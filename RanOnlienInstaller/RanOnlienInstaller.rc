@@ -1,0 +1,196 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\RanOnlienInstaller.rc2""  // Microsoft Visual C++에서 편집되지 않은 리소스\r\n"
+    "#include ""afxres.rc""         // 표준 구성 요소\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\RanOnlienInstaller.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DOWNLOADDLG DIALOGEX 0, 0, 294, 219
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "RanOnline Downloader"
+FONT 10, "돋움", 700, 0, 0x81
+BEGIN
+    PUSHBUTTON      "실  행",IDC_EXECUTE_BUTTON,15,190,62,15,BS_CENTER | 
+                    BS_VCENTER | BS_FLAT,WS_EX_TRANSPARENT
+    PUSHBUTTON      "시  작",IDC_START_BUTTON,114,190,62,15,BS_CENTER | 
+                    BS_VCENTER | BS_FLAT,WS_EX_TRANSPARENT
+    PUSHBUTTON      "닫  기",IDC_CLOSE_BUTTON,213,190,61,15,BS_CENTER | 
+                    BS_VCENTER | BS_FLAT,WS_EX_TRANSPARENT
+    CONTROL         "다운 완료후 바로 실행",IDC_READYTOSTART,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,171,99,9,
+                    WS_EX_TRANSPARENT
+    CONTROL         "",IDC_PROGRESS_ALL,"msctls_progress32",0x1,15,155,262,9,
+                    WS_EX_TRANSPARENT
+    LTEXT           "전송속도 ",IDC_STATIC,15,139,50,9,0,WS_EX_TRANSPARENT
+    LTEXT           "다운로드 위치",IDC_STATIC,15,123,50,9,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "진행상태",IDC_STATIC,15,107,37,9
+    CONTROL         "0 MB / 0 MB",IDC_STATE_STATIC,"Static",
+                    SS_LEFTNOWORDWRAP | WS_GROUP,81,107,199,9,
+                    WS_EX_TRANSPARENT
+    CONTROL         "내문서//",IDC_DOWNPLACE_STATIC,"Static",
+                    SS_LEFTNOWORDWRAP | SS_ENDELLIPSIS | WS_GROUP,81,123,197,
+                    9,WS_EX_TRANSPARENT
+    CONTROL         "0 KB / 초",IDC_SPEED_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,81,139,198,9,WS_EX_TRANSPARENT
+    CONTROL         129,IDC_IMAGE_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,280,91
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "TODO: <파일 설명>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "RanOnlienInstaller.exe"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "OriginalFilename", "RanOnlienInstaller.exe"
+            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "변환", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DOWNLOADDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 212
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BACK_BITMAP         BITMAP                  "RanDownImage.bmp"
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\RanOnlienInstaller.rc2"  // Microsoft Visual C++에서 편집되지 않은 리소스
+#include "afxres.rc"         // 표준 구성 요소
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

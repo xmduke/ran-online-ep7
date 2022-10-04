@@ -1,0 +1,794 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 중립 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+32784 MENU 
+BEGIN
+    POPUP "right"
+    BEGIN
+        MENUITEM "Add/Edit",                    ID_RIGHT_ADD
+        MENUITEM "Delete",                      ID_RIGHT_DELETE
+        MENUITEM "Edit Discription",            ID_RIGHT_EDIT
+    END
+END
+
+IDR_CONTEXT_LEFT MENU 
+BEGIN
+    POPUP "Left"
+    BEGIN
+        MENUITEM "New Folder",                  ID__MAKE
+        MENUITEM "Delete Folder",               ID__DELETE
+    END
+END
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "File(&F)"
+    BEGIN
+        MENUITEM "Open...\tCtrl+O(&O)",         ID_FILE_OPEN
+        MENUITEM "Save File List\tCtrl+S(&S)",  ID_FILE_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "Exit(&X)",                    ID_APP_EXIT
+    END
+    POPUP "Edit(&E)"
+    BEGIN
+        MENUITEM "Undo\tCtrl+Z(&U)",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cut\tCtrl+X(&T)",             ID_EDIT_CUT
+        MENUITEM "Copy\tCtrl+C(&C)",            ID_EDIT_COPY
+        MENUITEM "Paste\tCtrl+V(&P)",           ID_EDIT_PASTE
+    END
+    POPUP "Tools(&T)"
+    BEGIN
+        MENUITEM "Fault Check",                 ID_CHECK
+        MENUITEM "FTP Upload",                  ID_FTP
+    END
+    POPUP "View(&V)"
+    BEGIN
+        MENUITEM "Toolbars(&T)",                ID_VIEW_TOOLBAR
+        MENUITEM "Status Bar(&S)",              ID_VIEW_STATUS_BAR
+        MENUITEM "Partition(&P)",               ID_WINDOW_SPLIT
+    END
+    POPUP "Help(&H)"
+    BEGIN
+        MENUITEM "VersionManager 정보(&A)...",  ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 259, 63
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ran-Online Version Manager"
+FONT 9, "Arial", 400, 0, 0x0
+BEGIN
+    ICON            IDR_RAN_ICON,IDC_STATIC,14,15,18,17
+    LTEXT           "Ran-Online Client Version Manager Version 1.0",
+                    IDC_STATIC,40,10,197,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2002-2004 Min Comunications. All rights reserved. ",
+                    IDC_STATIC,40,25,205,8
+    DEFPUSHBUTTON   "OK",IDOK,104,40,50,16,WS_GROUP
+END
+
+IDD_DLG_COMPRESS DIALOGEX 0, 0, 415, 194
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Compress"
+FONT 9, "Arial", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,163,173,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,222,173,50,14
+    EDITTEXT        IDC_EDIT_CONSOLE,7,7,401,132,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | WS_VSCROLL
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,7,159,401,
+                    9
+    CTEXT           "",IDC_STATIC_PG,7,145,401,11
+END
+
+IDD_DLG_FILECHECK DIALOGEX 0, 0, 368, 194
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "File Check"
+FONT 9, "Arial", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,173,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,311,173,50,14
+    EDITTEXT        IDC_EDIT_CHECK,7,7,354,132,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL | NOT 
+                    WS_TABSTOP
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,7,161,354,
+                    9
+    CTEXT           "",IDC_STATIC_PG,7,145,354,11
+END
+
+IDD_DLG_FTP DIALOGEX 0, 0, 431, 194
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "FTP Upload"
+FONT 9, "Arial", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,246,173,50,14
+    EDITTEXT        IDC_EDIT_FTP,7,7,417,132,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | WS_VSCROLL
+    CONTROL         "",IDC_PROGRESS_FTP,"msctls_progress32",WS_BORDER,7,161,
+                    417,9
+    CTEXT           "",IDC_STATIC_FTP,7,145,417,11
+    PUSHBUTTON      "Stop",IDC_STOP,192,173,50,14
+    PUSHBUTTON      "Start",IDC_START,138,173,50,14
+END
+
+IDD_DLG_NEW_FOLDER DIALOGEX 0, 0, 225, 50
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Folder"
+FONT 9, "Arial", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,51,29,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,123,29,50,14
+    EDITTEXT        IDC_EDIT1,7,7,211,14,ES_AUTOHSCROLL
+END
+
+IDD_FORMLEFT DIALOGEX 0, 0, 91, 123
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "Arial", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_SINGLESEL | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,2,20,80,92
+    EDITTEXT        IDC_EDIT1,2,2,80,14,ES_AUTOHSCROLL | NOT WS_TABSTOP
+END
+
+IDD_FORMRIGHT DIALOGEX 0, 0, 116, 149
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "Arial", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,2,20,108,118
+    EDITTEXT        IDC_EDIT1,2,2,108,14,ES_AUTOHSCROLL | NOT WS_TABSTOP
+END
+
+IDD_VERSIONMANAGER_FORM DIALOGEX 0, 0, 186, 94
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_SYSMENU
+FONT 9, "Arial", 400, 0, 0x0
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_DLG_COMPRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 408
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_DLG_FILECHECK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 361
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_DLG_FTP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 424
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_DLG_NEW_FOLDER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 43
+    END
+
+    IDD_FORMLEFT, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 88
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_FORMRIGHT, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 113
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_VERSIONMANAGER_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 중립 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\VersionManager.rc2""  // Microsoft Visual C++에서 편집되지 않은 리소스\r\n"
+    "#include ""afxres.rc""         // 표준 구성 요소\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\icon1.ico"
+IDR_RanVersionTYPE      ICON                    "res\\VersionManagerDoc.ico"
+IDR_RAN_ICON            ICON                    "res\\Basic.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_TOOLBAR1            BITMAP                  "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    SEPARATOR
+    BUTTON      ID_CHECK
+    BUTTON      ID_FILE_SAVE
+    BUTTON      ID_FTP
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_TOOLBAR1 TOOLBAR  44, 16
+BEGIN
+    BUTTON      ID_BUTTON32771
+    BUTTON      ID_BUTTON32772
+    BUTTON      ID_BUTTON32773
+    BUTTON      ID_BUTTON32774
+    BUTTON      ID_BUTTON32775
+    BUTTON      ID_BUTTON32776
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "열기...\tCtrl+O(&O)",         ID_FILE_OPEN
+        MENUITEM "파일리스트 저장\tCtrl+S(&S)", ID_FILE_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "끝내기(&X)",                  ID_APP_EXIT
+    END
+    POPUP "편집(&E)"
+    BEGIN
+        MENUITEM "실행 취소\tCtrl+Z(&U)",       ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "잘라내기\tCtrl+X(&T)",        ID_EDIT_CUT
+        MENUITEM "복사\tCtrl+C(&C)",            ID_EDIT_COPY
+        MENUITEM "붙여넣기\tCtrl+V(&P)",        ID_EDIT_PASTE
+    END
+    POPUP "도구(&T)"
+    BEGIN
+        MENUITEM "무결성 체크",                 ID_CHECK
+        MENUITEM "FTP 업로드",                  ID_FTP
+    END
+    POPUP "보기(&V)"
+    BEGIN
+        MENUITEM "도구 모음(&T)",               ID_VIEW_TOOLBAR
+        MENUITEM "상태 표시줄(&S)",             ID_VIEW_STATUS_BAR
+        MENUITEM "분할(&P)",                    ID_WINDOW_SPLIT
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "VersionManager 정보(&A)...",  ID_APP_ABOUT
+    END
+END
+
+IDR_CONTEXT_LEFT MENU 
+BEGIN
+    POPUP "Left"
+    BEGIN
+        MENUITEM "New Folder",                  ID__MAKE
+        MENUITEM "Delete Folder",               ID__DELETE
+    END
+END
+
+32784 MENU 
+BEGIN
+    POPUP "right"
+    BEGIN
+        MENUITEM "추가/변경",                   ID_RIGHT_ADD
+        MENUITEM "삭제",                        ID_RIGHT_DELETE
+        MENUITEM "설명입력",                    ID_RIGHT_EDIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 259, 72
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Ran-Online Version Manager"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_RAN_ICON,IDC_STATIC,14,15,20,20
+    LTEXT           "Ran-Online Client Version Manager Version 1.0",
+                    IDC_STATIC,40,10,197,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2002-2004 Min Comunications. All rights reserved. ",
+                    IDC_STATIC,40,25,205,8
+    DEFPUSHBUTTON   "확인",IDOK,104,49,50,16,WS_GROUP
+END
+
+IDD_FORMLEFT DIALOGEX 0, 0, 91, 123
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "굴림", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_SINGLESEL | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,2,20,80,92
+    EDITTEXT        IDC_EDIT1,2,2,80,14,ES_AUTOHSCROLL | NOT WS_TABSTOP
+END
+
+IDD_FORMRIGHT DIALOGEX 0, 0, 116, 149
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "굴림", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,2,20,108,118
+    EDITTEXT        IDC_EDIT1,2,2,108,14,ES_AUTOHSCROLL | NOT WS_TABSTOP
+END
+
+IDD_VERSIONMANAGER_FORM DIALOGEX 0, 0, 186, 94
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DLG_NEW_FOLDER DIALOGEX 0, 0, 225, 50
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Folder"
+FONT 10, "굴림", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,51,29,50,14
+    PUSHBUTTON      "취소",IDCANCEL,123,29,50,14
+    EDITTEXT        IDC_EDIT1,7,7,211,14,ES_AUTOHSCROLL
+END
+
+IDD_DLG_COMPRESS DIALOGEX 0, 0, 415, 194
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Compress"
+FONT 10, "굴림", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,163,173,50,14
+    PUSHBUTTON      "취소",IDCANCEL,222,173,50,14
+    EDITTEXT        IDC_EDIT_CONSOLE,7,7,401,132,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | WS_VSCROLL
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,7,161,401,
+                    9
+    CTEXT           "",IDC_STATIC_PG,7,145,401,11
+END
+
+IDD_DLG_FTP DIALOGEX 0, 0, 431, 194
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "FTP Upload"
+FONT 10, "굴림", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "닫기",IDOK,246,173,50,14
+    EDITTEXT        IDC_EDIT_FTP,7,7,417,132,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | WS_VSCROLL
+    CONTROL         "",IDC_PROGRESS_FTP,"msctls_progress32",WS_BORDER,7,161,
+                    417,9
+    CTEXT           "",IDC_STATIC_FTP,7,145,417,11
+    PUSHBUTTON      "중단",IDC_STOP,192,173,50,14
+    PUSHBUTTON      "시작",IDC_START,138,173,50,14
+END
+
+IDD_DLG_FILECHECK DIALOGEX 0, 0, 368, 194
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "File Check"
+FONT 10, "굴림", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,7,173,50,14
+    PUSHBUTTON      "취소",IDCANCEL,311,173,50,14
+    EDITTEXT        IDC_EDIT_CHECK,7,7,354,132,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL | NOT 
+                    WS_TABSTOP
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,7,161,354,
+                    9
+    CTEXT           "",IDC_STATIC_PG,7,145,354,11
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "Comments", "Ran-Online Client Version Manager"
+            VALUE "CompanyName", "Min Communications"
+            VALUE "FileDescription", "Ran-Online Client Version Manager"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "VersionManager.exe"
+            VALUE "LegalCopyright", "(c) Min Communications.  All rights reserved."
+            VALUE "LegalTrademarks", "Copyright 2002"
+            VALUE "OriginalFilename", "VersionManager.exe"
+            VALUE "PrivateBuild", "1"
+            VALUE "ProductName", "Ran-Online Client Version Manager"
+            VALUE "ProductVersion", "1.0.0.1"
+            VALUE "SpecialBuild", "1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 65
+    END
+
+    IDD_FORMLEFT, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 88
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_FORMRIGHT, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 113
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_VERSIONMANAGER_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_DLG_NEW_FOLDER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 43
+    END
+
+    IDD_DLG_COMPRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 408
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_DLG_FTP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 424
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_DLG_FILECHECK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 361
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "RanOnline VersionManager\n\nRanVersion\nRan Version Files (*.lst)\n.lst\nRanOnlineVersionManager.Document\nRanOnlineVersionManager.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "VersionManager"
+    AFX_IDS_IDLEMESSAGE     "준비"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "새 문서를 만듭니다.\n새로 만들기"
+    ID_FILE_OPEN            "파일리스트를 엽니다.\n열기"
+    ID_FILE_CLOSE           "액티브 문서를 닫습니다.\n닫기"
+    ID_FILE_SAVE            "파일리스트를 생성후 저장합니다.\n파일리스트 저장"
+    ID_FILE_SAVE_AS         "액티브 문서를 새 이름으로 저장합니다.\n다른 이름으로 저장"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "프로그램 정보, 버전 번호, 저작권을 표시합니다.\n정보"
+    ID_APP_EXIT             "문서를 저장할지를 묻고 응용 프로그램을 끝냅니다.\n끝내기"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE2       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE3       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE4       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE5       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE6       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE7       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE8       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE9       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE10      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE11      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE12      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE13      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE14      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE15      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE16      "현재 문서를 엽니다."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "다음 창으로 전환합니다.\n다음 창"
+    ID_PREV_PANE            "이전 창으로 전환합니다.\n이전 창"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "활성 창을 여러 개의 창으로 분할합니다.\n분할"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "선택 영역을 지웁니다.\n지우기"
+    ID_EDIT_CLEAR_ALL       "모든 것을 지웁니다.\n모두 지우기"
+    ID_EDIT_COPY            "선택 영역을 복사하여 클립보드에 넣습니다.\n복사"
+    ID_EDIT_CUT             "선택 영역을 잘라내어 클립보드에 넣습니다.\n잘라내기"
+    ID_EDIT_FIND            "지정한 텍스트를 찾습니다.\n찾기"
+    ID_EDIT_PASTE           "클립보드 내용을 삽입합니다.\n붙여넣기"
+    ID_EDIT_REPEAT          "마지막 작업을 반복합니다.\n반복"
+    ID_EDIT_REPLACE         "특정 텍스트를 다른 텍스트로 바꿉니다.\n바꾸기"
+    ID_EDIT_SELECT_ALL      "전체 문서를 선택합니다.\n모두 선택"
+    ID_EDIT_UNDO            "마지막 작업 실행을 취소합니다.\n실행 취소"
+    ID_EDIT_REDO            "이전에 실행 취소된 작업을 다시 실행합니다.\n다시 실행"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "도구 모음을 표시하거나 숨깁니다.\n도구 모음 설정/해제"
+    ID_VIEW_STATUS_BAR      "상태 표시줄을 표시하거나 숨깁니다.\n상태 표시줄 설정/해제"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "창 크기를 변경합니다."
+    AFX_IDS_SCMOVE          "창 위치를 변경합니다."
+    AFX_IDS_SCMINIMIZE      "창을 아이콘으로 축소합니다."
+    AFX_IDS_SCMAXIMIZE      "창을 전체 화면 크기로 확대합니다."
+    AFX_IDS_SCNEXTWINDOW    "다음 문서 창으로 전환합니다."
+    AFX_IDS_SCPREVWINDOW    "이전 문서 창으로 전환합니다."
+    AFX_IDS_SCCLOSE         "문서를 저장할 것인지 확인하고 활성 창을 닫습니다."
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "창을 보통 크기로 복원합니다."
+    AFX_IDS_SCTASKLIST      "작업 목록 활성화"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CHECK                "파일들의 무결성을 검사합니다.\n무결성 체크"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FTP                  "파일들을 FTP 로 업로드 합니다.\nFTP 업로드"
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\VersionManager.rc2"  // Microsoft Visual C++에서 편집되지 않은 리소스
+#include "afxres.rc"         // 표준 구성 요소
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

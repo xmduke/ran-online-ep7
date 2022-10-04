@@ -1,0 +1,26 @@
+<HTML>
+<HEAD>
+<TITLE>MinWebLauncher Test</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+function StartGame()
+{
+    MinWebLauncher.StartGame();
+}
+</SCRIPT>
+
+</HEAD>
+<BODY>
+
+<OBJECT ID="MinWebLauncher" WIDTH=0 HEIGHT=0
+ CODEBASE="http://www.playran.com/MinWebLauncher.cab#Version=1,1,0,0" 
+ CLASSID="CLSID:5FFFA267-0B81-42B4-BE64-77B5C9FE287F">
+    <PARAM NAME="GameType" VALUE="0">
+    <PARAM NAME="DownloadURL" VALUE="http://www.playran.com/download/download.aspx">
+    <PARAM NAME="UUID" VALUE="5FFFA267-0B81-42B4-BE64-77B5C9FE287F">
+</OBJECT>
+
+<INPUT TYPE="button" NAME="Submit" VALUE="StartGame" ONCLICK=StartGame()>
+
+</BODY>
+</HTML>

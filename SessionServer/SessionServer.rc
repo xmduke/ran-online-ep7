@@ -1,0 +1,202 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 중립 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 22, 17, 230, 54
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 10, "Arial", 400, 0, 0x0
+BEGIN
+    ICON            IDI_SESSIONSERVER,IDC_MYICON,14,9,20,20
+    LTEXT           "Ran-Online SessionServer Version 1.0",IDC_STATIC,49,10,
+                    168,8,SS_NOPREFIX
+    LTEXT           "Copyright(C) Min Comunication",IDC_STATIC,49,20,165,8
+    DEFPUSHBUTTON   "OK",IDOK,107,36,30,11,WS_GROUP
+END
+
+IDD_MAIN_DIALOG DIALOGEX 0, 0, 335, 220
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SessionServer"
+FONT 10, "Arial", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_EXEC,7,198,156,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Execute",IDC_BTN_EXECUTE,165,198,39,14
+    PUSHBUTTON      "Start",IDC_BTN_STOP,206,198,39,14
+    PUSHBUTTON      "E&xit",IDC_CLOSE,289,198,39,14
+    EDITTEXT        IDC_EDITCONSOLE,7,7,321,141,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | 
+                    WS_VSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_EDITCONSOLE_INFO,7,150,321,46,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | 
+                    WS_VSCROLL | NOT WS_TABSTOP
+    PUSHBUTTON      "Pause",IDC_BTN_PAUSE,247,198,39,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 47
+    END
+
+    IDD_MAIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 328
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 중립 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_SMALL               ICON                    "BasicSmall.ico"
+IDI_SESSIONSERVER       ICON                    "Basic.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_SESSIONSERVER MENU 
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "끝내기(&X)",                  IDM_EXIT
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "정보(&A)...",                 IDM_ABOUT
+    END
+END
+
+IDR_POPMENU MENU 
+BEGIN
+    POPUP "PopupMenu"
+    BEGIN
+        MENUITEM "Open",                        IDC_OPEN
+        MENUITEM "Start",                       IDC_BTN_STOP
+        MENUITEM "Pause",                       IDC_BTN_PAUSE
+        MENUITEM "Exit",                        IDC_CLOSE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_SESSIONSERVER ACCELERATORS 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "SessionServer"
+    IDC_SESSIONSERVER       "SESSIONSERVER"
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

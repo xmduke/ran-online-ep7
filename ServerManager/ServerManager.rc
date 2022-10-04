@@ -1,0 +1,1591 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 일본어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_JOB_SCHEDULE DIALOGEX 0, 0, 246, 286
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Job Schedule"
+FONT 10, "??", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,204,7,35,14
+    CONTROL         "",IDC_LIST_JOB,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,24,232,255
+    PUSHBUTTON      "BroadCast Message",IDC_BTN_BROADCAST_MESSAGE_ADD,7,7,76,
+                    14
+    PUSHBUTTON      "Export",IDC_SCH_EXPORT,90,7,40,14
+    PUSHBUTTON      "Import",IDC_SCH_IMPORT,133,7,40,14
+END
+
+IDD_SERVERMANAGER_DIALOG DIALOGEX 0, 0, 374, 386
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ServerManager"
+MENU IDR_MENU1
+FONT 10, "??", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_IPADDRESS,"SysIPAddress32",WS_TABSTOP,50,9,77,15
+    EDITTEXT        IDC_EDIT_PORT,151,9,22,14,ES_AUTOHSCROLL | ES_NUMBER,
+                    WS_EX_RIGHT
+    PUSHBUTTON      "Connect",IDC_BTN_CONNECT,180,9,37,14
+    EDITTEXT        IDC_EDIT_REFRESH_RATE,252,9,21,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER,WS_EX_RIGHT
+    PUSHBUTTON      "Apply",IDC_BUTTON1,277,10,34,14
+    CONTROL         "",IDC_LIST_SERVER,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,
+                    80,360,200
+    LTEXT           "Address",IDC_STATIC,20,13,28,8
+    LTEXT           "Port",IDC_STATIC,134,13,14,12
+    CONTROL         "",IDC_LED1,"Static",SS_BLACKFRAME,7,9,12,13
+    LTEXT           "Refresh",IDC_STATIC,223,13,27,8
+    LTEXT           "",IDC_STATIC_HISTO,164,36,142,15,SS_SUNKEN
+    LTEXT           "Max",IDC_STATIC,14,39,15,8
+    LTEXT           "Current",IDC_STATIC,90,39,19,8
+    GROUPBOX        "User",IDC_STATIC,7,27,304,28
+    LTEXT           "",IDC_STATIC_MAX,32,36,47,13,SS_SUNKEN,WS_EX_RTLREADING
+    LTEXT           "",IDC_STATIC_CRT,112,37,43,12,SS_SUNKEN,
+                    WS_EX_RTLREADING
+    PUSHBUTTON      "Schedule",IDC_BTN_JOB_SCHEDULE,315,10,50,14
+    EDITTEXT        IDC_EDIT_CONSOLE,7,284,360,91,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | WS_VSCROLL | 
+                    WS_HSCROLL
+    EDITTEXT        IDC_EDIT_MSG,87,60,224,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Send",IDC_BTN_MSG_SND,317,60,50,14
+    PUSHBUTTON      "SMS Test",IDC_BUTTON4,317,36,50,14
+    COMBOBOX        IDC_COMBO_SERVER_LIST,7,60,75,70,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLG_MESSAGE DIALOGEX 0, 0, 294, 59
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Send Message"
+FONT 10, "Arial", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,19,280,15,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,7,38,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,237,38,50,14
+    LTEXT           "Type Message (Max : 50)",IDC_STATIC,7,7,280,8
+END
+
+IDD_SERVERVIEW_DIALOG DIALOGEX 0, 0, 177, 125
+STYLE DS_SETFONT | DS_SETFOREGROUND | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Server State"
+FONT 8, "??", 400, 0, 0x81
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,3,103,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,120,103,50,14
+    CONTROL         "Pin",IDC_BTN_PIN,"Button",BS_OWNERDRAW | WS_TABSTOP,0,0,
+                    17,14
+    LTEXT           "Max",IDC_STATIC,8,29,14,8
+    LTEXT           "Current",IDC_STATIC,7,41,24,8
+    LTEXT           "",IDC_STATIC_USER,62,25,104,27,SS_SUNKEN
+    GROUPBOX        "User",IDC_STATIC,4,17,166,40
+    GROUPBOX        "Ram",IDC_STATIC,4,60,166,39
+    LTEXT           "Max",IDC_STATIC,9,71,14,8
+    LTEXT           "Current",IDC_STATIC,9,85,24,8
+    LTEXT           "Static",IDC_STATIC_RAM,63,70,102,24,SS_SUNKEN
+END
+
+IDD_DLG_JOB_BROADCAST_MESSAGE DIALOGEX 0, 0, 345, 106
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Broadcast message"
+FONT 10, "Arial", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,85,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,113,85,50,14
+    LTEXT           "Hour",IDC_STATIC,8,9,19,8
+    COMBOBOX        IDC_COMBO_HOUR,32,7,24,127,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Min",IDC_STATIC,59,10,12,8
+    COMBOBOX        IDC_COMBO_MIN,73,7,25,128,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Type",IDC_STATIC,100,9,17,8
+    COMBOBOX        IDC_COMBO_TYPE,122,7,111,54,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_BROADCAST_MESSAGE,7,69,238,14,ES_AUTOHSCROLL
+    LTEXT           "Message (Max:100)",IDC_STATIC,7,57,72,8
+    CONTROL         "All Server",IDC_SEND_TYPE1,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,11,23,40,12
+    CONTROL         "Each Group",IDC_SEND_TYPE2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,9,37,48,15
+    CONTROL         "1 Server",IDC_SVR_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,62,34,43,13
+    CONTROL         "2 Server",IDC_SVR_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,105,34,41,13
+    CONTROL         "3 Server",IDC_SVR_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,149,34,41,13
+    CONTROL         "4 Server",IDC_SVR_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,192,34,39,13
+    CONTROL         "5 Server",IDC_SVR_CHECK5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,105,44,39,13
+    CONTROL         "6 Server",IDC_SVR_CHECK6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,62,44,39,13
+    CONTROL         "7 Server",IDC_SVR_CHECK7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,149,44,39,13
+    CONTROL         "8 Server",IDC_SVR_CHECK8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,192,44,39,13
+    CONTROL         "",IDC_MONTHCALENDAR1,"SysMonthCal32",MCS_NOTODAY | 
+                    MCS_NOTODAYCIRCLE | WS_TABSTOP,252,9,86,88
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DLG_JOB_SCHEDULE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 279
+    END
+
+    IDD_SERVERMANAGER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 367
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 379
+    END
+
+    IDD_DLG_MESSAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+
+    IDD_SERVERVIEW_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 170
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_DLG_JOB_BROADCAST_MESSAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 338
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 일본어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 중국어(중국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SERVERMANAGER_DIALOG DIALOGEX 0, 0, 374, 386
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ServerManager"
+MENU IDR_MENU1
+FONT 10, "??", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_IPADDRESS,"SysIPAddress32",WS_TABSTOP,50,9,77,15
+    EDITTEXT        IDC_EDIT_PORT,151,9,22,14,ES_AUTOHSCROLL | ES_NUMBER,
+                    WS_EX_RIGHT
+    PUSHBUTTON      "Connect",IDC_BTN_CONNECT,180,9,37,14
+    EDITTEXT        IDC_EDIT_REFRESH_RATE,252,9,21,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER,WS_EX_RIGHT
+    PUSHBUTTON      "Apply",IDC_BUTTON1,277,10,34,14
+    CONTROL         "",IDC_LIST_SERVER,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,
+                    80,360,200
+    LTEXT           "Address",IDC_STATIC,20,13,28,8
+    LTEXT           "Port",IDC_STATIC,134,13,14,12
+    CONTROL         "",IDC_LED1,"Static",SS_BLACKFRAME,7,9,12,13
+    LTEXT           "Refresh",IDC_STATIC,223,13,27,8
+    LTEXT           "",IDC_STATIC_HISTO,164,36,142,15,SS_SUNKEN
+    LTEXT           "Max",IDC_STATIC,14,39,15,8
+    LTEXT           "Current",IDC_STATIC,83,39,26,8
+    GROUPBOX        "User",IDC_STATIC,7,27,304,28
+    LTEXT           "",IDC_STATIC_MAX,32,36,47,13,SS_SUNKEN,WS_EX_RTLREADING
+    LTEXT           "",IDC_STATIC_CRT,112,37,43,12,SS_SUNKEN,
+                    WS_EX_RTLREADING
+    PUSHBUTTON      "Schedule",IDC_BTN_JOB_SCHEDULE,315,10,50,14
+    EDITTEXT        IDC_EDIT_CONSOLE,7,284,360,91,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | WS_VSCROLL | 
+                    WS_HSCROLL
+    EDITTEXT        IDC_EDIT_MSG,87,60,224,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Send",IDC_BTN_MSG_SND,317,60,50,14
+    PUSHBUTTON      "SMS Test",IDC_BUTTON4,317,36,50,14
+    COMBOBOX        IDC_COMBO_SERVER_LIST,7,60,75,70,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLG_MESSAGE DIALOGEX 0, 0, 294, 59
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Send Message"
+FONT 10, "Arial", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,19,280,15,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,7,38,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,237,38,50,14
+    LTEXT           "Type Message (Max : 50)",IDC_STATIC,7,7,280,8
+END
+
+IDD_SERVERVIEW_DIALOG DIALOGEX 0, 0, 177, 125
+STYLE DS_SETFONT | DS_SETFOREGROUND | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Server State"
+FONT 8, "Arial", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,3,103,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,120,103,50,14
+    CONTROL         "Pin",IDC_BTN_PIN,"Button",BS_OWNERDRAW | WS_TABSTOP,0,0,
+                    17,14
+    LTEXT           "Max",IDC_STATIC,8,29,14,8
+    LTEXT           "Current",IDC_STATIC,7,41,24,8
+    LTEXT           "",IDC_STATIC_USER,62,25,104,27,SS_SUNKEN
+    GROUPBOX        "User",IDC_STATIC,4,17,166,40
+    GROUPBOX        "Ram",IDC_STATIC,4,60,166,39
+    LTEXT           "Max",IDC_STATIC,9,71,14,8
+    LTEXT           "Current",IDC_STATIC,9,85,24,8
+    LTEXT           "Static",IDC_STATIC_RAM,63,70,102,24,SS_SUNKEN
+END
+
+IDD_DLG_JOB_BROADCAST_MESSAGE DIALOGEX 0, 0, 345, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Broadcast message"
+FONT 10, "Arial", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,78,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,113,78,50,14
+    LTEXT           "Hour",IDC_STATIC,8,2,19,8
+    COMBOBOX        IDC_COMBO_HOUR,32,0,24,127,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Min",IDC_STATIC,59,3,12,8
+    COMBOBOX        IDC_COMBO_MIN,73,0,25,128,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Type",IDC_STATIC,100,2,17,8
+    COMBOBOX        IDC_COMBO_TYPE,122,0,111,54,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_BROADCAST_MESSAGE,7,62,238,14,ES_AUTOHSCROLL
+    LTEXT           "Message (Max:100)",IDC_STATIC,7,50,72,8
+    CONTROL         "All Server",IDC_SEND_TYPE1,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,11,16,40,12
+    CONTROL         "Each Group",IDC_SEND_TYPE2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,9,30,48,15
+    CONTROL         "1 Server",IDC_SVR_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,62,27,43,13
+    CONTROL         "2 Server",IDC_SVR_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,105,27,41,13
+    CONTROL         "3 Server",IDC_SVR_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,149,27,41,13
+    CONTROL         "4 Server",IDC_SVR_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,192,27,39,13
+    CONTROL         "5 Server",IDC_SVR_CHECK5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,105,37,39,13
+    CONTROL         "6 Server",IDC_SVR_CHECK6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,62,37,39,13
+    CONTROL         "7 Server",IDC_SVR_CHECK7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,149,37,39,13
+    CONTROL         "8 Server",IDC_SVR_CHECK8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,192,37,39,13
+    CONTROL         "",IDC_MONTHCALENDAR1,"SysMonthCal32",MCS_NOTODAY | 
+                    MCS_NOTODAYCIRCLE | WS_TABSTOP,252,4,86,86
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SERVERMANAGER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 367
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 379
+    END
+
+    IDD_DLG_MESSAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+
+    IDD_SERVERVIEW_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 170
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_DLG_JOB_BROADCAST_MESSAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 338
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 중국어(중국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 중립 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 222, 61
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ServerManager"
+FONT 10, "Arial", 400, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ServerManager ver 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (c) 2003-2005 Min Communication",IDC_STATIC,
+                    40,25,150,8
+    DEFPUSHBUTTON   "OK",IDOK,85,38,50,16,WS_GROUP
+END
+
+IDD_DLG_JOB_BROADCAST_MESSAGE DIALOGEX 0, 0, 279, 247
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Broadcast message"
+FONT 10, "Arial", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,226,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,113,226,50,14
+    LTEXT           "Hour",IDC_STATIC,8,9,19,8
+    COMBOBOX        IDC_COMBO_HOUR,32,7,24,127,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Min",IDC_STATIC,59,10,12,8
+    COMBOBOX        IDC_COMBO_MIN,73,7,25,128,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Type",IDC_STATIC,100,9,17,8
+    COMBOBOX        IDC_COMBO_TYPE,122,7,111,54,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Message",IDC_STATIC,7,57,37,8
+    CONTROL         "All Server",IDC_SEND_TYPE1,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,11,23,40,12
+    CONTROL         "Each Group",IDC_SEND_TYPE2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,9,37,48,15
+    CONTROL         "1 Server",IDC_SVR_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,62,34,43,13
+    CONTROL         "2 Server",IDC_SVR_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,105,34,41,13
+    CONTROL         "3 Server",IDC_SVR_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,149,34,41,13
+    CONTROL         "4 Server",IDC_SVR_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,192,34,39,13
+    CONTROL         "5 Server",IDC_SVR_CHECK5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,105,44,39,13
+    CONTROL         "6 Server",IDC_SVR_CHECK6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,62,44,39,13
+    CONTROL         "7 Server",IDC_SVR_CHECK7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,149,44,39,13
+    CONTROL         "8 Server",IDC_SVR_CHECK8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,192,44,39,13
+    CONTROL         "",IDC_MONTHCALENDAR1,"SysMonthCal32",MCS_NOTODAY | 
+                    MCS_NOTODAYCIRCLE | WS_TABSTOP,187,70,86,94
+    EDITTEXT        IDC_EDIT_BROADCAST_MESSAGE,7,70,173,152,ES_MULTILINE | 
+                    ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_DLG_MESSAGE DIALOGEX 0, 0, 294, 59
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Send Message"
+FONT 10, "Arial", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,19,280,15,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,7,38,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,237,38,50,14
+    LTEXT           "Type Message (Max : 50)",IDC_STATIC,7,7,280,8
+END
+
+IDD_SERVERMANAGER_DIALOG DIALOGEX 0, 0, 375, 367
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ServerManager"
+MENU IDR_MENU1
+FONT 9, "Arial", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_IPADDRESS,"SysIPAddress32",WS_TABSTOP,50,9,77,15
+    EDITTEXT        IDC_EDIT_PORT,151,9,22,14,ES_AUTOHSCROLL | ES_NUMBER,
+                    WS_EX_RIGHT
+    PUSHBUTTON      "Connect",IDC_BTN_CONNECT,180,9,37,14
+    EDITTEXT        IDC_EDIT_REFRESH_RATE,252,9,21,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER,WS_EX_RIGHT
+    PUSHBUTTON      "Apply",IDC_BUTTON1,277,10,34,14
+    EDITTEXT        IDC_EDIT_MSG1,60,74,173,12,ES_MULTILINE
+    EDITTEXT        IDC_EDIT_MSG2,60,86,213,12,ES_MULTILINE
+    EDITTEXT        IDC_EDIT_MSG3,60,97,213,12,ES_MULTILINE
+    EDITTEXT        IDC_EDIT_MSG4,60,109,213,12,ES_MULTILINE
+    EDITTEXT        IDC_EDIT_MSG5,60,120,213,12,ES_MULTILINE
+    EDITTEXT        IDC_EDIT_MSG6,60,131,213,12,ES_MULTILINE
+    EDITTEXT        IDC_EDIT_MSG7,60,143,213,12,ES_MULTILINE
+    EDITTEXT        IDC_EDIT_MSG8,60,154,213,12,ES_MULTILINE
+    EDITTEXT        IDC_EDIT_MSG9,60,166,213,12,ES_MULTILINE
+    EDITTEXT        IDC_EDIT_MSG10,60,177,213,12,ES_MULTILINE
+    EDITTEXT        IDC_EDIT_MSG11,60,188,213,12,ES_MULTILINE
+    EDITTEXT        IDC_EDIT_MSG12,60,200,213,12,ES_MULTILINE
+    EDITTEXT        IDC_EDIT_MSG13,60,211,213,12,ES_MULTILINE
+    EDITTEXT        IDC_EDIT_MSG14,60,223,213,12,ES_MULTILINE
+    EDITTEXT        IDC_EDIT_MSG15,60,234,213,12,ES_MULTILINE
+    EDITTEXT        IDC_EDIT_MSG16,60,244,213,12,ES_MULTILINE
+    EDITTEXT        IDC_EDIT_MSG17,60,256,213,12,ES_MULTILINE
+    EDITTEXT        IDC_EDIT_MSG18,60,269,213,12,ES_MULTILINE
+    EDITTEXT        IDC_EDIT_MSG19,60,280,213,12,ES_MULTILINE
+    EDITTEXT        IDC_EDIT_MSG20,60,292,213,12,ES_MULTILINE
+    PUSHBUTTON      "Send",IDC_BTN_MSG_SND,278,74,22,12
+    CONTROL         "Each Group",IDC_SEND_TYPE2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,11,58,42,12
+    CONTROL         "All Server",IDC_SEND_TYPE1,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,11,75,35,12
+    CONTROL         "1 Server",IDC_SVR_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,55,57,36,14
+    CONTROL         "2 Server",IDC_SVR_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,94,57,39,14
+    CONTROL         "3 Server",IDC_SVR_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,133,57,39,14
+    CONTROL         "4 Server",IDC_SVR_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,172,57,39,14
+    CONTROL         "5 Server",IDC_SVR_CHECK5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,211,57,39,14
+    CONTROL         "6 Server",IDC_SVR_CHECK6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,249,57,39,14
+    CONTROL         "7 Server",IDC_SVR_CHECK7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,288,57,39,14
+    CONTROL         "8 Server",IDC_SVR_CHECK8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,327,57,39,14
+    CONTROL         "",IDC_LIST_SERVER,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,
+                    93,157,178
+    LTEXT           "Address",IDC_STATIC,20,13,28,8
+    LTEXT           "Port",IDC_STATIC,134,13,14,12
+    CONTROL         "",IDC_LED1,"Static",SS_BLACKFRAME,7,9,12,13
+    LTEXT           "Refresh",IDC_STATIC,223,13,27,8
+    LTEXT           "",IDC_STATIC_HISTO,162,36,144,15,SS_SUNKEN
+    LTEXT           "Max",IDC_STATIC,14,39,15,8
+    LTEXT           "Current",IDC_STATIC,84,39,26,8
+    GROUPBOX        "User",IDC_STATIC,7,27,304,28
+    LTEXT           "",IDC_STATIC_MAX,32,36,47,13,SS_SUNKEN,WS_EX_RTLREADING
+    LTEXT           "",IDC_STATIC_CRT,115,37,43,12,SS_SUNKEN,
+                    WS_EX_RTLREADING
+    PUSHBUTTON      "Schedule",IDC_BTN_JOB_SCHEDULE,318,10,50,12,WS_DISABLED
+    EDITTEXT        IDC_EDIT_CONSOLE,7,275,361,85,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | WS_VSCROLL | 
+                    WS_HSCROLL
+    PUSHBUTTON      "SMS Test",IDC_BUTTON4,318,25,50,11
+    GROUPBOX        "",IDC_STATIC,7,70,49,20
+    GROUPBOX        "",IDC_STATIC,7,53,361,20
+    PUSHBUTTON      "10",IDC_VIEW10_BUTTON,249,74,14,12
+    PUSHBUTTON      "19",IDC_VIEW20_BUTTON,264,74,14,12
+    PUSHBUTTON      "1",IDC_VIEW1_BUTTON,235,74,14,12
+    PUSHBUTTON      "Server State",IDC_SVRSTATE_BUTTON,319,39,49,12
+    CONTROL         "Tracing List",IDC_TRACING_BUTTON,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,326,74,42,12
+    PUSHBUTTON      "ADD",IDC_ADD_BUTTON,308,260,26,11
+    PUSHBUTTON      "DELETE",IDC_DEL_BUTTON,335,260,33,11
+    EDITTEXT        IDC_TRACING_EDIT,249,260,56,11,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST_TRACING,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,171,93,197,164,
+                    WS_EX_LEFTSCROLLBAR
+    CONTROL         "UserNum",IDC_ADD_TYPE_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,213,260,34,11
+    PUSHBUTTON      "Clear",IDC_BTN_MSG_CLEAR,302,74,22,12
+END
+
+IDD_SERVERVIEW_DIALOG DIALOGEX 0, 0, 177, 125
+STYLE DS_SETFONT | DS_SETFOREGROUND | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Server State"
+FONT 8, "Arial", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,3,103,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,120,103,50,14
+    CONTROL         "Pin",IDC_BTN_PIN,"Button",BS_OWNERDRAW | WS_TABSTOP,0,0,
+                    17,14
+    LTEXT           "Max",IDC_STATIC,8,29,14,8
+    LTEXT           "Current",IDC_STATIC,7,41,24,8
+    LTEXT           "",IDC_STATIC_USER,62,25,104,27,SS_SUNKEN
+    GROUPBOX        "User",IDC_STATIC,4,17,166,40
+    GROUPBOX        "Ram",IDC_STATIC,4,60,166,39
+    LTEXT           "Max",IDC_STATIC,9,71,14,8
+    LTEXT           "Current",IDC_STATIC,9,85,24,8
+    LTEXT           "Static",IDC_STATIC_RAM,63,70,102,24,SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 215
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+
+    IDD_DLG_JOB_BROADCAST_MESSAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 272
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+    END
+
+    IDD_DLG_MESSAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+
+    IDD_SERVERMANAGER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 368
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 360
+    END
+
+    IDD_SERVERVIEW_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 170
+        BOTTOMMARGIN, 118
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "res\\bmp00001.bmp"
+IDB_LEDS                BITMAP                  "res\\bmp00002.bmp"
+IDB_MATRIXLARGE         BITMAP                  "res\\matrixla.bmp"
+IDB_MATRIXSMALL         BITMAP                  "res\\matrixsm.bmp"
+IDB_MATRIXTINY          BITMAP                  "res\\matrixti.bmp"
+IDB_PP_PINNED           BITMAP                  "res\\pp_pinne.bmp"
+IDB_PP_PINNEDEDGE       BITMAP                  "res\\bmp00003.bmp"
+IDB_PP_UNPINNED         BITMAP                  "res\\pp_unpin.bmp"
+IDB_PP_UNPINNEDEDGE     BITMAP                  "res\\bmp00004.bmp"
+IDB_STATEBITMAP         BITMAP                  "res\\statebit.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_SERVER_LIST_MENU MENU 
+BEGIN
+    POPUP "Context Menu"
+    BEGIN
+        MENUITEM "Open",                        138
+        MENUITEM SEPARATOR
+        MENUITEM "Notice Message",              ID_CONTEXTMENU_MESSAGE
+        MENUITEM "Pause",                       ID_CONTEXTMENU_PAUSE
+        MENUITEM "Pause (5 min)",               ID_CONTEXTMENU_PAUSE_5
+        MENUITEM "Resume",                      ID_CONTEXTMENU_RESUME
+        MENUITEM "ReStart",                     ID_CONTEXTMENU_RESTART
+        MENUITEM "ReStart (5 min)",             ID_CONTEXTMENU_RESTART_5
+        MENUITEM "Stop (5 min)",                ID_CONTEXTMENU_STOP_5
+        MENUITEM "Stop",                        ID_CONTEXTMENU_STOP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "ServerManager Info(&A)..."
+    IDS_STRING102           "Connect OK"
+    IDS_STRING103           "Connection Failed"
+    IDS_STRING104           "Already Registered"
+    IDS_STRING105           "Server Registered"
+    IDS_STRING106           "OK"
+    IDS_STRING107           "Not responsed"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CONTEXTMENU_MESSAGE  "Open Server status"
+END
+
+#endif    // 중립 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "ServerManager 정보"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ServerManager 버전 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (c) 2003-2005 Min Communication",IDC_STATIC,
+                    40,25,161,8
+    DEFPUSHBUTTON   "확인",IDOK,92,39,50,16,WS_GROUP
+END
+
+IDD_SERVERMANAGER_DIALOG DIALOGEX 0, 0, 374, 386
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ServerManager"
+MENU IDR_MENU1
+FONT 10, "굴림", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_IPADDRESS,"SysIPAddress32",WS_TABSTOP,50,9,77,15
+    EDITTEXT        IDC_EDIT_PORT,151,9,22,14,ES_AUTOHSCROLL | ES_NUMBER,
+                    WS_EX_RIGHT
+    PUSHBUTTON      "연결",IDC_BTN_CONNECT,180,9,37,14
+    EDITTEXT        IDC_EDIT_REFRESH_RATE,252,9,21,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER,WS_EX_RIGHT
+    PUSHBUTTON      "적용",IDC_BUTTON1,277,10,34,14
+    CONTROL         "",IDC_LIST_SERVER,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,
+                    80,360,200
+    LTEXT           "Address",IDC_STATIC,20,13,28,8
+    LTEXT           "Port",IDC_STATIC,134,13,14,12
+    CONTROL         "",IDC_LED1,"Static",SS_BLACKFRAME,7,9,12,13
+    LTEXT           "갱신시간",IDC_STATIC,223,13,27,8
+    LTEXT           "",IDC_STATIC_HISTO,164,36,142,15,SS_SUNKEN
+    LTEXT           "최대",IDC_STATIC,14,39,15,8
+    LTEXT           "현재",IDC_STATIC,90,39,19,8
+    GROUPBOX        "동접현황",IDC_STATIC,7,27,304,28
+    LTEXT           "",IDC_STATIC_MAX,32,36,47,13,SS_SUNKEN,WS_EX_RTLREADING
+    LTEXT           "",IDC_STATIC_CRT,112,37,43,12,SS_SUNKEN,
+                    WS_EX_RTLREADING
+    PUSHBUTTON      "일정등록",IDC_BTN_JOB_SCHEDULE,315,10,50,14
+    EDITTEXT        IDC_EDIT_CONSOLE,7,284,360,91,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | WS_VSCROLL | 
+                    WS_HSCROLL
+    EDITTEXT        IDC_EDIT_MSG,87,60,224,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "전송",IDC_BTN_MSG_SND,317,60,50,14
+    PUSHBUTTON      "SMS Test",IDC_BUTTON4,317,36,50,14
+    COMBOBOX        IDC_COMBO_SERVER_LIST,7,60,75,70,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SERVERVIEW_DIALOG DIALOGEX 0, 0, 177, 125
+STYLE DS_SETFONT | DS_SETFOREGROUND | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Server State"
+FONT 8, "굴림", 400, 0, 0x81
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,3,103,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,120,103,50,14
+    CONTROL         "Pin",IDC_BTN_PIN,"Button",BS_OWNERDRAW | WS_TABSTOP,0,0,
+                    17,14
+    LTEXT           "Max",IDC_STATIC,8,29,14,8
+    LTEXT           "Current",IDC_STATIC,7,41,24,8
+    LTEXT           "",IDC_STATIC_USER,62,25,104,27,SS_SUNKEN
+    GROUPBOX        "User",IDC_STATIC,4,17,166,40
+    GROUPBOX        "Ram",IDC_STATIC,4,60,166,39
+    LTEXT           "Max",IDC_STATIC,9,71,14,8
+    LTEXT           "Current",IDC_STATIC,9,85,24,8
+    LTEXT           "Static",IDC_STATIC_RAM,63,70,102,24,SS_SUNKEN
+END
+
+IDD_DLG_MESSAGE DIALOGEX 0, 0, 293, 63
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "전체메시지 전송"
+FONT 10, "굴림", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,24,279,15,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "확인",IDOK,7,43,50,14
+    PUSHBUTTON      "취소",IDCANCEL,236,42,50,14
+    LTEXT           "전송할 메시지를 입력하세요 (최대 50 글자)",IDC_STATIC,7,
+                    7,279,8
+END
+
+IDD_DLG_JOB_SCHEDULE DIALOGEX 0, 0, 314, 154
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Job Schedule"
+FONT 10, "굴림", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,272,7,35,14
+    CONTROL         "",IDC_LIST_JOB,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,23,300,124,
+                    WS_EX_LEFTSCROLLBAR
+    PUSHBUTTON      "BroadCast Message",IDC_BTN_BROADCAST_MESSAGE_ADD,7,7,72,
+                    14
+    PUSHBUTTON      "Export",IDC_SCH_EXPORT,85,7,30,14
+    PUSHBUTTON      "Import",IDC_SCH_IMPORT,117,7,30,14
+END
+
+IDD_DLG_JOB_BROADCAST_MESSAGE DIALOGEX 0, 0, 306, 126
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Broadcast message"
+FONT 10, "굴림", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,103,44,17
+    PUSHBUTTON      "Cancel",IDCANCEL,100,103,44,17
+    LTEXT           "Hour",IDC_STATIC,8,9,17,10
+    COMBOBOX        IDC_COMBO_HOUR,29,7,21,127,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Min",IDC_STATIC,53,10,11,10
+    COMBOBOX        IDC_COMBO_MIN,65,7,22,128,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Type",IDC_STATIC,89,9,15,10
+    COMBOBOX        IDC_COMBO_TYPE,108,7,97,54,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT_BROADCAST_MESSAGE,7,83,209,17,ES_AUTOHSCROLL
+    LTEXT           "Message (Max:100)",IDC_STATIC,7,68,63,10
+    CONTROL         "All Server",IDC_SEND_TYPE1,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,11,26,35,15
+    CONTROL         "Each Group",IDC_SEND_TYPE2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,9,44,42,18
+    CONTROL         "1 Server",IDC_SVR_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,56,40,38,16
+    CONTROL         "2 Server",IDC_SVR_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,93,40,36,16
+    CONTROL         "3 Server",IDC_SVR_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,132,40,36,16
+    CONTROL         "4 Server",IDC_SVR_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,169,40,34,16
+    CONTROL         "5 Server",IDC_SVR_CHECK5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,93,52,34,16
+    CONTROL         "6 Server",IDC_SVR_CHECK6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,56,52,34,16
+    CONTROL         "7 Server",IDC_SVR_CHECK7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,132,52,34,16
+    CONTROL         "8 Server",IDC_SVR_CHECK8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,169,52,34,16
+    CONTROL         "",IDC_MONTHCALENDAR1,"SysMonthCal32",MCS_NOTODAY | 
+                    MCS_NOTODAYCIRCLE | WS_TABSTOP,222,9,76,108
+END
+
+IDD_SVERSTATE_DIALOG DIALOGEX 0, 0, 183, 202
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Server State"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,126,181,50,14
+    LTEXT           "Max",IDC_STATIC,132,7,17,9
+    LTEXT           "Current",IDC_STATIC,76,7,31,9
+    LTEXT           "",IDC_STATIC_MAX1,121,20,55,15,SS_SUNKEN,
+                    WS_EX_RTLREADING
+    LTEXT           "",IDC_STATIC_CRT1,66,20,50,14,SS_SUNKEN,
+                    WS_EX_RTLREADING
+    LTEXT           "",IDC_STATIC_MAX2,121,38,55,15,SS_SUNKEN,
+                    WS_EX_RTLREADING
+    LTEXT           "",IDC_STATIC_CRT2,65,38,50,14,SS_SUNKEN,
+                    WS_EX_RTLREADING
+    LTEXT           "",IDC_STATIC_MAX3,121,57,55,15,SS_SUNKEN,
+                    WS_EX_RTLREADING
+    LTEXT           "",IDC_STATIC_CRT3,65,57,50,14,SS_SUNKEN,
+                    WS_EX_RTLREADING
+    LTEXT           "",IDC_STATIC_MAX4,121,76,55,15,SS_SUNKEN,
+                    WS_EX_RTLREADING
+    LTEXT           "",IDC_STATIC_CRT4,65,76,50,14,SS_SUNKEN,
+                    WS_EX_RTLREADING
+    LTEXT           "",IDC_STATIC_MAX5,121,95,55,15,SS_SUNKEN,
+                    WS_EX_RTLREADING
+    LTEXT           "",IDC_STATIC_CRT5,65,95,50,14,SS_SUNKEN,
+                    WS_EX_RTLREADING
+    LTEXT           "",IDC_STATIC_MAX6,121,113,55,15,SS_SUNKEN,
+                    WS_EX_RTLREADING
+    LTEXT           "",IDC_STATIC_CRT6,65,113,50,14,SS_SUNKEN,
+                    WS_EX_RTLREADING
+    LTEXT           "",IDC_STATIC_MAX7,121,132,55,15,SS_SUNKEN,
+                    WS_EX_RTLREADING
+    LTEXT           "",IDC_STATIC_CRT7,65,132,50,14,SS_SUNKEN,
+                    WS_EX_RTLREADING
+    LTEXT           "",IDC_STATIC_MAX8,121,151,55,15,SS_SUNKEN,
+                    WS_EX_RTLREADING
+    LTEXT           "",IDC_STATIC_CRT8,65,151,50,14,SS_SUNKEN,
+                    WS_EX_RTLREADING
+    LTEXT           "Server Numer",IDC_STATIC,14,7,45,10
+    LTEXT           "",IDC_STATIC_SVRNUM1,20,20,20,14,SS_SUNKEN,
+                    WS_EX_RTLREADING
+    LTEXT           "",IDC_STATIC_SVRNUM2,20,38,20,14,SS_SUNKEN,
+                    WS_EX_RTLREADING
+    LTEXT           "",IDC_STATIC_SVRNUM3,20,57,20,14,SS_SUNKEN,
+                    WS_EX_RTLREADING
+    LTEXT           "",IDC_STATIC_SVRNUM4,20,76,20,14,SS_SUNKEN,
+                    WS_EX_RTLREADING
+    LTEXT           "",IDC_STATIC_SVRNUM5,20,95,20,14,SS_SUNKEN,
+                    WS_EX_RTLREADING
+    LTEXT           "",IDC_STATIC_SVRNUM6,20,113,20,14,SS_SUNKEN,
+                    WS_EX_RTLREADING
+    LTEXT           "",IDC_STATIC_SVRNUM7,20,132,20,14,SS_SUNKEN,
+                    WS_EX_RTLREADING
+    LTEXT           "",IDC_STATIC_SVRNUM8,20,151,20,14,SS_SUNKEN,
+                    WS_EX_RTLREADING
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_SERVERMANAGER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 367
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 379
+    END
+
+    IDD_SERVERVIEW_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 170
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_DLG_MESSAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 286
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_DLG_JOB_SCHEDULE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 307
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_DLG_JOB_BROADCAST_MESSAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 299
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_SVERSTATE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LEDS                BITMAP                  "res\\leds.bmp"
+IDB_STATEBITMAP         BITMAP                  "res\\state.bmp"
+IDB_BITMAP1             BITMAP                  "res\\bitmap1.bmp"
+IDB_PP_UNPINNEDEDGE     BITMAP                  "res\\pin4.bmp"
+IDB_PP_PINNEDEDGE       BITMAP                  "res\\pin2.bmp"
+IDB_PP_UNPINNED         BITMAP                  "res\\pin3.bmp"
+IDB_PP_PINNED           BITMAP                  "res\\pin1.bmp"
+IDB_MATRIXTINY          BITMAP                  "res\\matrixsettinyblue.bmp"
+IDB_MATRIXSMALL         BITMAP                  "res\\matrixsetsmallblue.bmp"
+IDB_MATRIXLARGE         BITMAP                  "res\\matrixsetblue.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "새로만들기",                  ID_Menu
+        MENUITEM "끝내기(&X)",                  ID_134
+    END
+    POPUP "서버(&S)"
+    BEGIN
+        MENUITEM "새로고침",                    ID_133
+    END
+END
+
+IDR_SERVER_LIST_MENU MENU 
+BEGIN
+    POPUP "Context Menu"
+    BEGIN
+        MENUITEM "Open",                        138
+        MENUITEM SEPARATOR
+        MENUITEM "Notice Message",              ID_CONTEXTMENU_MESSAGE
+        MENUITEM "Pause",                       ID_CONTEXTMENU_PAUSE
+        MENUITEM "Pause (5 min)",               32777
+        MENUITEM "Resume",                      ID_CONTEXTMENU_RESUME
+        MENUITEM "ReStart",                     ID_CONTEXTMENU_RESTART
+        MENUITEM "ReStart (5 min)",             ID_CONTEXTMENU_RESTART_5
+        MENUITEM "Stop (5 min)",                ID_CONTEXTMENU_STOP_5
+        MENUITEM "Stop",                        ID_CONTEXTMENU_STOP
+    END
+END
+
+IDR_SERVER_JOB_MENU MENU 
+BEGIN
+    POPUP "Job Menu"
+    BEGIN
+        MENUITEM "ADD",                         ID_JOB_ADD
+        MENUITEM "EDIT",                        ID_JOB_EDIT
+        MENUITEM "DELETE",                      ID_JOB_DELETE
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\ServerManager.rc2""  // Microsoft Visual C++에서 편집되지 않은 리소스\r\n"
+    "#include ""afxres.rc""         // 표준 구성 요소\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ServerManager.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "TODO: <파일 설명>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "ServerManager.exe"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "OriginalFilename", "ServerManager.exe"
+            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_MANIFEST            RT_MANIFEST             "res\\ServerManager.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "ServerManager 정보(&A)..."
+    IDS_STRING102           "연결에 성공했습니다"
+    IDS_STRING103           "연결에 실패했습니다"
+    IDS_STRING104           "이미등록되어 있습니다"
+    IDS_STRING105           "서버를 등록하였습니다"
+    IDS_STRING106           "정상"
+    IDS_STRING107           "응답없음"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CONTEXTMENU_MESSAGE  "서버상태 열기"
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 중국어(대만) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_JOB_SCHEDULE DIALOGEX 0, 0, 246, 286
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Job Schedule"
+FONT 10, "??", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,204,7,35,14
+    CONTROL         "",IDC_LIST_JOB,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,24,232,255
+    PUSHBUTTON      "BroadCast Message",IDC_BTN_BROADCAST_MESSAGE_ADD,7,7,76,
+                    14
+    PUSHBUTTON      "Export",IDC_SCH_EXPORT,90,7,40,14
+    PUSHBUTTON      "Import",IDC_SCH_IMPORT,133,7,40,14
+END
+
+IDD_SERVERMANAGER_DIALOG DIALOGEX 0, 0, 375, 350
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ServerManager"
+MENU IDR_MENU1
+FONT 9, "Arial", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_IPADDRESS,"SysIPAddress32",WS_TABSTOP,50,9,77,15
+    EDITTEXT        IDC_EDIT_PORT,151,9,22,14,ES_AUTOHSCROLL | ES_NUMBER,
+                    WS_EX_RIGHT
+    PUSHBUTTON      "Connect",IDC_BTN_CONNECT,180,9,37,14
+    EDITTEXT        IDC_EDIT_REFRESH_RATE,252,9,21,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER,WS_EX_RIGHT
+    PUSHBUTTON      "Apply",IDC_BUTTON1,277,10,34,14
+    CONTROL         "",IDC_LIST_SERVER,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,
+                    80,361,200
+    LTEXT           "Address",IDC_STATIC,20,13,28,8
+    LTEXT           "Port",IDC_STATIC,134,13,14,12
+    CONTROL         "",IDC_LED1,"Static",SS_BLACKFRAME,7,9,12,13
+    LTEXT           "Refresh",IDC_STATIC,223,13,27,8
+    LTEXT           "",IDC_STATIC_HISTO,162,36,144,15,SS_SUNKEN
+    LTEXT           "Max",IDC_STATIC,14,39,15,8
+    LTEXT           "Current",IDC_STATIC,84,39,26,8
+    GROUPBOX        "User",IDC_STATIC,7,27,304,28
+    LTEXT           "",IDC_STATIC_MAX,32,36,47,13,SS_SUNKEN,WS_EX_RTLREADING
+    LTEXT           "",IDC_STATIC_CRT,115,37,43,12,SS_SUNKEN,
+                    WS_EX_RTLREADING
+    PUSHBUTTON      "Schedule",IDC_BTN_JOB_SCHEDULE,318,10,50,14
+    EDITTEXT        IDC_EDIT_CONSOLE,7,284,361,59,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | WS_VSCROLL | 
+                    WS_HSCROLL
+    EDITTEXT        IDC_EDIT_MSG,87,60,224,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Send",IDC_BTN_MSG_SND,318,60,50,14
+    PUSHBUTTON      "SMS Test",IDC_BUTTON4,318,36,50,14
+    COMBOBOX        IDC_COMBO_SERVER_LIST,7,60,75,70,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SERVERVIEW_DIALOG DIALOGEX 0, 0, 177, 125
+STYLE DS_SETFONT | DS_SETFOREGROUND | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Server State"
+FONT 8, "??", 400, 0, 0x81
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,3,103,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,120,103,50,14
+    CONTROL         "Pin",IDC_BTN_PIN,"Button",BS_OWNERDRAW | WS_TABSTOP,0,0,
+                    17,14
+    LTEXT           "Max",IDC_STATIC,8,29,14,8
+    LTEXT           "Current",IDC_STATIC,7,41,24,8
+    LTEXT           "",IDC_STATIC_USER,62,25,104,27,SS_SUNKEN
+    GROUPBOX        "User",IDC_STATIC,4,17,166,40
+    GROUPBOX        "Ram",IDC_STATIC,4,60,166,39
+    LTEXT           "Max",IDC_STATIC,9,71,14,8
+    LTEXT           "Current",IDC_STATIC,9,85,24,8
+    LTEXT           "Static",IDC_STATIC_RAM,63,70,102,24,SS_SUNKEN
+END
+
+IDD_DLG_MESSAGE DIALOGEX 0, 0, 294, 59
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Send Message"
+FONT 10, "Arial", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,19,280,15,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,7,38,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,237,38,50,14
+    LTEXT           "Type Message (Max : 50)",IDC_STATIC,7,7,280,8
+END
+
+IDD_DLG_JOB_BROADCAST_MESSAGE DIALOGEX 0, 0, 345, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Broadcast message"
+FONT 10, "Arial", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,78,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,113,78,50,14
+    LTEXT           "Hour",IDC_STATIC,8,2,19,8
+    COMBOBOX        IDC_COMBO_HOUR,32,0,24,127,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Min",IDC_STATIC,59,3,12,8
+    COMBOBOX        IDC_COMBO_MIN,73,0,25,128,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Type",IDC_STATIC,100,2,17,8
+    COMBOBOX        IDC_COMBO_TYPE,122,0,111,54,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_BROADCAST_MESSAGE,7,62,238,14,ES_AUTOHSCROLL
+    LTEXT           "Message (Max:100)",IDC_STATIC,7,50,72,8
+    CONTROL         "All Server",IDC_SEND_TYPE1,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,11,16,40,12
+    CONTROL         "Each Group",IDC_SEND_TYPE2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,9,30,48,15
+    CONTROL         "1 Server",IDC_SVR_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,62,27,43,13
+    CONTROL         "2 Server",IDC_SVR_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,105,27,41,13
+    CONTROL         "3 Server",IDC_SVR_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,149,27,41,13
+    CONTROL         "4 Server",IDC_SVR_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,192,27,39,13
+    CONTROL         "5 Server",IDC_SVR_CHECK5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,105,37,39,13
+    CONTROL         "6 Server",IDC_SVR_CHECK6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,62,37,39,13
+    CONTROL         "7 Server",IDC_SVR_CHECK7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,149,37,39,13
+    CONTROL         "8 Server",IDC_SVR_CHECK8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,192,37,39,13
+    CONTROL         "",IDC_MONTHCALENDAR1,"SysMonthCal32",MCS_NOTODAY | 
+                    MCS_NOTODAYCIRCLE | WS_TABSTOP,252,2,86,88
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DLG_JOB_SCHEDULE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 279
+    END
+
+    IDD_SERVERMANAGER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 368
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 343
+    END
+
+    IDD_SERVERVIEW_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 170
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_DLG_MESSAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+
+    IDD_DLG_JOB_BROADCAST_MESSAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 338
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 중국어(대만) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 중국어(홍콩 특별 행정구) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ZHH)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_HONGKONG
+#pragma code_page(950)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_MESSAGE DIALOGEX 0, 0, 294, 59
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Send Message"
+FONT 10, "Arial", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,19,280,15,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,7,38,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,237,38,50,14
+    LTEXT           "Type Message (Max : 50)",IDC_STATIC,7,7,280,8
+END
+
+IDD_SERVERVIEW_DIALOG DIALOGEX 0, 0, 177, 125
+STYLE DS_SETFONT | DS_SETFOREGROUND | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Server State"
+FONT 8, "Arial", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,3,103,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,120,103,50,14
+    CONTROL         "Pin",IDC_BTN_PIN,"Button",BS_OWNERDRAW | WS_TABSTOP,0,0,
+                    17,14
+    LTEXT           "Max",IDC_STATIC,8,29,14,8
+    LTEXT           "Current",IDC_STATIC,7,41,24,8
+    LTEXT           "",IDC_STATIC_USER,62,25,104,27,SS_SUNKEN
+    GROUPBOX        "User",IDC_STATIC,4,17,166,40
+    GROUPBOX        "Ram",IDC_STATIC,4,60,166,39
+    LTEXT           "Max",IDC_STATIC,9,71,14,8
+    LTEXT           "Current",IDC_STATIC,9,85,24,8
+    LTEXT           "Static",IDC_STATIC_RAM,63,70,102,24,SS_SUNKEN
+END
+
+IDD_SERVERMANAGER_DIALOG DIALOGEX 0, 0, 375, 350
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ServerManager"
+MENU IDR_MENU1
+FONT 9, "Arial", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_IPADDRESS,"SysIPAddress32",WS_TABSTOP,50,9,77,15
+    EDITTEXT        IDC_EDIT_PORT,151,9,22,14,ES_AUTOHSCROLL | ES_NUMBER,
+                    WS_EX_RIGHT
+    PUSHBUTTON      "Connect",IDC_BTN_CONNECT,180,9,37,14
+    EDITTEXT        IDC_EDIT_REFRESH_RATE,252,9,21,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER,WS_EX_RIGHT
+    PUSHBUTTON      "Apply",IDC_BUTTON1,277,10,34,14
+    CONTROL         "",IDC_LIST_SERVER,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,
+                    80,361,200
+    LTEXT           "Address",IDC_STATIC,20,13,28,8
+    LTEXT           "Port",IDC_STATIC,134,13,14,12
+    CONTROL         "",IDC_LED1,"Static",SS_BLACKFRAME,7,9,12,13
+    LTEXT           "Refresh",IDC_STATIC,223,13,27,8
+    LTEXT           "",IDC_STATIC_HISTO,162,36,144,15,SS_SUNKEN
+    LTEXT           "Max",IDC_STATIC,14,39,15,8
+    LTEXT           "Current",IDC_STATIC,84,39,26,8
+    GROUPBOX        "User",IDC_STATIC,7,27,304,28
+    LTEXT           "",IDC_STATIC_MAX,32,36,47,13,SS_SUNKEN,WS_EX_RTLREADING
+    LTEXT           "",IDC_STATIC_CRT,115,37,43,12,SS_SUNKEN,
+                    WS_EX_RTLREADING
+    PUSHBUTTON      "Schedule",IDC_BTN_JOB_SCHEDULE,318,10,50,14
+    EDITTEXT        IDC_EDIT_CONSOLE,7,284,361,59,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | WS_VSCROLL | 
+                    WS_HSCROLL
+    EDITTEXT        IDC_EDIT_MSG,87,60,224,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Send",IDC_BTN_MSG_SND,318,60,50,14
+    PUSHBUTTON      "SMS Test",IDC_BUTTON4,318,36,50,14
+    COMBOBOX        IDC_COMBO_SERVER_LIST,7,60,75,70,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLG_JOB_BROADCAST_MESSAGE DIALOGEX 0, 0, 350, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Broadcast message"
+FONT 10, "Arial", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,8,78,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,114,78,50,14
+    LTEXT           "Hour",IDC_STATIC,9,2,19,8
+    COMBOBOX        IDC_COMBO_HOUR,33,0,24,127,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Min",IDC_STATIC,60,3,12,8
+    COMBOBOX        IDC_COMBO_MIN,74,0,25,128,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Type",IDC_STATIC,101,2,17,8
+    COMBOBOX        IDC_COMBO_TYPE,123,0,111,54,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_BROADCAST_MESSAGE,8,62,238,14,ES_AUTOHSCROLL
+    LTEXT           "Message (Max:100)",IDC_STATIC,8,50,72,8
+    CONTROL         "All Server",IDC_SEND_TYPE1,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,12,16,40,12
+    CONTROL         "Each Group",IDC_SEND_TYPE2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,10,30,48,15
+    CONTROL         "1 Server",IDC_SVR_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,63,27,43,13
+    CONTROL         "2 Server",IDC_SVR_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,106,27,41,13
+    CONTROL         "3 Server",IDC_SVR_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,150,27,41,13
+    CONTROL         "4 Server",IDC_SVR_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,193,27,39,13
+    CONTROL         "5 Server",IDC_SVR_CHECK5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,106,37,39,13
+    CONTROL         "6 Server",IDC_SVR_CHECK6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,63,37,39,13
+    CONTROL         "7 Server",IDC_SVR_CHECK7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,150,37,39,13
+    CONTROL         "8 Server",IDC_SVR_CHECK8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,193,37,39,13
+    CONTROL         "",IDC_MONTHCALENDAR1,"SysMonthCal32",MCS_NOTODAY | 
+                    MCS_NOTODAYCIRCLE | WS_TABSTOP,253,0,86,92
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DLG_MESSAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+
+    IDD_SERVERVIEW_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 170
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_SERVERMANAGER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 368
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 343
+    END
+
+    IDD_DLG_JOB_BROADCAST_MESSAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 343
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 중국어(홍콩 특별 행정구) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 말레이어(말레이시아) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_MSL)
+#ifdef _WIN32
+LANGUAGE LANG_MALAY, SUBLANG_MALAY_MALAYSIA
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_MESSAGE DIALOGEX 0, 0, 294, 59
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Send Message"
+FONT 10, "Arial", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,19,280,15,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,7,38,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,237,38,50,14
+    LTEXT           "Type Message (Max : 50)",IDC_STATIC,7,7,280,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DLG_MESSAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 말레이어(말레이시아) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\ServerManager.rc2"  // Microsoft Visual C++에서 편집되지 않은 리소스
+#include "afxres.rc"         // 표준 구성 요소
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

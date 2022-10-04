@@ -1,0 +1,341 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resrc1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "resource.h"
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// ÀÏº»¾î resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 229
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 47
+    END
+
+    IDD_AUTOPATCHMAN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 234
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 255
+    END
+
+    IDD_DIALOG_WARNING_WHQL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 109
+    END
+
+    IDD_GAMESETDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 209
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AutoPatchMan î•ñ"
+FONT 9, "MS UI Gothic", 400, 0, 0x80
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,18,21
+    LTEXT           "AutoPatchMan ƒo[ƒWƒ‡ƒ“ 1B0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (c) 2002",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "Šm”F",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_AUTOPATCHMAN_DIALOG DIALOGEX 0, 0, 239, 262
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_BORDER
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "MS UI Gothic", 400, 0, 0x80
+BEGIN
+    PUSHBUTTON      "ƒIƒvƒVƒ‡ƒ“",IDC_BUTTON_OPTION,150,159,40,16,BS_CENTER | 
+                    BS_VCENTER | BS_FLAT | NOT WS_TABSTOP
+    PUSHBUTTON      "ƒQ[ƒ€ƒXƒ^[ƒg",IDC_BUTTON_START,3,159,112,16,BS_CENTER | 
+                    BS_VCENTER | BS_FLAT | NOT WS_TABSTOP
+    PUSHBUTTON      "I—¹",IDC_BUTTON_EXIT,194,159,40,16,BS_CENTER | 
+                    BS_VCENTER | BS_FLAT | NOT WS_TABSTOP
+    CONTROL         "",IDC_STATIC_NOTIFY,
+                    "{8856F961-340A-11D0-A96B-00C04FD705A2}",0x0,4,14,230,
+                    141
+    CONTROL         "",IDC_PROGRESS_ALL,"msctls_progress32",0x1,3,247,230,8
+    CONTROL         "",IDC_PROGRESS_CUR,"msctls_progress32",0x1,3,237,230,8
+    LTEXT           "RAN-Online",IDC_STATIC,99,4,39,8
+    LISTBOX         IDC_LIST_LOG,3,195,230,38,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "“®ì",IDC_BUTTON_PATCH,120,156,24,11,NOT WS_VISIBLE
+    CONTROL         "http",IDC_CHECK_USE_HTTP,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,119,169,27,10
+    CONTROL         "ƒQ[ƒ€‚Ì€”õ‚ª‚Å‚«‚½‚çƒXƒ^[ƒg",IDC_READYTOSTART,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,181,154,10
+END
+
+IDD_DIALOG_WARNING_WHQL DIALOGEX 0, 0, 250, 117
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Œx"
+FONT 9, "MS UI Gothic", 400, 0, 0x80
+BEGIN
+    DEFPUSHBUTTON   "Šm”F",IDOK,176,95,50,14
+    ICON            IDR_MAINFRAME,IDC_STATIC,222,6,18,21
+    LTEXT           "Windows Hardware Quality Labs (WHQL) ƒrƒfƒIƒJ[ƒhƒhƒ‰ƒCƒo[‚ªƒCƒ“ƒXƒg[ƒ‹‚³‚ê‚Ä‚¢‚Ü‚¹‚ñBN@WHQL”FØƒhƒ‰ƒCƒo[‚Å‚Í‚È‚¢ê‡ƒQ[ƒ€ŽÀs‚É–â‘è‚ª¶‚¶‚é‰Â”\«‚ª‚ ‚è‚Ü‚·B",
+                    IDC_STATIC,7,7,202,36
+    LTEXT           "ƒhƒ‰ƒCƒo[ƒ_ƒEƒ“ƒ[ƒh",IDC_STATIC_NIVIDIA_LINK,120,54,
+                    101,8
+    LTEXT           "nVidia  ( Geforce, TNT )",IDC_STATIC,18,54,92,8
+    LTEXT           "ƒhƒ‰ƒCƒo[ƒ_ƒEƒ“ƒ[ƒh",IDC_STATIC_ATI_LINK,120,72,111,
+                    8
+    LTEXT           "ATI  ( Radeon )",IDC_STATIC,42,72,66,8
+    CONTROL         "¡Œã‚ÌŒx•\Ž¦‚µ‚È‚¢",IDC_CHECK_NOCHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,96,114,10
+END
+
+IDD_GAMESETDLG DIALOGEX 0, 0, 319, 215
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "ƒIƒvƒVƒ‡ƒ“"
+FONT 9, "MS UI Gothic", 400, 0, 0x80
+BEGIN
+    DEFPUSHBUTTON   "ƒZ[ƒu",IDOK,168,193,78,16
+    PUSHBUTTON      "ŽæÁ",IDCANCEL,262,193,50,16
+    GROUPBOX        "DISPLAY",IDC_STATIC,6,6,154,50
+    COMBOBOX        IDC_COMBO_RESOLUTION,12,18,98,87,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "ƒTƒEƒ“ƒhƒIƒvƒVƒ‡ƒ“",IDC_STATIC,166,7,146,118
+    CONTROL         "",IDC_SLIDER_BGM,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,192,65,98,13
+    LTEXT           "BGM",IDC_STATIC,174,67,15,8
+    CONTROL         "",IDC_SLIDER_SFX,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,192,107,98,13
+    LTEXT           "SFX",IDC_STATIC,174,107,13,8
+    CONTROL         "",IDC_SLIDER_MAP,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,192,87,98,13
+    LTEXT           "MAP",IDC_STATIC,174,87,15,8
+    COMBOBOX        IDC_COMBO_HZ,115,18,31,99,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_3DALGORITHM,174,43,86,75,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "ƒTƒEƒ“ƒh’T‚µ",IDC_BUTTON_COMPATIBLE,262,43,46,14
+    CONTROL         "",IDC_CHECK_BGM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    294,67,16,8
+    CONTROL         "",IDC_CHECK_MAP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    294,89,16,8
+    CONTROL         "",IDC_CHECK_SFX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    294,109,16,8
+    CONTROL         "ƒpƒbƒVƒuƒ‚[ƒhŽg—p",IDC_CHECK_PASSIVE,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,174,144,109,
+                    10
+    CONTROL         "ƒQ[ƒ€ƒJ[ƒ\ƒ‹Žg—p",IDC_CHECK_GAMECURSOR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,184,128,10
+    CONTROL         "’nŒ`‰eŽg—p",IDC_CHECK_SHADOWLAND,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,132,117,10
+    CONTROL         "ƒŠƒAƒ‹ƒ^ƒCƒ€”½ŽËŽg—p",IDC_CHECK_REALREFLECT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,145,123,10
+    COMBOBOX        IDC_COMBO_SHADOWCHAR,80,94,77,67,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SKINDETAIL,80,111,77,54,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ƒLƒƒƒ‰ƒNƒ^[‰e",IDC_STATIC,10,96,60,8
+    LTEXT           "ƒLƒƒƒ‰ƒNƒ^[ƒfƒBƒe[ƒ‹",IDC_STATIC,10,112,66,8
+    GROUPBOX        "ƒOƒ‰ƒtƒBƒbƒNƒIƒvƒVƒ‡ƒ“",IDC_STATIC,6,65,154,144
+    CONTROL         "‰æ‘œ˜c‹ÈŽg—p",IDC_CHECK_REFRACT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,158,126,10
+    CONTROL         "–¾ˆÃŒø‰ÊŽg—p",IDC_CHECK_GLOW,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,19,171,125,10
+    COMBOBOX        IDC_COMBO_FOGRANGE,80,77,77,152,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Ž‹–ì",IDC_STATIC,10,79,63,8
+    GROUPBOX        "ƒ_ƒEƒ“ƒ[ƒh",IDC_STATIC,166,131,146,30
+    CONTROL         "ƒeƒLƒXƒgƒtƒHƒ“ƒgŽg—p",IDC_CHECK_TEXTURE_FONT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,197,128,10
+    CONTROL         "3DƒTƒEƒ“ƒhŽg—p",IDC_CHECK_3DSOUND,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,174,23,100,10
+    CONTROL         "ƒEƒBƒ“ƒhƒEƒ‚[ƒh",IDC_CHECK_WINDOWMODE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,36,132,9
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_AUTOPATCHMAN_DIALOG DLGINIT
+BEGIN
+    IDC_STATIC_NOTIFY, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x29a7, 0x0000, 0x15e9, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "AutoPatchMan î•ñ(&A)BBB"
+    IDS_WHQL_CVD            "WHQL ”FØƒrƒfƒIƒhƒ‰ƒCƒo["
+    IDS_WHQL_UCVD           "WHQL ”ñ-”FØƒrƒfƒIƒhƒ‰ƒCƒo["
+    IDS_MESSAGE_001         "WEB‚©‚çŽÀs‚µ‚Ä‚­‚¾‚³‚¢"
+    IDS_MESSAGE_002         "ŽÀsƒtƒ@ƒCƒ‹‚ª‰ó‚ê‚Ä‚¢‚Ü‚·BÄƒCƒ“ƒXƒg[ƒ‹‚µ‚Ä‚­‚¾‚³‚¢"
+    IDS_MESSAGE_003         "I—¹‚µ‚Ä‚¢‚Ü‚·B­X‚¨‘Ò‚¿‚­‚¾‚³‚¢"
+    IDS_MESSAGE_004         "ƒpƒbƒ`ŒãAÄƒXƒ^[ƒg‚ÉŽ¸”s‚µ‚Ü‚µ‚½B"
+    IDS_MESSAGE_005         "ƒo[ƒWƒ‡ƒ“‚ªˆá‚¢‚Ü‚·"
+    IDS_MESSAGE_006         "Œ»ÝƒVƒXƒeƒ€‚ÉŽÀ‘•‚³‚ê‚Ä‚¢‚éDirectX‚Ìƒo[ƒWƒ‡ƒ“‚ªˆá‚¢‚Ü‚·B"
+    IDS_MESSAGE_007         "ÅVƒo[ƒWƒ‡ƒ“‚ÌDirectX‚ðƒCƒ“ƒXƒg[ƒ‹‚µ‚ÄAÄƒXƒ^[ƒg‚µ‚Ä‚­‚¾‚³‚¢B."
+    IDS_MESSAGE_008         "ƒT[ƒo[ƒƒ“ƒeƒiƒ“ƒX’†‚Å‚·B‚µ‚Î‚ç‚­‚µ‚Ä‚©‚çÄÚ‘±‘±‚µ‚Ä‚­‚¾‚³‚¢B"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MESSAGE_009         "ƒo[ƒWƒ‡ƒ“ƒtƒ@ƒCƒ‹ŒÄ‚Ñž‚Ý‚ÉŽ¸”s‚µ‚Ü‚µ‚½B"
+    IDS_MESSAGE_010         "ƒvƒƒOƒ‰ƒ€ƒpƒbƒ`ƒtƒ@ƒCƒ‹ŒÄ‚Ñž‚Ý’†AƒGƒ‰[‚ª‚ ‚è‚Ü‚µ‚½B"
+    IDS_MESSAGE_011         "ƒvƒƒOƒ‰ƒ€ƒpƒbƒ`ƒtƒ@ƒCƒ‹ƒCƒ“ƒXƒg[ƒ‹’†AƒGƒ‰[‚ª‚ ‚è‚Ü‚µ‚½B"
+    IDS_MESSAGE_012         "ƒQ[ƒ€‚Ìis‚É•K—v‚È€”õ‚ªŠ®—¹‚µ‚Ü‚µ‚½B"
+    IDS_MESSAGE_013         "Å‘åÚ‘±‰ñ”‚ð’´‰ß‚µ‚Ü‚µ‚½B"
+    IDS_MESSAGE_014         "Ú‘±‚ð‚µ‚Ä‚¢‚Ü‚·B"
+    IDS_MESSAGE_015         "Ú‘±ŽžŠÔ’´‰ß‚É‚æ‚Á‚Ä, ƒT[ƒo[‚Æ‚ÌÚ‘±‚ÉŽ¸”s‚µ‚Ü‚µ‚½B"
+    IDS_MESSAGE_016         "ƒT[ƒo[Ú‘± , î•ñ‘—M‚É¬Œ÷‚µ‚Ü‚µ‚½B"
+    IDS_MESSAGE_017         "FTPÚ‘±’†‚Å‚·B"
+    IDS_MESSAGE_018         "Ú‘±ŽžŠÔ’´‰ß‚É‚æ‚Á‚Ä, FTP ƒT[ƒo[‚Æ‚ÌÚ‘± ‚ÉŽ¸”s‚µ‚Ü‚µ‚½B"
+    IDS_MESSAGE_019         "FTP ƒT[ƒo[ Ú‘± , î•ñ‘—M‚É¬Œ÷‚µ‚Ü‚µ‚½B"
+    IDS_MESSAGE_020         "ƒCƒxƒ“ƒgì¬‚ÉŽ¸”s‚µ‚Ü‚µ‚½B"
+    IDS_MESSAGE_021         "ƒCƒxƒ“ƒg‘I‘ð ‚ÉŽ¸”s‚µ‚Ü‚µ‚½B"
+    IDS_MESSAGE_022         "CONNECT‚ÉŽ¸”s‚µ‚Ü‚µ‚½B"
+    IDS_MESSAGE_023         "ƒCƒxƒ“ƒg‘Ò‹@‚ÉŽ¸”s‚µ‚Ü‚µ‚½B"
+    IDS_MESSAGE_024         "CONNECTƒCƒxƒ“ƒg‚ª”­¶‚µ‚Ä‚¢‚Ü‚¹‚ñB"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MESSAGE_025         "ƒXƒŒƒbƒhì¬‚ÉŽ¸”s‚µ‚Ü‚µ‚½B"
+    IDS_MESSAGE_026         "ƒT[ƒo[‚ÉÚ‘±‚Å‚«‚Ü‚¹‚ñB"
+    IDS_MESSAGE_027         "ƒo[ƒWƒ‡ƒ“‚Ì“]‘—‚ÉŽ¸”s‚µ‚Ü‚µ‚½B"
+    IDS_MESSAGE_028         "‹­§I—¹‚µ‚Ü‚µ‚½B"
+    IDS_MESSAGE_029         "ƒ‰ƒ“ƒ`ƒƒ[ŽÀs‚É•K—v‚Èƒtƒ@ƒCƒ‹‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñB"
+    IDS_MESSAGE_030         "ƒTƒEƒ“ƒhƒJ[ƒh‚ª‚È‚¢‚©A³í‚Å‚Í‚ ‚è‚Ü‚¹‚ñB"
+    IDS_MESSAGE_031         "‰e‚È‚µ"
+    IDS_MESSAGE_032         "‰e’á‹‰"
+    IDS_MESSAGE_033         "‰e’†‹‰"
+    IDS_MESSAGE_034         "‰e‚‹‰1"
+    IDS_MESSAGE_035         "‰e‚‹‰2"
+    IDS_MESSAGE_036         "’á‹‰"
+    IDS_MESSAGE_037         "’†‹‰"
+    IDS_MESSAGE_038         "‚‹‰"
+    IDS_MESSAGE_039         "Šî–{"
+    IDS_MESSAGE_040         "ƒn[ƒhƒEƒFƒA‰Á‘¬ HALF"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MESSAGE_041         "ƒn[ƒhƒEƒFƒA‰Á‘¬ FULL"
+    IDS_MESSAGE_042         "‹ß‚­"
+    IDS_MESSAGE_043         "•’Ê"
+    IDS_MESSAGE_044         "‰“‚­"
+    IDS_MESSAGE_045         "FTPÚ‘±‚ÉŽ¸”s‚µ‚Ü‚µ‚½B"
+    IDS_MESSAGE_046         "‘—M‚³‚ê‚½ƒtƒ@ƒCƒ‹—e—Ê‚ª‡‚¢‚Ü‚¹‚ñ"
+    IDS_MESSAGE_047         "ƒpƒbƒ`ƒtƒ@ƒCƒ‹‚ð‘—M’†‚Å‚·B"
+    IDS_MESSAGE_048         "ƒpƒbƒ`‚ð“K—p‚µ‚Ä‚¢‚Ü‚·B"
+    IDS_MESSAGE_049         "ƒŠƒXƒg‘—M’†‚Å‚·B"
+    IDS_MESSAGE_050         "ƒŠƒXƒg‘—M‚ÉŽ¸”s‚µ‚Ü‚µ‚½B"
+    IDS_MESSAGE_051         "ƒŠƒXƒgˆ³k‚ð‰ð“€‚µ‚Ä‚¢‚Ü‚·B"
+    IDS_MESSAGE_052         "ƒŠƒXƒgˆ³k‰ð“€‚ÉŽ¸”s‚µ‚Ü‚µ‚½B"
+    IDS_MESSAGE_053         "ƒpƒbƒ`ƒtƒ@ƒCƒ‹‚ÌƒŠƒXƒg‚ðƒ[ƒh‚µ‚Ü‚·B"
+    IDS_MESSAGE_054         "ƒŠƒXƒgƒ[ƒh‚ÉŽ¸”s‚µ‚Ü‚µ‚½B"
+    IDS_MESSAGE_055         "ƒpƒbƒ`ƒtƒ@ƒCƒ‹‘—M‚ÉŽ¸”s‚µ‚Ü‚µ‚½B"
+    IDS_MESSAGE_056         "ƒIƒvƒVƒ‡ƒ“‚Å uƒ_ƒEƒ“ƒ[ƒh'‚É uƒpƒbƒVƒuvƒ‚[ƒh‚ðƒ`ƒFƒbƒN‚µ‚½Œã‚É"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MESSAGE_057         "ƒpƒbƒ`ƒtƒ@ƒCƒ‹ƒŠƒXƒg”äŠr‚ðis‚µ‚Ü‚·B"
+    IDS_MESSAGE_058         "ƒŠƒXƒg”äŠr‚ÉŽ¸”s‚µ‚Ü‚µ‚½B"
+    IDS_MESSAGE_059         "ƒpƒbƒ`ƒtƒ@ƒCƒ‹’†ˆê•”‚ª‘¹‚³‚ê‚Ü‚µ‚½B"
+    IDS_MESSAGE_060         "ƒNƒ‰ƒCƒAƒ“ƒgƒo[ƒWƒ‡ƒ“‚ðXV‚µ‚Ü‚·B"
+    IDS_MESSAGE_061         "ƒNƒ‰ƒCƒAƒ“ƒgƒo[ƒWƒ‡ƒ“XV‚ÉŽ¸”s‚µ‚Ü‚µ‚½B"
+    IDS_MESSAGE_062         "‚·‚×‚Ä‚Ìƒpƒbƒ`ì‹Æ‚ð¬Œ÷“I‚É‹s‚µ‚Ü‚µ‚½B"
+    IDS_MESSAGE_063         "‚à‚¤ˆê“xŽŽ‚Ý‚ÄŒ©‚Ä‚­‚¾‚³‚¢B"
+END
+
+#endif    // ÀÏº»¾î resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Áß¸³ resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\icon1.jp.ico"
+#endif    // Áß¸³ resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

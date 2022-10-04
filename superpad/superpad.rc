@@ -1,0 +1,1253 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "RES\\SUPERPAD.ICO"
+IDR_TEXTTYPE            ICON                    "RES\\PADDOC.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "RES\\TOOLBAR.BMP"
+IDR_TEXTTYPE_INPLACE    BITMAP                  "RES\\ITOOLBAR.BMP"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "새로 만들기(&N)\tCtrl+N",     ID_FILE_NEW
+        MENUITEM "열기(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "페이지 설정(&U)...",          ID_PAGE_SETUP
+        MENUITEM "인쇄 설정(&R)...",            ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "끝내기(&X)\tAlt+F4",          ID_APP_EXIT
+    END
+    POPUP "보기(&V)"
+    BEGIN
+        MENUITEM "도구 모음(&T)",               ID_VIEW_TOOLBAR
+        MENUITEM "상태 표시줄(&S)",             ID_VIEW_STATUS_BAR
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "란 LogicFile Editor 정보(&A)...", ID_APP_ABOUT
+    END
+END
+
+IDR_TEXTTYPE MENU 
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "새로 만들기(&N)\tCtrl+N",     ID_FILE_NEW
+        MENUITEM "열기(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "닫기(&C)",                    ID_FILE_CLOSE
+        MENUITEM "저장(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "다른 이름으로 저장(&A)...",   ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "인쇄(&P)...\tCtrl+P",         ID_FILE_PRINT
+        MENUITEM "인쇄 미리 보기(&V)",          ID_FILE_PRINT_PREVIEW
+        MENUITEM "페이지 설정(&U)...",          ID_PAGE_SETUP
+        MENUITEM "인쇄 설정(&R)...",            ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "끝내기(&X)\tAlt+F4",          ID_APP_EXIT
+    END
+    POPUP "편집(&E)"
+    BEGIN
+        MENUITEM "실행 취소(&U)\tCtrl+Z",       ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "잘라내기(&T)\tCtrl+X",        ID_EDIT_CUT
+        MENUITEM "복사(&C)\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "붙여넣기(&P)\tCtrl+V",        ID_EDIT_PASTE
+        MENUITEM "지우기(&D)\tDel",             ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "찾기(&F)...\tCtrl+F",         ID_EDIT_FIND
+        MENUITEM "다음 찾기(&N)\tF3",           ID_EDIT_REPEAT
+        MENUITEM "바꾸기(&E)...\tCtrl+H",       ID_EDIT_REPLACE
+        MENUITEM SEPARATOR
+        MENUITEM "모두 선택(&L)\tCtrl+A",       ID_EDIT_SELECT_ALL
+        MENUITEM "자동 줄 바꿈(&W)",            ID_WORD_WRAP
+    END
+    POPUP "보기(&V)"
+    BEGIN
+        MENUITEM "도구 모음(&T)",               ID_VIEW_TOOLBAR
+        MENUITEM "상태 표시줄(&S)",             ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "탭(&T)...",                   ID_SET_TABSTOPS
+        MENUITEM "글꼴(&F)...",                 ID_CHOOSE_FONT
+        MENUITEM "프린터 글꼴(&P)...",          ID_CHOOSE_PRINT_FONT
+        MENUITEM "화면 글꼴 반영(&M)",          ID_MIRROR_DISPLAY_FONT
+    END
+    POPUP "창(&W)"
+    BEGIN
+        MENUITEM "계단식(&C)",                  ID_WINDOW_CASCADE
+        MENUITEM "제목(&T)",                    ID_WINDOW_TILE_HORZ
+        MENUITEM "아이콘 정렬(&A)",             ID_WINDOW_ARRANGE
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "란 LogicFile Editor 정보(&A)...", ID_APP_ABOUT
+    END
+END
+
+IDR_TEXTTYPE_INPLACE MENU 
+BEGIN
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Delete\tDel",                ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Find...\tCtrl+F",            ID_EDIT_FIND
+        MENUITEM "Find &Next\tF3",              ID_EDIT_REPEAT
+        MENUITEM "&Replace...\tCtrl+H",         ID_EDIT_REPLACE
+        MENUITEM SEPARATOR
+        MENUITEM "Select &All\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM "&Word Wrap",                  ID_WORD_WRAP
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Set Ta&b Stops...",           ID_SET_TABSTOPS
+        MENUITEM "Set &Font...",                ID_CHOOSE_FONT
+        MENUITEM "Set &Printer Font...",        ID_CHOOSE_PRINT_FONT
+        MENUITEM "&Mirror Display Font",        ID_MIRROR_DISPLAY_FONT
+        MENUITEM SEPARATOR
+        MENUITEM "&Update Now...",              ID_VIEW_UPDATENOW
+    END
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About SuperPad...",          ID_APP_ABOUT
+    END
+END
+
+IDR_TEXTTYPE_EMBEDDED MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\aCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\aCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Update <container>",         ID_FILE_UPDATE
+        MENUITEM "Save Copy &As...",            ID_FILE_SAVE_COPY_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\aCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "Page Se&tup...",              ID_PAGE_SETUP
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit && return to <container>\aAlt+F4", ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Delete\tDel",                ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Find...\tCtrl+F",            ID_EDIT_FIND
+        MENUITEM "Find &Next\tF3",              ID_EDIT_REPEAT
+        MENUITEM "&Replace...\tCtrl+H",         ID_EDIT_REPLACE
+        MENUITEM SEPARATOR
+        MENUITEM "Select &All\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM "&Word Wrap",                  ID_WORD_WRAP
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "Set Ta&b Stops...",           ID_SET_TABSTOPS
+        MENUITEM "Set &Font...",                ID_CHOOSE_FONT
+        MENUITEM "Set &Printer Font...",        ID_CHOOSE_PRINT_FONT
+        MENUITEM "&Mirror Display Font",        ID_MIRROR_DISPLAY_FONT
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About SuperPad...",          ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_F3,          ID_EDIT_REPEAT,         VIRTKEY, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    "F",            ID_EDIT_FIND,           VIRTKEY, CONTROL, NOINVERT
+    "H",            ID_EDIT_REPLACE,        VIRTKEY, CONTROL, NOINVERT
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
+END
+
+IDR_TEXTTYPE_INPLACE ACCELERATORS 
+BEGIN
+    VK_ESCAPE,      ID_CANCEL_INPLACE,      VIRTKEY, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_F3,          ID_EDIT_REPEAT,         VIRTKEY, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_EDIT_FIND,           VIRTKEY, CONTROL, NOINVERT
+    "H",            ID_EDIT_REPLACE,        VIRTKEY, CONTROL, NOINVERT
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SET_TABSTOPS DIALOGEX 0, 0, 161, 46
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Set Tab Stops"
+FONT 8, "Helv", 0, 0, 0x0
+BEGIN
+    LTEXT           "탭 간격(&T):",IDC_STATIC,6,14,37,8
+    EDITTEXT        IDC_EDIT_TABS,50,12,49,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "확인",IDOK,111,4,40,15
+    PUSHBUTTON      "취소",IDCANCEL,111,23,40,14
+END
+
+IDD_PAGE_SETUP DIALOGEX 0, 0, 195, 73
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Page Setup"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "&Header:",IDC_STATIC,7,8,30,9
+    EDITTEXT        IDC_HEADER,37,7,106,13,ES_AUTOHSCROLL
+    CONTROL         "File Time",IDC_HEADER_FILE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,6,23,49,10
+    CONTROL         "System Time",IDC_HEADER_SYSTEM,"Button",
+                    BS_AUTORADIOBUTTON,58,23,61,10
+    LTEXT           "&Footer:",IDC_STATIC,7,41,29,9
+    EDITTEXT        IDC_FOOTER,37,40,106,13,ES_AUTOHSCROLL
+    CONTROL         "File Time",IDC_FOOTER_FILE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,6,56,49,10
+    CONTROL         "System Time",IDC_FOOTER_SYSTEM,"Button",
+                    BS_AUTORADIOBUTTON,58,56,61,10
+    DEFPUSHBUTTON   "확인",IDOK,147,5,42,14
+    PUSHBUTTON      "취소",IDCANCEL,147,23,42,14
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 327, 73
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About SuperPad"
+FONT 8, "Helv", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_BIGICON,"Button",BS_OWNERDRAW | WS_DISABLED,6,6,
+                    38,40
+    LTEXT           "란 LogicFile Editor 1.0",IDC_STATIC,60,6,70,8,NOT 
+                    WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,58,24,262,2
+    LTEXT           "Windows에서 사용할 수 있는 실제 메모리:",IDC_STATIC,60,
+                    43,125,8,NOT WS_GROUP
+    LTEXT           "(Avail mem)",IDC_PHYSICAL_MEM,207,43,120,8,NOT WS_GROUP
+    LTEXT           "사용 가능한 디스크 공간:",IDC_STATIC,60,55,72,8,NOT 
+                    WS_GROUP
+    LTEXT           "(Disk space)",IDC_DISK_SPACE,150,55,177,8,NOT WS_GROUP
+    DEFPUSHBUTTON   "확인",IDOK,279,5,40,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "새 문서를 만듭니다."
+    ID_FILE_OPEN            "기존 문서를 엽니다."
+    ID_FILE_CLOSE           "현재 문서를 닫습니다."
+    ID_FILE_SAVE            "현재 문서를 저장합니다."
+    ID_FILE_SAVE_AS         "현재 문서를 새 이름으로 저장합니다."
+    ID_FILE_PRINT_SETUP     "프린터와 인쇄 설정을 변경합니다."
+    ID_FILE_PRINT           "현재 문서를 인쇄합니다."
+    ID_FILE_PRINT_PREVIEW   "전체 페이지를 표시합니다."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "프로그램 정보, 버젼 번호, 저작권을 표시합니다."
+    ID_APP_EXIT             "응용 프로그램을 끝내고 문서를 저장할 지 묻습니다."
+    ID_HELP_INDEX           "List Help topics"
+    ID_HELP_USING           "Display instructions about how to use help"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows"
+    ID_HELP                 "Display help for current task or command"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE2       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE3       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE4       "현재 문서를 엽니다."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_ARRANGE       "창의 아래쪽에 아이콘을 정렬합니다."
+    ID_WINDOW_CASCADE       "겹치도록 창을 정렬합니다."
+    ID_WINDOW_TILE_HORZ     "제목이 겹치지 않도록 창을 정렬합니다."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "선택 영역을 지웁니다."
+    ID_EDIT_COPY            "선택 영역을 복사하여 클립보드에 넣습니다."
+    ID_EDIT_CUT             "선택한 부분을 잘라내어 클립보드에 저장합니다."
+    ID_EDIT_FIND            "지정된 문자열을 찾습니다."
+    ID_EDIT_PASTE           "클립보드의 내용을 삽입합니다."
+    ID_EDIT_REPEAT          "마지막 찾기를 반복합니다."
+    ID_EDIT_REPLACE         "지정한 텍스트를 다른 텍스트로 바꿉니다."
+    ID_EDIT_SELECT_ALL      "전체 문서를 선택합니다."
+    ID_EDIT_UNDO            "마지막 작업을 취소합니다."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "도구 모음을 표시하거나 숨깁니다."
+    ID_VIEW_STATUS_BAR      "상태 표시줄을 표시하거나 숨깁니다."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_PAGE_SETUP           "머리글, 바닥글 그리고 여백을 설정합니다."
+    ID_CHOOSE_PRINT_FONT    "인쇄 글꼴을 설정합니다."
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "이 창을 활성화 합니다."
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "인쇄 미리 보기를 닫습니다."
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "란 LogicFile Editor"
+    AFX_IDS_IDLEMESSAGE     "준비"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "\nUntitled\nLogic Document\nLogic File(*.charset, *.charclass, *.classconst, *.crowsale, *.genitem, *.bin)\n.charset;.charclass;.classconst;.crowsale;.genitem;.bin"
+    IDR_TEXTTYPE            "\nUntitled\nLogic Document\nLogic File(*.charset, *.charclass, *.classconst, *.crowsale, *.genitem, *.bin)\n.charset;.charclass;.classconst;.crowsale;.genitem;.bin"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CHOOSE_FONT          "화면 글꼴을 설정합니다."
+    ID_SET_TABSTOPS         "탭을 설정합니다."
+    ID_WORD_WRAP            "자동 줄 바꿈을 작동시키거나 끔니다."
+END
+
+STRINGTABLE 
+BEGIN
+    IDP_ERR_GET_PRINTER_DC  "Cannot get printer device context."
+    IDP_ERR_GET_DEVICE_DEFAULTS "Cannot get printer device defaults."
+END
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 2.0 initialization failed.  Make sure that the OLE libraries are the correct version."
+    ID_MIRROR_DISPLAY_FONT  "인쇄시 화면과 같은 글꼴을 사용합니다."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DISK_SPACE_UNAVAIL  "Unavailable"
+    IDS_DISK_SPACE          "%lu KB"
+    IDS_MATH_COPR_NOTPRESENT "Not present"
+    IDS_MATH_COPR_PRESENT   "Present"
+    IDS_PHYSICAL_MEM        "%lu KB"
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 중국어(대만) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_TEXTTYPE_EMBEDDED MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\aCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\aCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Update <container>",         ID_FILE_UPDATE
+        MENUITEM "Save Copy &As...",            ID_FILE_SAVE_COPY_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\aCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "Page Se&tup...",              ID_PAGE_SETUP
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit && return to <container>\aAlt+F4", ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Delete\tDel",                ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Find...\tCtrl+F",            ID_EDIT_FIND
+        MENUITEM "Find &Next\tF3",              ID_EDIT_REPEAT
+        MENUITEM "&Replace...\tCtrl+H",         ID_EDIT_REPLACE
+        MENUITEM SEPARATOR
+        MENUITEM "Select &All\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM "&Word Wrap",                  ID_WORD_WRAP
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "Set Ta&b Stops...",           ID_SET_TABSTOPS
+        MENUITEM "Set &Font...",                ID_CHOOSE_FONT
+        MENUITEM "Set &Printer Font...",        ID_CHOOSE_PRINT_FONT
+        MENUITEM "&Mirror Display Font",        ID_MIRROR_DISPLAY_FONT
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About SuperPad...",          ID_APP_ABOUT
+    END
+END
+
+IDR_TEXTTYPE_INPLACE MENU 
+BEGIN
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Delete\tDel",                ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Find...\tCtrl+F",            ID_EDIT_FIND
+        MENUITEM "Find &Next\tF3",              ID_EDIT_REPEAT
+        MENUITEM "&Replace...\tCtrl+H",         ID_EDIT_REPLACE
+        MENUITEM SEPARATOR
+        MENUITEM "Select &All\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM "&Word Wrap",                  ID_WORD_WRAP
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Set Ta&b Stops...",           ID_SET_TABSTOPS
+        MENUITEM "Set &Font...",                ID_CHOOSE_FONT
+        MENUITEM "Set &Printer Font...",        ID_CHOOSE_PRINT_FONT
+        MENUITEM "&Mirror Display Font",        ID_MIRROR_DISPLAY_FONT
+        MENUITEM SEPARATOR
+        MENUITEM "&Update Now...",              ID_VIEW_UPDATENOW
+    END
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About SuperPad...",          ID_APP_ABOUT
+    END
+END
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Page Se&tup...",              ID_PAGE_SETUP
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tAlt+F4",               ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About LogicFile Editor 1.0...", ID_APP_ABOUT
+    END
+END
+
+IDR_TEXTTYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "Page Se&tup...",              ID_PAGE_SETUP
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tAlt+F4",               ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Delete\tDel",                ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Find...",                    ID_EDIT_FIND
+        MENUITEM "Find &Next\tF3",              ID_EDIT_REPEAT
+        MENUITEM "&Replace...",                 ID_EDIT_REPLACE
+        MENUITEM SEPARATOR
+        MENUITEM "Select &All",                 ID_EDIT_SELECT_ALL
+        MENUITEM "&Word Wrap",                  ID_WORD_WRAP
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "Set Ta&b Stops...",           ID_SET_TABSTOPS
+        MENUITEM "Set &Font...",                ID_CHOOSE_FONT
+        MENUITEM "Set &Printer Font...",        ID_CHOOSE_PRINT_FONT
+        MENUITEM "&Mirror Display Font",        ID_MIRROR_DISPLAY_FONT
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About LogicFile Editor 1.0...", ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 319, 73
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About SuperPad"
+FONT 8, "MingLiU", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_BIGICON,"Button",BS_OWNERDRAW | WS_DISABLED,6,6,
+                    38,40
+    LTEXT           "RanOnline LogicFile Editor 1.0",IDC_STATIC,60,6,121,8,
+                    NOT WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,56,24,262,2
+    LTEXT           "Physical Memory:",IDC_STATIC,60,43,65,8,NOT WS_GROUP
+    LTEXT           "(Avail mem)",IDC_PHYSICAL_MEM,136,43,182,8,NOT WS_GROUP
+    LTEXT           "Disk Space:",IDC_STATIC,60,55,45,8,NOT WS_GROUP
+    LTEXT           "(Disk space)",IDC_DISK_SPACE,136,55,182,8,NOT WS_GROUP
+    DEFPUSHBUTTON   "OK",IDOK,279,5,40,14
+END
+
+IDD_PAGE_SETUP DIALOGEX 0, 0, 195, 73
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Page Setup"
+FONT 8, "MingLiU", 400, 0, 0x0
+BEGIN
+    LTEXT           "&Header:",IDC_STATIC,7,8,30,9
+    EDITTEXT        IDC_HEADER,37,7,106,13,ES_AUTOHSCROLL
+    CONTROL         "File Time",IDC_HEADER_FILE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,6,23,49,10
+    CONTROL         "System Time",IDC_HEADER_SYSTEM,"Button",
+                    BS_AUTORADIOBUTTON,58,23,61,10
+    LTEXT           "&Footer:",IDC_STATIC,7,41,29,9
+    EDITTEXT        IDC_FOOTER,37,40,106,13,ES_AUTOHSCROLL
+    CONTROL         "File Time",IDC_FOOTER_FILE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,6,56,49,10
+    CONTROL         "System Time",IDC_FOOTER_SYSTEM,"Button",
+                    BS_AUTORADIOBUTTON,58,56,61,10
+    DEFPUSHBUTTON   "OK",IDOK,147,5,42,14
+    PUSHBUTTON      "Cancel",IDCANCEL,147,23,42,14
+END
+
+IDD_SET_TABSTOPS DIALOGEX 0, 0, 161, 46
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Set Tab Stops"
+FONT 8, "MingLiU", 400, 0, 0x0
+BEGIN
+    LTEXT           "&Tab Stops:",IDC_STATIC,6,14,41,8
+    EDITTEXT        IDC_EDIT_TABS,50,12,49,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,111,4,40,15
+    PUSHBUTTON      "Cancel",IDCANCEL,111,23,40,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        RIGHTMARGIN, 318
+    END
+
+    IDD_SET_TABSTOPS, DIALOG
+    BEGIN
+        RIGHTMARGIN, 160
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document"
+    ID_FILE_OPEN            "Open an existing document"
+    ID_FILE_CLOSE           "Close the active document"
+    ID_FILE_SAVE            "Save the active document"
+    ID_FILE_SAVE_AS         "Save the active document with a new name"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options"
+    ID_FILE_PRINT           "Print the active document"
+    ID_FILE_PRINT_PREVIEW   "Display full pages"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright"
+    ID_APP_EXIT             "Quit the application; prompts to save documents"
+    ID_HELP_INDEX           "List Help topics"
+    ID_HELP_USING           "Display instructions about how to use help"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows"
+    ID_HELP                 "Display help for current task or command"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection"
+    ID_EDIT_COPY            "Copy the selection and puts it on the Clipboard"
+    ID_EDIT_CUT             "Cut the selection and puts it on the Clipboard"
+    ID_EDIT_FIND            "Find the specified text"
+    ID_EDIT_PASTE           "Insert Clipboard contents"
+    ID_EDIT_REPEAT          "Repeat last find command"
+    ID_EDIT_REPLACE         "Replace specific text with different text"
+    ID_EDIT_SELECT_ALL      "Select the entire document"
+    ID_EDIT_UNDO            "Undo the last action"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_PAGE_SETUP           "Set headers, footers, and margins"
+    ID_CHOOSE_PRINT_FONT    "Set font for printing"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "RanOnline LogicFile Editor"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "\nUntitled\nLogic Document\nLogic File(*.charset, *.charclass, *.classconst, *.crowsale, *.genitem, *.bin)\n.charset;.charclass;.classconst;.crowsale;.genitem;.bin"
+    IDR_TEXTTYPE            "\nUntitled\nLogic Document\nLogic File(*.charset, *.charclass, *.classconst, *.crowsale, *.genitem, *.bin)\n.charset;.charclass;.classconst;.crowsale;.genitem;.bin"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CHOOSE_FONT          "Select display font for this window"
+    ID_SET_TABSTOPS         "Set tab stops for this window"
+    ID_WORD_WRAP            "Toggle on/off word-wrap mode"
+END
+
+STRINGTABLE 
+BEGIN
+    IDP_ERR_GET_PRINTER_DC  "Cannot get printer device context."
+    IDP_ERR_GET_DEVICE_DEFAULTS "Cannot get printer device defaults."
+END
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 2.0 initialization failed.  Make sure that the OLE libraries are the correct version."
+    ID_MIRROR_DISPLAY_FONT  "Use same font for printing as for display"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DISK_SPACE_UNAVAIL  "Unavailable"
+    IDS_DISK_SPACE          "%lu KB"
+    IDS_MATH_COPR_NOTPRESENT "Not present"
+    IDS_MATH_COPR_PRESENT   "Present"
+    IDS_PHYSICAL_MEM        "%lu KB"
+END
+
+#endif    // 중국어(대만) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 영어(미국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Page Se&tup...",              ID_PAGE_SETUP
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tAlt+F4",               ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About LogicFile Editor 1.0...", ID_APP_ABOUT
+    END
+END
+
+IDR_TEXTTYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "Page Se&tup...",              ID_PAGE_SETUP
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tAlt+F4",               ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Delete\tDel",                ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Find...",                    ID_EDIT_FIND
+        MENUITEM "Find &Next\tF3",              ID_EDIT_REPEAT
+        MENUITEM "&Replace...",                 ID_EDIT_REPLACE
+        MENUITEM SEPARATOR
+        MENUITEM "Select &All",                 ID_EDIT_SELECT_ALL
+        MENUITEM "&Word Wrap",                  ID_WORD_WRAP
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "Set Ta&b Stops...",           ID_SET_TABSTOPS
+        MENUITEM "Set &Font...",                ID_CHOOSE_FONT
+        MENUITEM "Set &Printer Font...",        ID_CHOOSE_PRINT_FONT
+        MENUITEM "&Mirror Display Font",        ID_MIRROR_DISPLAY_FONT
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About LogicFile Editor 1.0...", ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 269, 73
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About SuperPad"
+FONT 8, "Helv", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_BIGICON,"Button",BS_OWNERDRAW | WS_DISABLED,6,6,
+                    38,40
+    LTEXT           "RanOnline LogicFile Editor 1.0",IDC_STATIC,60,6,96,8,
+                    NOT WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,0,24,262,2
+    LTEXT           "Physical Memory:",IDC_STATIC,60,43,58,8,NOT WS_GROUP
+    LTEXT           "(Avail mem)",IDC_PHYSICAL_MEM,117,43,127,8,NOT WS_GROUP
+    LTEXT           "Disk Space:",IDC_STATIC,60,55,39,8,NOT WS_GROUP
+    LTEXT           "(Disk space)",IDC_DISK_SPACE,116,55,123,8,NOT WS_GROUP
+    DEFPUSHBUTTON   "OK",IDOK,222,5,40,14
+END
+
+IDD_PAGE_SETUP DIALOGEX 0, 0, 195, 73
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Page Setup"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "&Header:",IDC_STATIC,7,8,30,9
+    EDITTEXT        IDC_HEADER,37,7,106,13,ES_AUTOHSCROLL
+    CONTROL         "File Time",IDC_HEADER_FILE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,6,23,49,10
+    CONTROL         "System Time",IDC_HEADER_SYSTEM,"Button",
+                    BS_AUTORADIOBUTTON,58,23,61,10
+    LTEXT           "&Footer:",IDC_STATIC,7,41,29,9
+    EDITTEXT        IDC_FOOTER,37,40,106,13,ES_AUTOHSCROLL
+    CONTROL         "File Time",IDC_FOOTER_FILE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,6,56,49,10
+    CONTROL         "System Time",IDC_FOOTER_SYSTEM,"Button",
+                    BS_AUTORADIOBUTTON,58,56,61,10
+    DEFPUSHBUTTON   "OK",IDOK,147,5,42,14
+    PUSHBUTTON      "Cancel",IDCANCEL,147,23,42,14
+END
+
+IDD_SET_TABSTOPS DIALOGEX 0, 0, 161, 46
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Set Tab Stops"
+FONT 8, "Helv", 0, 0, 0x0
+BEGIN
+    LTEXT           "&Tab Stops:",IDC_STATIC,6,14,37,8
+    EDITTEXT        IDC_EDIT_TABS,50,12,49,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,111,4,40,15
+    PUSHBUTTON      "Cancel",IDCANCEL,111,23,40,14
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.rc""\r\n"
+    "#include ""afxprint.rc""\r\n"
+    "#include ""afxolesv.rc""\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.rc""\r\n"
+    "#include ""afxprint.rc""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        RIGHTMARGIN, 262
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document"
+    ID_FILE_OPEN            "Open an existing document"
+    ID_FILE_CLOSE           "Close the active document"
+    ID_FILE_SAVE            "Save the active document"
+    ID_FILE_SAVE_AS         "Save the active document with a new name"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options"
+    ID_FILE_PRINT           "Print the active document"
+    ID_FILE_PRINT_PREVIEW   "Display full pages"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright"
+    ID_APP_EXIT             "Quit the application; prompts to save documents"
+    ID_HELP_INDEX           "List Help topics"
+    ID_HELP_USING           "Display instructions about how to use help"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows"
+    ID_HELP                 "Display help for current task or command"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection"
+    ID_EDIT_COPY            "Copy the selection and puts it on the Clipboard"
+    ID_EDIT_CUT             "Cut the selection and puts it on the Clipboard"
+    ID_EDIT_FIND            "Find the specified text"
+    ID_EDIT_PASTE           "Insert Clipboard contents"
+    ID_EDIT_REPEAT          "Repeat last find command"
+    ID_EDIT_REPLACE         "Replace specific text with different text"
+    ID_EDIT_SELECT_ALL      "Select the entire document"
+    ID_EDIT_UNDO            "Undo the last action"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_PAGE_SETUP           "Set headers, footers, and margins"
+    ID_CHOOSE_PRINT_FONT    "Set font for printing"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "RanOnline LogicFile Editor"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "\nUntitled\nLogic Document\nLogic File(*.charset, *.charclass, *.classconst, *.crowsale, *.genitem, *.bin)\n.charset;.charclass;.classconst;.crowsale;.genitem;.bin"
+    IDR_TEXTTYPE            "\nUntitled\nLogic Document\nLogic File(*.charset, *.charclass, *.classconst, *.crowsale, *.genitem, *.bin)\n.charset;.charclass;.classconst;.crowsale;.genitem;.bin"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CHOOSE_FONT          "Select display font for this window"
+    ID_SET_TABSTOPS         "Set tab stops for this window"
+    ID_WORD_WRAP            "Toggle on/off word-wrap mode"
+END
+
+STRINGTABLE 
+BEGIN
+    IDP_ERR_GET_PRINTER_DC  "Cannot get printer device context."
+    IDP_ERR_GET_DEVICE_DEFAULTS "Cannot get printer device defaults."
+END
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 2.0 initialization failed.  Make sure that the OLE libraries are the correct version."
+    ID_MIRROR_DISPLAY_FONT  "Use same font for printing as for display"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DISK_SPACE_UNAVAIL  "Unavailable"
+    IDS_DISK_SPACE          "%lu KB"
+    IDS_MATH_COPR_NOTPRESENT "Not present"
+    IDS_MATH_COPR_PRESENT   "Present"
+    IDS_PHYSICAL_MEM        "%lu KB"
+END
+
+#endif    // 영어(미국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "afxres.rc"
+#include "afxprint.rc"
+#include "afxolesv.rc"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

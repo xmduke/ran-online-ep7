@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[Basic.dsp]
+SCC_Aux_Path = "X:\"
+SCC_Project_Name = "$/Smtm/Basic", BBBAAAAA
+
+[Basic.vcproj]
+SCC_Aux_Path = "X:\"
+SCC_Project_Name = "$/Smtm/Basic", BBBAAAAA

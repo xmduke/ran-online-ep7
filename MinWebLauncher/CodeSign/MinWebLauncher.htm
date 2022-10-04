@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+<TITLE>New Page</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function StartGame()
+{
+    MinWebLauncher.StartGame();
+}
+
+function GoDownloadPage()
+{
+    MinWebLauncher.GoDownloadPage();
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY>
+
+<OBJECT ID="MinWebLauncher" WIDTH=0 HEIGHT=0
+ CLASSID="CLSID:5FFFA267-0B81-42B4-BE64-77B5C9FE287F">
+    <PARAM NAME="_Version" VALUE="65536">
+    <PARAM NAME="_ExtentX" VALUE="2646">
+    <PARAM NAME="_ExtentY" VALUE="1323">
+    <PARAM NAME="_StockProps" VALUE="0">
+    <PARAM NAME="GameType" VALUE="0">
+    <PARAM NAME="DownloadURL" VALUE="http://www.playran.com/download/download.aspx">
+    <PARAM NAME="UUID" VALUE="5FFFA267-0B81-42B4-BE64-77B5C9FE287F">
+</OBJECT>
+
+<INPUT TYPE="button" NAME="Submit" VALUE="GoDownloadPage" ONCLICK=GoDownloadPage()>
+<INPUT TYPE="button" NAME="Submit" VALUE="StartGame" ONCLICK=StartGame()>
+
+</BODY>
+</HTML>

@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[enginelib.dsp]
+SCC_Aux_Path = "X:\"
+SCC_Project_Name = "$/Smtm/enginelib", DIAAAAAA
+
+[enginelib.vcproj]
+SCC_Aux_Path = "X:\"
+SCC_Project_Name = "$/Smtm/enginelib", DIAAAAAA

@@ -1,0 +1,453 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "resource.h"
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 吝惫绢(吝惫) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_GAMESETDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 250
+    END
+
+    IDD_DIALOG_WARNING_WHQL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_AUTOPATCHMAN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 256
+        BOTTOMMARGIN, 257
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOG_DOWNLOAD_AREA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 128
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 117
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GAMESETDLG DIALOGEX 0, 0, 319, 261
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "选项"
+FONT 9, "SimSun", 400, 0, 0x86
+BEGIN
+    DEFPUSHBUTTON   "保存",IDOK,172,234,78,16
+    PUSHBUTTON      "取消",IDCANCEL,262,234,50,16
+    GROUPBOX        "分辨率",IDC_STATIC,6,6,156,50
+    COMBOBOX        IDC_COMBO_RESOLUTION,12,18,98,87,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "音效",IDC_STATIC,168,6,146,118
+    CONTROL         "",IDC_SLIDER_BGM,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,208,64,84,13
+    LTEXT           "BGM",IDC_STATIC,176,66,25,8
+    CONTROL         "",IDC_SLIDER_SFX,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,208,106,84,13
+    LTEXT           "SFX",IDC_STATIC,176,106,25,8
+    CONTROL         "",IDC_SLIDER_MAP,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,208,86,84,13
+    LTEXT           "MAP",IDC_STATIC,176,86,25,8
+    COMBOBOX        IDC_COMBO_HZ,115,18,41,99,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_3DALGORITHM,176,42,86,75,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "推荐",IDC_BUTTON_COMPATIBLE,264,42,42,14
+    CONTROL         "",IDC_CHECK_BGM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    296,66,16,8
+    CONTROL         "",IDC_CHECK_MAP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    296,88,16,8
+    CONTROL         "",IDC_CHECK_SFX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    296,108,16,8
+    CONTROL         "被动模式",IDC_CHECK_PASSIVE,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,176,143,128,10
+    CONTROL         "鼠标模式",IDC_CHECK_GAMECURSOR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,19,184,135,10
+    CONTROL         "地形阴影",IDC_CHECK_SHADOWLAND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,19,132,135,10
+    CONTROL         "实时反射",IDC_CHECK_REALREFLECT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,145,135,10
+    COMBOBOX        IDC_COMBO_SHADOWCHAR,78,95,77,67,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SKINDETAIL,78,112,77,54,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "角色阴影",IDC_STATIC,12,95,62,8
+    LTEXT           "角色细节",IDC_STATIC,12,111,62,8
+    GROUPBOX        "图形效果",IDC_STATIC,6,66,156,151
+    CONTROL         "画面弯曲",IDC_CHECK_REFRACT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,19,158,135,10
+    CONTROL         "最低效果",IDC_CHECK_GLOW,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,19,171,135,10
+    COMBOBOX        IDC_COMBO_FOGRANGE,78,78,77,152,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "角色视野",IDC_STATIC,12,78,62,8
+    GROUPBOX        "下载",IDC_STATIC,168,130,146,30
+    CONTROL         "字体纹理",IDC_CHECK_TEXTURE_FONT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,197,135,10
+    CONTROL         "3D音效",IDC_CHECK_3DSOUND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,176,22,129,10
+    CONTROL         "窗口模式",IDC_CHECK_WINDOWMODE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,36,139,10
+    GROUPBOX        "下载服务器",IDC_STATIC,167,167,145,50
+    CONTROL         "",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,175,
+                    182,60,10
+    CONTROL         "",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,242,182,70,10
+    CONTROL         "",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,175,201,60,10
+    CONTROL         "",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,242,201,70,10
+END
+
+IDD_DIALOG_WARNING_WHQL DIALOGEX 0, 0, 250, 119
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "警告"
+FONT 8, "SimSun", 400, 0, 0x86
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,180,96,50,14
+    ICON            IDR_MAINFRAME,IDC_STATIC,222,6,20,20
+    LTEXT           "您未安装Windows Hardware Quality Labs (WHQL)识别的显卡驱动程序。 如果您不及时安装WHQL可识别的显卡驱动程序，在游戏过程中可能会出现错误。",
+                    IDC_STATIC,7,7,204,35
+    LTEXT           "下载驱动程序",IDC_STATIC_NIVIDIA_LINK,153,54,84,8
+    LTEXT           "nVidia 系列 ( Geforce, TNT )",IDC_STATIC,19,54,113,8
+    LTEXT           "下载驱动程序",IDC_STATIC_ATI_LINK,153,72,84,8
+    LTEXT           "ATI 系列 ( Radeon )",IDC_STATIC,19,72,113,8
+    CONTROL         "下次运行时，不提示该警告",IDC_CHECK_NOCHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,96,152,10
+END
+
+IDD_AUTOPATCHMAN_DIALOG DIALOGEX 0, 0, 263, 262
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_BORDER
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "SimSun", 400, 0, 0x86
+BEGIN
+    PUSHBUTTON      "选项",IDC_BUTTON_OPTION,160,159,47,16,BS_CENTER | 
+                    BS_VCENTER | BS_FLAT | NOT WS_TABSTOP
+    PUSHBUTTON      "开始游戏",IDC_BUTTON_START,6,159,106,16,BS_CENTER | 
+                    BS_VCENTER | BS_FLAT | NOT WS_VISIBLE | NOT WS_TABSTOP
+    PUSHBUTTON      "结束游戏",IDC_BUTTON_EXIT,209,159,47,16,BS_CENTER | 
+                    BS_VCENTER | BS_FLAT | NOT WS_TABSTOP
+    CONTROL         "",IDC_STATIC_NOTIFY,
+                    "{8856F961-340A-11D0-A96B-00C04FD705A2}",0x0,6,14,250,
+                    141
+    CONTROL         "",IDC_PROGRESS_ALL,"msctls_progress32",0x1,6,249,250,8
+    CONTROL         "",IDC_PROGRESS_CUR,"msctls_progress32",0x1,6,240,250,8
+    LTEXT           "",IDC_STATIC,99,4,39,8
+    LISTBOX         IDC_LIST_LOG,6,197,250,38,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "开始更新",IDC_BUTTON_PATCH,113,157,45,14,NOT WS_VISIBLE
+    CONTROL         "http",IDC_CHECK_USE_HTTP,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,113,172,41,10
+    CONTROL         "游戏准备好时，开始游戏",IDC_READYTOSTART,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,182,235,10
+    PUSHBUTTON      "重新连接服务器",IDC_BUTTON_RETRY,6,159,106,16,BS_CENTER | 
+                    BS_VCENTER | BS_FLAT | NOT WS_VISIBLE | NOT WS_TABSTOP
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AutoPatchMan ??"
+FONT 9, "SimSun", 400, 0, 0x86
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "自动更新程序 版本 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (c) 2006",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_DIALOG_DOWNLOAD_AREA DIALOGEX 0, 0, 135, 124
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "下载目录"
+FONT 9, "SimSun", 400, 0, 0x86
+BEGIN
+    GROUPBOX        "选择更新目录",IDC_STATIC,7,7,121,89
+    CONTROL         "",IDC_RADIO_AREA1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,12,22,105,8
+    CONTROL         "",IDC_RADIO_AREA2,"Button",BS_AUTORADIOBUTTON,12,41,108,
+                    8
+    CONTROL         "",IDC_RADIO_AREA3,"Button",BS_AUTORADIOBUTTON,12,60,108,
+                    8
+    CONTROL         "",IDC_RADIO_AREA4,"Button",BS_AUTORADIOBUTTON,12,79,108,
+                    8
+    PUSHBUTTON      "确定",IDOK,78,103,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_AUTOPATCHMAN_DIALOG DLGINIT
+BEGIN
+    IDC_STATIC_NOTIFY, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x26c2, 0x0000, 0x15e9, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "FileDescription", "都市2046"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "都市2046"
+            VALUE "LegalCopyright", "Copyright (c) 2006 广东数据通信网络有限公司"
+            VALUE "OriginalFilename", "launcher.exe"
+            VALUE "ProductName", "都市2046"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "自动更新程序 信息(&A)..."
+    IDS_WHQL_CVD            "WHQL可识别显卡驱动程序。"
+    IDS_WHQL_UCVD           "WHQL不能识别显卡驱动程序。"
+    IDS_MESSAGE_001         "在网页上运行。"
+    IDS_MESSAGE_002         "都市2046 文件损坏，请重新安装都市2046。"
+    IDS_MESSAGE_003         "结束游戏中，请稍候。"
+    IDS_MESSAGE_004         "在更新完成后，重新运行游戏失败。"
+    IDS_MESSAGE_005         "Winsock 版本过旧。"
+    IDS_MESSAGE_006         "DirectX版本过旧。"
+    IDS_MESSAGE_007         "请安装 DirectX新版本后，再运行游戏。"
+    IDS_MESSAGE_008         "服务器维护中，请稍候再登陆游戏。"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MESSAGE_009         "读取游戏版本失败。"
+    IDS_MESSAGE_010         "下载更新文件时，发生错误。"
+    IDS_MESSAGE_011         "安装更新文件时，发生错误。"
+    IDS_MESSAGE_012         "游戏运行的各项准备已经完毕"
+    IDS_MESSAGE_013         "服务器人数已满，登陆失败，请稍候尝试"
+    IDS_MESSAGE_014         "正在尝试登陆中……"
+    IDS_MESSAGE_015         "由于网络超时，连接服务器失败"
+    IDS_MESSAGE_016         "连接服务器完毕，数据传输成功"
+    IDS_MESSAGE_017         "尝试连接FTP……"
+    IDS_MESSAGE_018         "人数过多，连接FTP服务器失败"
+    IDS_MESSAGE_019         "连接FTP服务器完毕，数据传输成功"
+    IDS_MESSAGE_020         "生成服务器失败."
+    IDS_MESSAGE_021         "选择服务器失败."
+    IDS_MESSAGE_022         "连接失败"
+    IDS_MESSAGE_023         "等待服务器失败"
+    IDS_MESSAGE_024         "连接服务器无响应"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MESSAGE_025         "频道生成失败"
+    IDS_MESSAGE_026         "无法连接到服务器"
+    IDS_MESSAGE_027         "版本数据传送失败"
+    IDS_MESSAGE_028         "强制结束游戏"
+    IDS_MESSAGE_029         "找不到执行Launcher所需的文件?"
+    IDS_MESSAGE_030         "没有声卡或声卡无法正常启动"
+    IDS_MESSAGE_031         "无阴影"
+    IDS_MESSAGE_032         "阴影效果低"
+    IDS_MESSAGE_033         "阴影效果中"
+    IDS_MESSAGE_034         "阴影效果高"
+    IDS_MESSAGE_035         "阴影效果最高"
+    IDS_MESSAGE_036         "低"
+    IDS_MESSAGE_037         "中"
+    IDS_MESSAGE_038         "高"
+    IDS_MESSAGE_039         "标准"
+    IDS_MESSAGE_040         "硬盘加速 一半"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MESSAGE_041         "硬盘加速 完全"
+    IDS_MESSAGE_042         "拉近"
+    IDS_MESSAGE_043         "普通"
+    IDS_MESSAGE_044         "拉远"
+    IDS_MESSAGE_045         "连接FTP失败。"
+    IDS_MESSAGE_046         "下载的文件大小错误"
+    IDS_MESSAGE_047         "正在接收更新文件中……"
+    IDS_MESSAGE_048         "正在更新中……"
+    IDS_MESSAGE_049         "正在传送更新列表文件。"
+    IDS_MESSAGE_050         "传送更新列表文件时发生错误。"
+    IDS_MESSAGE_051         "正在解压缩更新列表文件。"
+    IDS_MESSAGE_052         "解压缩更新列表文件失败。"
+    IDS_MESSAGE_053         "读取更新文件列表中。"
+    IDS_MESSAGE_054         "读取更新文件列表失败。"
+    IDS_MESSAGE_055         "在传送更新文件时发生错误。"
+    IDS_MESSAGE_056         "请检查“选项”中的“被动模式”是否开启。"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MESSAGE_057         "正在比较更新文件列表。"
+    IDS_MESSAGE_058         "比较更新文件列表失败。"
+    IDS_MESSAGE_059         "部分更新文件已损坏。"
+    IDS_MESSAGE_060         "更新客户端版本。"
+    IDS_MESSAGE_061         "更新客户端版本失败。"
+    IDS_MESSAGE_062         "所有的更新已经成功完成"
+    IDS_MESSAGE_063         "请再次尝试"
+    IDS_MESSAGE_064         "在选项中更改下载服务器或者稍候重试"
+    IDS_MESSAGE_065         "开始进行文件对比。"
+    IDS_MESSAGE_066         "文件对比完毕。"
+    IDS_MESSAGE_067         "生成对比文件列表。"
+    IDS_MESSAGE_068         "生成文件对比列表失败。"
+    IDS_MESSAGE_069         "进行文件对比......"
+END
+
+#endif    // 吝惫绢(吝惫) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 吝赋 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\icon1.ch.ico"
+#endif    // 吝赋 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 茄惫绢 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""resource.h""\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 茄惫绢 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

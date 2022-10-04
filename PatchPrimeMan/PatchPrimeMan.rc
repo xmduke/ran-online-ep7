@@ -1,0 +1,296 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\PatchPrimeMan.rc2""  // Microsoft Visual C++에서 편집되지 않은 리소스\r\n"
+    "#include ""afxres.rc""         // 표준 구성 요소\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\PatchPrimeMan.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PATCHPRIMEMAN_DIALOG DIALOGEX 0, 0, 277, 84
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "굴림체", 400, 0, 0x81
+BEGIN
+    CONTROL         "",IDC_PROGRESS_ALL,"msctls_progress32",WS_BORDER,7,69,
+                    264,8
+    PUSHBUTTON      "x",IDC_BUTTON_EXIT,258,7,12,11,BS_FLAT | NOT WS_TABSTOP
+    LISTBOX         IDC_LIST_LOG,7,30,264,36,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Client Launcher Patcher",IDC_STATIC,162,7,93,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,7,23,263,2
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "TODO: <파일 설명>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "PatchPrimeMan.exe"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "OriginalFilename", "PatchPrimeMan.exe"
+            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PATCHPRIMEMAN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 270
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_MANIFEST            RT_MANIFEST             "res\\PatchPrimeMan.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_MESSAGE_001         "런처가 정상종료할때까지 대기합니다."
+    IDS_MESSAGE_002         "패치를 시작합니다."
+    IDS_MESSAGE_003         "종료하고 있습니다. 잠시만 기다려주십시오."
+    IDS_MESSAGE_004         "게임 진행에 필요한 준비가 완료되었습니다."
+    IDS_MESSAGE_005         "최대 접속 회수 초과로 인해 서버 접속에 실패하였습니다."
+    IDS_MESSAGE_006         "FTP 접속 시도중입니다......"
+    IDS_MESSAGE_007         "접속 시간 초과로 인해, FTP 서버접속에 실패하였습니다."
+    IDS_MESSAGE_008         "FTP 서버 접속, 정보전송에 성공하였습니다."
+    IDS_MESSAGE_009         "종료하고 있습니다. 잠시만 기다려주십시오."
+    IDS_MESSAGE_010         "FTP 접속에 실패하였습니다."
+    IDS_MESSAGE_011         "파일을 다운로드 합니다."
+    IDS_MESSAGE_012         "파일 설치에 실패하였습니다. 잠시후에 다시 시도해 주십시오."
+    IDS_MESSAGE_013         "파일을 다운로드하였습니다."
+    IDS_MESSAGE_014         "파일을 설치합니다."
+    IDS_MESSAGE_015         "파일을 설치하였습니다."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MESSAGE_016         "정보 갱신에 실패하였습니다. 잠시후에 다시 시도해 주십시오."
+    IDS_MESSAGE_017         "패치가 성공적으로 완료되었습니다. 잠시만 기다려 주십시오."
+    IDS_MESSAGE_018         "전송받은 파일 크기가 맞지 않습니다."
+    IDS_MESSAGE_019         "강제종료 되었습니다."
+    IDS_MESSAGE_020         "파일 다운로드에 실패하였습니다."
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 영어(미국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PATCHPRIMEMAN_DIALOG DIALOGEX 0, 0, 278, 84
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "Arial", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_PROGRESS_ALL,"msctls_progress32",WS_BORDER,7,69,
+                    264,8
+    PUSHBUTTON      "x",IDC_BUTTON_EXIT,259,7,12,11,BS_FLAT | NOT WS_TABSTOP
+    LISTBOX         IDC_LIST_LOG,7,30,264,36,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Client Launcher Patcher",IDC_STATIC,181,7,76,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,7,23,264,2
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PATCHPRIMEMAN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 271
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_MESSAGE_001         "Waiting for absolute completion of launcher."
+    IDS_MESSAGE_002         "Starting patch."
+    IDS_MESSAGE_003         "Closing. wait a moment."
+    IDS_MESSAGE_004         "Preparation finished to game play."
+    IDS_MESSAGE_005         "Connecting server fails due to over using than maximun connection tryout frequency."
+    IDS_MESSAGE_006         "FTP trying to connection......"
+    IDS_MESSAGE_007         "Connecting Server fails due to over connection time."
+    IDS_MESSAGE_008         "Connect to FTP Server, data transmission success."
+    IDS_MESSAGE_009         "Closing. wait a moment."
+    IDS_MESSAGE_010         "Connecting FTP fails."
+    IDS_MESSAGE_011         "Downloading files."
+    IDS_MESSAGE_012         "Installing files fails. try again a second later."
+    IDS_MESSAGE_013         "Downloading files success."
+    IDS_MESSAGE_014         "Installing files."
+    IDS_MESSAGE_015         "Installing files success."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MESSAGE_016         "Updating data fails. try again a second later."
+    IDS_MESSAGE_017         "Patch finished completely. wait a moment."
+    IDS_MESSAGE_018         "Size of downloaded file is wrong."
+    IDS_MESSAGE_019         "Forced termination finished."
+    IDS_MESSAGE_020         "Downloading files fails."
+END
+
+#endif    // 영어(미국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\PatchPrimeMan.rc2"  // Microsoft Visual C++에서 편집되지 않은 리소스
+#include "afxres.rc"         // 표준 구성 요소
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

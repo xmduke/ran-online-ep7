@@ -1,0 +1,211 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 吝惫绢(吝惫) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_XCRASHREPORT_DIALOG DIALOGEX 0, 0, 295, 270
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "错误报告"
+FONT 9, "SimSun", 400, 0, 0x86
+BEGIN
+    LTEXT           "发生错误。\r\n如果想把错误的内容报告给开发公司的话，请点击“错误报告提交”，如果不想报告的话，请选择“不提交”。",IDC_BANNER,0,0,240,35
+    LTEXT           "",IDC_APP_ICON,240,0,50,35,SS_NOTIFY
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,0,35,295,1
+    LTEXT           "",
+                    IDC_STATIC,7,43,281,29
+    EDITTEXT        IDC_WHAT,12,138,260,86,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "想确认报告书里附加的内容，",IDC_STATIC,15,228,145,8
+    DEFPUSHBUTTON   "不提交",IDC_DO_NOT_SEND_ERROR,223,249,65,14
+    PUSHBUTTON      "错误报告提交",IDC_SEND_ERROR,150,249,70,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,0,242,294,1
+    LTEXT           "请点击这里。",IDC_CLICK_HERE,167,228,112,8
+    LTEXT           "错误报告书里将会附加系统的配置和错误内容，不附加其他信息。如果要确认附加内容，请在下面部分确认，如果认为可以发送给开发公司的话，请选择“错误报告提交”。",
+                    IDC_STATIC,7,72,281,24
+    LTEXT           "如果提交“错误报告书”的话，对分析该错误上有很大的帮助。",IDC_STATIC,7,102,
+                    281,8
+    LTEXT           "如果需要错误报告说明，请在下面部分填写一下。",IDC_STATIC,12,126,264,
+                    8
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 271, 70
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About XCrashReport"
+FONT 8, "SimSun", 400, 0, 0x86
+BEGIN
+    ICON            128,IDC_STATIC,11,14,21,23,SS_CENTERIMAGE | WS_BORDER
+    LTEXT           "XCrashReport Version 1.0",IDC_STATIC,40,13,140,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (c) 2003 Hans Dietrich",IDC_STATIC,40,27,164,
+                    8
+    DEFPUSHBUTTON   "OK",IDOK,209,9,50,14,WS_GROUP
+END
+
+IDD_DETAILS DIALOGEX 0, 0, 350, 300
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Error Report Contents"
+FONT 8, "SimSun", 400, 0, 0x86
+BEGIN
+    LTEXT           "",IDC_STATIC_DETAILS_BANNER,0,0,351,16
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,0,16,351,85
+    LTEXT           "Double-click a file to view its contents.",IDC_STATIC,2,
+                    101,332,8
+    RTEXT           "Name:",IDC_STATIC,5,116,127,8
+    LTEXT           "",IDC_STATIC_NAME,33,116,100,8
+    RTEXT           "Description:",IDC_STATIC,138,116,194,8
+    LTEXT           "",IDC_STATIC_DESC,182,116,160,8
+    EDITTEXT        IDC_CONTENTS,0,128,351,152,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+    DEFPUSHBUTTON   "Close",IDOK,297,284,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_XCRASHREPORT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 288
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 263
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 265
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 57
+    END
+
+    IDD_DETAILS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 343
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 293
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About XCrashReport..."
+    IDS_STRING102           "FTP连接失败。"
+    IDS_STRING103           "请用E- MAIL把文件发过来。"
+    IDS_STRING104           "发生错误，因此结束。很抱歉给您带来不便！"
+END
+
+#endif    // 吝惫绢(吝惫) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 康绢(固惫) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 康绢(固惫) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

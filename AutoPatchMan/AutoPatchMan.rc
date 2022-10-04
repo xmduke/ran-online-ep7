@@ -1,0 +1,1050 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 중국어(중국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GAMESETDLG DIALOGEX 0, 0, 315, 283
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Option"
+FONT 9, "芥竟", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "??",IDOK,173,257,78,16
+    PUSHBUTTON      "??",IDCANCEL,258,257,50,16
+    GROUPBOX        "?????",IDC_DISPLAY_STATIC,6,6,147,48
+    COMBOBOX        IDC_COMBO_RESOLUTION,12,18,98,87,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "??? ??",IDC_SOUND_STATIC,162,6,146,118
+    CONTROL         "",IDC_SLIDER_BGM,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,187,65,98,13
+    LTEXT           "BGM",IDC_BGM_STATIC,169,67,17,8
+    CONTROL         "",IDC_SLIDER_SFX,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,187,107,98,13
+    LTEXT           "SFX",IDC_SFX_STATIC,169,107,14,8
+    CONTROL         "",IDC_SLIDER_MAP,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,187,87,98,13
+    LTEXT           "MAP",IDC_MAP_STATIC,169,87,16,8
+    COMBOBOX        IDC_COMBO_HZ,115,18,35,99,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_3DALGORITHM,169,43,86,75,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "?????",IDC_BUTTON_COMPATIBLE,258,43,42,14
+    CONTROL         "",IDC_CHECK_BGM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    289,67,16,8
+    CONTROL         "",IDC_CHECK_MAP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    289,89,16,8
+    CONTROL         "",IDC_CHECK_SFX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    289,109,16,8
+    CONTROL         "??? ?? ??",IDC_CHECK_PASSIVE,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,169,144,80,10
+    CONTROL         "?? ?? ??",IDC_CHECK_GAMECURSOR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,19,213,72,10
+    CONTROL         "?? ??? ??",IDC_CHECK_SHADOWLAND,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,139,80,10
+    CONTROL         "??? ?? ??",IDC_CHECK_REALREFLECT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,152,80,10
+    COMBOBOX        IDC_COMBO_SHADOWCHAR,70,101,77,67,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SKINDETAIL,70,117,77,54,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "??? ???",IDC_SHADOWCHAR_STATIC,12,103,53,8
+    LTEXT           "??? ???",IDC_SKINDETAIL_STATIC,12,121,53,8
+    GROUPBOX        "??? ??",IDC_GRAPHIC_STATIC,7,58,147,195
+    CONTROL         "?? ?? ??",IDC_CHECK_REFRACT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,19,165,72,10
+    CONTROL         "??? ?? ??",IDC_CHECK_GLOW,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,19,178,80,10
+    COMBOBOX        IDC_COMBO_FOGRANGE,70,85,77,152,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "??",IDC_FOGRANGE_STATIC,12,89,17,8
+    GROUPBOX        "????",IDC_DOWNLOAD_STATIC,162,129,146,30
+    CONTROL         "??? ?? ??",IDC_CHECK_TEXTURE_FONT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,226,80,10
+    CONTROL         "3D ??? ??",IDC_CHECK_3DSOUND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,169,23,72,10
+    CONTROL         "? ?? ( ??? ?? )",IDC_CHECK_WINDOWMODE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,36,108,10
+    COMBOBOX        IDC_COMBO_DEFAULTOPTION,70,69,77,152,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "?? ??",IDC_DEFAULT_OPTION_STATIC,12,73,35,8
+    CONTROL         "???? ??",IDC_CHECK_BUFFEFFECT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,19,190,72,10
+    CONTROL         "POST PROCESSING ??",IDC_CHECK_POSTPROCESSING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,202,97,10
+    GROUPBOX        "??????",IDC_DOWNAREA_STATIC,163,163,142,90
+    CONTROL         "",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,170,
+                    180,51,10
+    CONTROL         "",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,233,180,60,10
+    CONTROL         "",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,170,199,51,10
+    CONTROL         "??? ?? ??",IDC_CHECK_FRAME_LIMIT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,238,80,10
+END
+
+IDD_DIALOG_WARNING_WHQL DIALOGEX 0, 0, 250, 119
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Warning"
+FONT 8, "芥竟", 400, 0, 0x86
+BEGIN
+    DEFPUSHBUTTON   "??",IDOK,180,96,50,14
+    ICON            IDR_MAINFRAME,IDC_STATIC,221,6,20,20
+    LTEXT           "Windows Hardware Quality Labs (WHQL) ?? ?? ??? ?? ????? ???? ?? ????. \nWHQL ?? ????? ?? ?? ?? ??? ??? ??? ? ????.",
+                    IDC_VIDEO_STATIC,12,6,194,44
+    LTEXT           "???? ????",IDC_STATIC_NVIDIA_LINK,138,57,69,8
+    LTEXT           "nVidia ?? ( Geforce, TNT )",IDC_NVIDIA_STATIC,18,57,113,
+                    8
+    LTEXT           "???? ????",IDC_STATIC_ATI_LINK,139,72,69,8
+    LTEXT           "ATI ?? ( Radeon )",IDC_ATI_STATIC,42,72,77,8
+    CONTROL         "?? ??? ???? ??.",IDC_CHECK_NOCHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,96,120,10
+END
+
+IDD_DIALOG_DOWNLOAD_AREA DIALOGEX 0, 0, 135, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Download Area"
+FONT 9, "芥竟", 400, 0, 0x86
+BEGIN
+    GROUPBOX        "?? ?? ??? ?????.",IDC_AREA_STATIC,7,7,121,152
+    CONTROL         "",IDC_RADIO_AREA1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,12,22,105,8
+    CONTROL         "",IDC_RADIO_AREA2,"Button",BS_AUTORADIOBUTTON,12,39,108,
+                    8
+    CONTROL         "",IDC_RADIO_AREA3,"Button",BS_AUTORADIOBUTTON,12,56,108,
+                    8
+    PUSHBUTTON      "??",IDOK,78,162,50,14
+END
+
+IDD_AUTOPATCHMAN_DIALOG DIALOGEX 0, 0, 238, 264
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_BORDER
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "芥竟", 400, 0, 0x86
+BEGIN
+    PUSHBUTTON      "??",IDC_BUTTON_OPTION,150,159,40,16,BS_CENTER | 
+                    BS_VCENTER | BS_FLAT | NOT WS_TABSTOP
+    PUSHBUTTON      "????",IDC_BUTTON_START,5,159,111,16,BS_CENTER | 
+                    BS_VCENTER | BS_FLAT | NOT WS_TABSTOP
+    PUSHBUTTON      "??",IDC_BUTTON_EXIT,194,159,40,16,BS_CENTER | 
+                    BS_VCENTER | BS_FLAT | NOT WS_TABSTOP
+    CONTROL         "",IDC_STATIC_NOTIFY,
+                    "{8856F961-340A-11D0-A96B-00C04FD705A2}",0x0,4,14,230,
+                    141
+    CONTROL         "",IDC_PROGRESS_ALL,"msctls_progress32",0x1,4,248,230,8
+    CONTROL         "",IDC_PROGRESS_CUR,"msctls_progress32",0x1,4,237,230,8
+    LTEXT           "RAN-Online",IDC_TITLE_STATIC,99,4,41,8
+    LISTBOX         IDC_LIST_LOG,4,194,230,38,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "??",IDC_BUTTON_PATCH,120,156,24,11,NOT WS_VISIBLE
+    CONTROL         "http",IDC_CHECK_USE_HTTP,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,117,169,30,10
+    CONTROL         "??? ???? ?? ??",IDC_READYTOSTART,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,180,116,10
+    PUSHBUTTON      "???",IDC_BUTTON_RETRY,5,159,111,16,BS_CENTER | 
+                    BS_VCENTER | BS_FLAT | NOT WS_VISIBLE | NOT WS_TABSTOP
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AutoPatchMan Information"
+FONT 9, "芥竟", 400, 0, 0x86
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "AutoPatchMan ?? 1.0\nCopyright (c) 2002",IDC_VER_STATIC,
+                    40,17,119,19,SS_NOPREFIX
+    DEFPUSHBUTTON   "??",IDOK,178,7,50,16,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_AUTOPATCHMAN_DIALOG DLGINIT
+BEGIN
+    IDC_STATIC_NOTIFY, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x23a8, 0x0000, 0x15e9, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_GAMESETDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 273
+    END
+
+    IDD_DIALOG_WARNING_WHQL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_DIALOG_DOWNLOAD_AREA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 128
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_AUTOPATCHMAN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 234
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 256
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 45
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 중국어(중국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 중립 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\icon1.ico"
+IDR_MAINFRAME_CH        ICON                    "res\\icon1.ch.ico"
+IDR_MAINFRAME_MY        ICON                    "res\\icon1.my.ico"
+IDR_MAINFRAME_TW        ICON                    "res\\icon1.tw.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000003b5"
+        BEGIN
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 949
+    END
+END
+
+#endif    // 중립 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 중립(기본값) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUD)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AutoPatchMan 정보"
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    LTEXT           "AutoPatchMan 버전 1.0\nCopyright (c) 2002",
+                    IDC_VER_STATIC,40,17,119,19,SS_NOPREFIX
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_AUTOPATCHMAN_DIALOG DIALOGEX 0, 0, 250, 264
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_BORDER
+EXSTYLE WS_EX_APPWINDOW
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "옵션",IDC_BUTTON_OPTION,164,159,40,16,BS_CENTER | 
+                    BS_VCENTER | BS_FLAT | NOT WS_TABSTOP
+    PUSHBUTTON      "게임시작",IDC_BUTTON_START,5,159,123,16,BS_CENTER | 
+                    BS_VCENTER | BS_FLAT | NOT WS_TABSTOP
+    PUSHBUTTON      "종료",IDC_BUTTON_EXIT,206,159,40,16,BS_CENTER | 
+                    BS_VCENTER | BS_FLAT | NOT WS_TABSTOP
+    CONTROL         "",IDC_STATIC_NOTIFY,
+                    "{8856F961-340A-11D0-A96B-00C04FD705A2}",0x0,4,14,242,
+                    141
+    CONTROL         "",IDC_PROGRESS_ALL,"msctls_progress32",0x1,4,248,242,8
+    CONTROL         "",IDC_PROGRESS_CUR,"msctls_progress32",0x1,4,237,242,8
+    CTEXT           "RAN-Online",IDC_TITLE_STATIC,4,4,242,8
+    LISTBOX         IDC_LIST_LOG,4,194,242,38,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "동작",IDC_BUTTON_PATCH,136,156,24,11,NOT WS_VISIBLE
+    CONTROL         "http",IDC_CHECK_USE_HTTP,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,133,169,30,10
+    CONTROL         "게임이 준비되면 바로 시작",IDC_READYTOSTART,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,180,116,10
+    PUSHBUTTON      "재시도",IDC_BUTTON_RETRY,5,159,123,16,BS_CENTER | 
+                    BS_VCENTER | BS_FLAT | NOT WS_VISIBLE | NOT WS_TABSTOP
+END
+
+IDD_GAMESETDLG DIALOGEX 0, 0, 315, 291
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "옵션"
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "저장",IDOK,173,264,78,16
+    PUSHBUTTON      "취소",IDCANCEL,258,264,50,16
+    GROUPBOX        "디스플레이",IDC_DISPLAY_STATIC,6,6,147,48
+    COMBOBOX        IDC_COMBO_RESOLUTION,12,18,98,87,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "사운드 옵션",IDC_SOUND_STATIC,162,6,146,118
+    CONTROL         "",IDC_SLIDER_BGM,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,187,65,98,13
+    LTEXT           "BGM",IDC_BGM_STATIC,169,67,17,8
+    CONTROL         "",IDC_SLIDER_SFX,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,187,107,98,13
+    LTEXT           "SFX",IDC_SFX_STATIC,169,107,14,8
+    CONTROL         "",IDC_SLIDER_MAP,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,187,87,98,13
+    LTEXT           "MAP",IDC_MAP_STATIC,169,87,16,8
+    COMBOBOX        IDC_COMBO_HZ,115,18,35,99,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_3DALGORITHM,169,43,86,75,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "사운드찾기",IDC_BUTTON_COMPATIBLE,258,43,42,14
+    CONTROL         "",IDC_CHECK_BGM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    289,67,16,8
+    CONTROL         "",IDC_CHECK_MAP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    289,89,16,8
+    CONTROL         "",IDC_CHECK_SFX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    289,109,16,8
+    CONTROL         "패시브 모드 사용",IDC_CHECK_PASSIVE,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,169,144,80,10
+    CONTROL         "게임 커서 사용",IDC_CHECK_GAMECURSOR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,213,72,10
+    CONTROL         "지형 그림자 사용",IDC_CHECK_SHADOWLAND,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,139,80,10
+    CONTROL         "실시간 반사 사용",IDC_CHECK_REALREFLECT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,152,80,10
+    COMBOBOX        IDC_COMBO_SHADOWCHAR,70,101,77,67,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SKINDETAIL,70,117,77,54,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "캐릭터 그림자",IDC_SHADOWCHAR_STATIC,12,103,53,8
+    LTEXT           "캐릭터 디테일",IDC_SKINDETAIL_STATIC,12,121,53,8
+    GROUPBOX        "그래픽 옵션",IDC_GRAPHIC_STATIC,7,58,147,199
+    CONTROL         "화면 왜곡 사용",IDC_CHECK_REFRACT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,165,72,10
+    CONTROL         "글로우 효과 사용",IDC_CHECK_GLOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,178,80,10
+    COMBOBOX        IDC_COMBO_FOGRANGE,70,85,77,152,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "시야",IDC_FOGRANGE_STATIC,12,89,17,8
+    GROUPBOX        "다운로드",IDC_DOWNLOAD_STATIC,162,129,146,30
+    CONTROL         "텍스쳐 폰트 사용",IDC_CHECK_TEXTURE_FONT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,226,80,10
+    CONTROL         "3D 사운드 사용",IDC_CHECK_3DSOUND,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,169,23,72,10
+    CONTROL         "창 모드 ( 윈도우 모드 )",IDC_CHECK_WINDOWMODE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,36,108,10
+    COMBOBOX        IDC_COMBO_DEFAULTOPTION,70,69,77,152,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "기본 설정",IDC_DEFAULT_OPTION_STATIC,12,73,35,8
+    CONTROL         "버프효과 사용",IDC_CHECK_BUFFEFFECT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,190,72,10
+    CONTROL         "POST PROCESSING 사용",IDC_CHECK_POSTPROCESSING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,202,97,10
+    GROUPBOX        "다운로드지역",IDC_DOWNAREA_STATIC,163,163,145,93
+    CONTROL         "",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,170,
+                    180,51,10
+    CONTROL         "",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,233,180,60,10
+    CONTROL         "",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,170,199,51,10
+    CONTROL         "프레임 제한 사용",IDC_CHECK_FRAME_LIMIT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,239,80,10
+END
+
+IDD_DIALOG_WARNING_WHQL DIALOGEX 0, 0, 250, 119
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "경고"
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,180,96,50,14
+    ICON            IDR_MAINFRAME,IDC_STATIC,218,6,21,20
+    LTEXT           "Windows Hardware Quality Labs (WHQL) 인증 정식 비디오 카드 드라이버가 설치되어 있지 않습니다. \nWHQL 인증 드라이버가 아닐 때에 게임 실행에 문제가 발생할 수 있습니다.",
+                    IDC_VIDEO_STATIC,12,6,194,44
+    LTEXT           "드라이버 다운로드",IDC_STATIC_NVIDIA_LINK,138,57,69,8
+    LTEXT           "nVidia 계열 ( Geforce, TNT )",IDC_NVIDIA_STATIC,18,57,
+                    113,8
+    LTEXT           "드라이버 다운로드",IDC_STATIC_ATI_LINK,139,72,69,8
+    LTEXT           "ATI 계열 ( Radeon )",IDC_ATI_STATIC,42,72,77,8
+    CONTROL         "다음 실행시 경고하지 않음.",IDC_CHECK_NOCHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,96,120,10
+END
+
+IDD_DIALOG_DOWNLOAD_AREA DIALOGEX 0, 0, 135, 190
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Download Area"
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "패치 받을 지역을 선택하세요.",IDC_AREA_STATIC,7,7,121,
+                    154
+    CONTROL         "",IDC_RADIO_AREA1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,12,22,105,8
+    CONTROL         "",IDC_RADIO_AREA2,"Button",BS_AUTORADIOBUTTON,12,40,108,
+                    8
+    CONTROL         "",IDC_RADIO_AREA3,"Button",BS_AUTORADIOBUTTON,12,58,108,
+                    8
+    PUSHBUTTON      "확인",IDOK,78,168,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_AUTOPATCHMAN_DIALOG DLGINIT
+BEGIN
+    IDC_STATIC_NOTIFY, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x2584, 0x0000, 0x17ab, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 45
+    END
+
+    IDD_AUTOPATCHMAN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 246
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 256
+    END
+
+    IDD_GAMESETDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 281
+    END
+
+    IDD_DIALOG_WARNING_WHQL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_DIALOG_DOWNLOAD_AREA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 128
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 중립(기본값) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\AutoPatchMan.rc2""  // Microsoft Visual C++에서 편집되지 않은 리소스\r\n"
+    "#include ""afxres.rc""         // 표준 구성 요소\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_MANIFEST            RT_MANIFEST             "res\\AutoPatchMan.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    ABOUT_BOX_ID_OK         "OK"
+    DOWNAREA_ID_OK          "OK"
+    GAMESET_ID_CANCEL       "Cancel"
+    GAMESET_ID_OK           "Save"
+    IDC_SOUND_OPTION5       "SFX"
+    IDC_GRAPHIC_OPTION13    "Frame Limit"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_VER_STATIC          "AutoPatchMan Version 1.0\nCopyright (c) 2002"
+    IDC_TITLE_STATIC        "RanOnline"
+    IDC_AREA_STATIC         "Area"
+    IDC_VIDEO_STATIC        "Windows Hardware Quality Labs (WHQL) Certified\nVideo Driver is not installed.\nif Windows Hardware Quality Labs (WHQL) Certified Video Driver is not installed,\nit's possible to make error while playing game."
+    IDC_NVIDIA_STATIC       "nVidia  ( Geforce, TNT )"
+    IDC_ATI_STATIC          "ATI  ( Radeon )"
+    IDC_DISPLAY_STATIC      "Display"
+    IDD_ABOUT_BOX           "AutoPatchMan Information"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_BUTTON_EXIT         "Exit"
+    IDC_BUTTON_START        "Start"
+    IDC_BUTTON_RETRY        "Retry"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_BUTTON_OPTION       "Option"
+    IDC_CHECK_NOCHECK       "Don't caution next time."
+    IDC_STATIC_ATI_LINK     "Driver Download"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_CHECK_PASSIVE       "Passive Mode"
+    IDC_CHECK_USE_HTTP      "Http"
+    IDC_BUTTON_PATCH        "Action"
+    IDC_CHECK_WINDOWMODE    "Window mode"
+    IDC_READYTOSTART        "When the game is prepared, start"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_DOWNLOAD_STATIC     "Download"
+    IDC_DOWNAREA_STATIC     "DownLoad Area"
+    IDC_STATIC_NVIDIA_LINK  "Driver Download"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MESSAGE32           "Low"
+    IDS_MESSAGE33           "Middle"
+    IDS_MESSAGE34           "High"
+    IDS_MESSAGE35           "Higher"
+    IDS_MESSAGE36           "Low"
+    IDS_MESSAGE37           "Middle"
+    IDS_MESSAGE38           "High"
+    IDS_MESSAGE39           "Standard"
+    IDD_DIALOG_DOWNLOAD_AREA "DOWNLOAD AREA"
+    IDS_MESSAGE40           "Hardware Acceleration HALF"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MESSAGE17           "Try to connection FTP......"
+    IDS_MESSAGE18           "Connecting FTP Server fails due to over connection time."
+    IDS_MESSAGE19           "Connect to FTP Server,  data transmission success."
+    IDS_MESSAGE20           "Creating event fails."
+    IDS_MESSAGE21           "Selecting event fails."
+    IDS_MESSAGE22           "Connecting fails."
+    IDS_MESSAGE23           "Waiting for event fails."
+    IDS_MESSAGE24           "Contact event was not occured."
+    IDS_MESSAGE25           "Thread Creating fails."
+    IDS_MESSAGE26           "Unable to connect to Server."
+    IDS_MESSAGE27           "Version data transmission failed."
+    IDD_DIALOG_WARNING_WHQL "Caution"
+    IDS_MESSAGE28           "Forced termination accomplished."
+    IDS_MESSAGE29           "Can't find file to start launch program."
+    IDS_MESSAGE30           "Sound card is missing or out of order."
+    IDS_MESSAGE31           "None"
+END
+
+STRINGTABLE 
+BEGIN
+    IDD_GAMESETDLG          "Option"
+    WARNING_ID_OK           "OK"
+    IDS_WHQL_CVD            "WHQL Certified Video Driver"
+    IDS_WHQL_UCVD           "WHQL Uncertified Video Driver"
+    IDS_ABOUTBOX            "AutoPatchMan Info.(&A)..."
+    IDC_GRAPHIC_OPTION0     "Graphic"
+    IDC_GRAPHIC_OPTION1     "Default Option"
+    IDC_GRAPHIC_OPTION2     "View"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_GRAPHIC_OPTION3     "Character Shadow"
+    IDC_GRAPHIC_OPTION4     "Character Detail"
+    IDC_GRAPHIC_OPTION5     "Field Shadow"
+    IDC_GRAPHIC_OPTION6     "Realtime Reflection"
+    IDC_GRAPHIC_OPTION7     "Scene Distortion"
+    IDC_GRAPHIC_OPTION8     "Glow Effect"
+    IDC_GRAPHIC_OPTION9     "Buff Effect"
+    IDC_GRAPHIC_OPTION10    "POST PROCESSING"
+    IDC_GRAPHIC_OPTION11    "Game Cursor"
+    IDC_GRAPHIC_OPTION12    "Texture Font"
+    IDC_SOUND_OPTION0       "Sound"
+    IDC_SOUND_OPTION1       "3D Sound"
+    IDC_SOUND_OPTION2       "Find"
+    IDC_SOUND_OPTION3       "BGM"
+    IDC_SOUND_OPTION4       "MAP"
+    IDS_MESSAGE0            "Ran Online"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MESSAGE1            "웹에서 실행해주십시오."
+    IDS_MESSAGE2            "Ran-Online file is damaged. Please reinstall Ran-Online."
+    IDS_MESSAGE3            "Closing. wait a moment."
+    IDS_MESSAGE4            "Program restart  failed after patch."
+    IDS_MESSAGE5            "Winsock version is not suitable."
+    IDS_MESSAGE6            "DirextX version is not suitable."
+    IDS_MESSAGE7            "Please play after updating DirectX."
+    IDS_MESSAGE8            "Server is now inspected. Please conect a little bit later."
+    IDS_MESSAGE9            "Version file reading  failed."
+    IDS_MESSAGE10           "Error occurs while program patch file loading."
+    IDS_MESSAGE11           "Error occurs whlile program patch file installing."
+    IDS_MESSAGE12           "Finished prepare to game play."
+    IDS_MESSAGE13           "Connecting Server failed. reach the max try connecting."
+    IDS_MESSAGE14           "Trying to connection......"
+    IDS_MESSAGE15           "Connecting Server failed. over the max connection time."
+    IDS_MESSAGE16           "Connecting Server OK, data transmission succeed."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MESSAGE41           "Hardware Acceleration FULL"
+    IDS_MESSAGE42           "Near"
+    IDS_MESSAGE43           "Far"
+    IDS_MESSAGE44           "Further"
+    IDS_MESSAGE45           "Connecting FTP Server fails."
+    IDS_MESSAGE46           "Size of downloaded file is wrong."
+    IDS_MESSAGE47           "Patch file is being transmitted......"
+    IDS_MESSAGE48           "Patching......"
+    IDS_MESSAGE49           "Patch list file is being transmitted."
+    IDS_MESSAGE50           "Error occurs while patch list file transmitting."
+    IDS_MESSAGE51           "Decompressing patch list file."
+    IDS_MESSAGE52           "Decompressing patch list file fails."
+    IDS_MESSAGE53           "Loading patch file list."
+    IDS_MESSAGE54           "Loading patch file list fails."
+    IDS_MESSAGE55           "Error occurs while patch file transmitting."
+    IDS_MESSAGE56           "Please check 'passive mode' on 'option' menu, 'download' tap,"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MESSAGE57           "Comparing patch file list."
+    IDS_MESSAGE58           "Comparing patch file list fails."
+    IDS_MESSAGE59           "A part of patch file is damaged."
+    IDS_MESSAGE60           "Renewing client version."
+    IDS_MESSAGE61           "Renewing client version fails."
+    IDS_MESSAGE62           "It accomplished all patch work successfully."
+    IDS_MESSAGE63           "and try again."
+    IDS_MESSAGE64           "Please try again after changing the downlaoding server from Option."
+    IDS_MESSAGE65           "Initiating the file comparisons..."
+    IDS_MESSAGE66           "Completed the file comparisons!"
+    IDS_MESSAGE67           "Creating the list needed for the file comparisons..."
+    IDS_MESSAGE68           "Failed to create the file comparisons list! "
+    IDS_MESSAGE69           "Comparing the files..."
+    IDS_MESSAGE70           "Zipping down the file..."
+    IDS_MESSAGE71           "Failed to zip down the file!"
+    IDS_MESSAGE72           "Failed to execute the optimization!"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MESSAGE73           "User definitions"
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 영어(미국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AutoPatchMan Infomation"
+FONT 8, "Arial", 400, 0, 0xA3
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "AutoPatchMan Ver 1.0\nCopyright (c) 2002",
+                    IDC_VER_STATIC,40,17,119,19,SS_NOPREFIX
+    DEFPUSHBUTTON   "??",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_AUTOPATCHMAN_DIALOG DIALOGEX 0, 0, 250, 264
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_BORDER
+EXSTYLE WS_EX_APPWINDOW
+FONT 8, "Arial", 400, 0, 0xA3
+BEGIN
+    PUSHBUTTON      "Option",IDC_BUTTON_OPTION,164,159,40,16,BS_CENTER | 
+                    BS_VCENTER | BS_FLAT | NOT WS_TABSTOP
+    PUSHBUTTON      "Start",IDC_BUTTON_START,5,159,123,16,BS_CENTER | 
+                    BS_VCENTER | BS_FLAT | NOT WS_TABSTOP
+    PUSHBUTTON      "Exit",IDC_BUTTON_EXIT,206,159,40,16,BS_CENTER | 
+                    BS_VCENTER | BS_FLAT | NOT WS_TABSTOP
+    CONTROL         "",IDC_STATIC_NOTIFY,
+                    "{8856F961-340A-11D0-A96B-00C04FD705A2}",0x0,4,14,242,
+                    141
+    CONTROL         "",IDC_PROGRESS_ALL,"msctls_progress32",0x1,4,248,242,8
+    CONTROL         "",IDC_PROGRESS_CUR,"msctls_progress32",0x1,4,237,242,8
+    CTEXT           "RAN-Online",IDC_TITLE_STATIC,4,4,242,8
+    LISTBOX         IDC_LIST_LOG,4,194,242,38,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Action",IDC_BUTTON_PATCH,136,156,24,11,NOT WS_VISIBLE
+    CONTROL         "http",IDC_CHECK_USE_HTTP,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,133,169,30,10
+    CONTROL         "게임이 준비되면 바로 시작",IDC_READYTOSTART,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,180,116,10
+    PUSHBUTTON      "ReTry",IDC_BUTTON_RETRY,5,159,123,16,BS_CENTER | 
+                    BS_VCENTER | BS_FLAT | NOT WS_VISIBLE | NOT WS_TABSTOP
+END
+
+IDD_DIALOG_DOWNLOAD_AREA DIALOGEX 0, 0, 135, 186
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Download Area"
+FONT 8, "Arial", 400, 0, 0xA3
+BEGIN
+    GROUPBOX        "Select Area",IDC_AREA_STATIC,7,7,121,147
+    CONTROL         "",IDC_RADIO_AREA1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,12,22,105,8
+    CONTROL         "",IDC_RADIO_AREA2,"Button",BS_AUTORADIOBUTTON,12,39,108,
+                    8
+    CONTROL         "",IDC_RADIO_AREA3,"Button",BS_AUTORADIOBUTTON,12,56,108,
+                    8
+    PUSHBUTTON      "OK",IDOK,78,165,50,14
+END
+
+IDD_DIALOG_WARNING_WHQL DIALOGEX 0, 0, 250, 119
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "경고"
+FONT 8, "Arial", 400, 0, 0xA3
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,180,96,50,14
+    ICON            IDR_MAINFRAME,IDC_STATIC,218,6,20,20
+    LTEXT           "Windows Hardware Quality Labs (WHQL) Certified\nVideo Driver is not installed.\nif Windows Hardware Quality Labs (WHQL) Certified Video Driver is not installed,",
+                    IDC_VIDEO_STATIC,12,6,194,44
+    LTEXT           "Driver Download",IDC_STATIC_NVIDIA_LINK,138,57,69,8
+    LTEXT           "nVidia  ( Geforce, TNT )",IDC_NVIDIA_STATIC,18,57,113,8
+    LTEXT           "Driver Download",IDC_STATIC_ATI_LINK,139,72,69,8
+    LTEXT           "ATI ( Radeon )",IDC_ATI_STATIC,42,72,77,8
+    CONTROL         "Don't caution next time.",IDC_CHECK_NOCHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,96,120,10
+END
+
+IDD_GAMESETDLG DIALOGEX 0, 0, 315, 291
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "옵션"
+FONT 8, "Arial", 400, 0, 0xA3
+BEGIN
+    DEFPUSHBUTTON   "저장",IDOK,173,264,78,16
+    PUSHBUTTON      "취소",IDCANCEL,258,264,50,16
+    GROUPBOX        "Display",IDC_DISPLAY_STATIC,6,6,147,48
+    COMBOBOX        IDC_COMBO_RESOLUTION,12,18,98,87,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Sound",IDC_SOUND_STATIC,162,6,146,118
+    CONTROL         "",IDC_SLIDER_BGM,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,187,65,98,13
+    LTEXT           "BGM",IDC_BGM_STATIC,169,67,17,8
+    CONTROL         "",IDC_SLIDER_SFX,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,187,107,98,13
+    LTEXT           "SFX",IDC_SFX_STATIC,169,107,14,8
+    CONTROL         "",IDC_SLIDER_MAP,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,187,87,98,13
+    LTEXT           "MAP",IDC_MAP_STATIC,169,87,16,8
+    COMBOBOX        IDC_COMBO_HZ,115,18,35,99,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_3DALGORITHM,169,43,86,75,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Find",IDC_BUTTON_COMPATIBLE,258,43,42,14
+    CONTROL         "",IDC_CHECK_BGM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    289,67,16,8
+    CONTROL         "",IDC_CHECK_MAP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    289,89,16,8
+    CONTROL         "",IDC_CHECK_SFX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    289,109,16,8
+    CONTROL         "Passive Mode",IDC_CHECK_PASSIVE,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,169,144,80,10
+    CONTROL         "Game Curso",IDC_CHECK_GAMECURSOR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,213,72,10
+    CONTROL         "Field Shadow",IDC_CHECK_SHADOWLAND,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,139,80,10
+    CONTROL         "Realtime Reflection",IDC_CHECK_REALREFLECT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,152,80,10
+    COMBOBOX        IDC_COMBO_SHADOWCHAR,70,101,77,67,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SKINDETAIL,70,117,77,54,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Character Shadow",IDC_SHADOWCHAR_STATIC,12,103,53,8
+    LTEXT           "Character Detail",IDC_SKINDETAIL_STATIC,12,121,53,8
+    GROUPBOX        "Graphic Option",IDC_GRAPHIC_STATIC,7,58,147,199
+    CONTROL         "Scene Distortion",IDC_CHECK_REFRACT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,165,72,10
+    CONTROL         "Glow Effect",IDC_CHECK_GLOW,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,19,178,80,10
+    COMBOBOX        IDC_COMBO_FOGRANGE,70,85,77,152,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "View",IDC_FOGRANGE_STATIC,12,89,18,8
+    GROUPBOX        "Download",IDC_DOWNLOAD_STATIC,162,129,146,30
+    CONTROL         "Texture Font",IDC_CHECK_TEXTURE_FONT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,226,80,10
+    CONTROL         "3D Sound",IDC_CHECK_3DSOUND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,169,23,72,10
+    CONTROL         "window mode",IDC_CHECK_WINDOWMODE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,36,108,10
+    COMBOBOX        IDC_COMBO_DEFAULTOPTION,70,69,77,152,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Default Option",IDC_DEFAULT_OPTION_STATIC,12,73,46,8
+    CONTROL         "Buff Effect",IDC_CHECK_BUFFEFFECT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,190,72,10
+    CONTROL         "POST PROCESSING",IDC_CHECK_POSTPROCESSING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,202,79,10
+    GROUPBOX        "DOWNLOAD AREA",IDC_DOWNAREA_STATIC,163,163,145,93
+    CONTROL         "",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,170,
+                    180,51,10
+    CONTROL         "",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,233,180,60,10
+    CONTROL         "",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,170,199,51,10
+    CONTROL         "Used limit Frame",IDC_CHECK_FRAME_LIMIT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,239,80,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_AUTOPATCHMAN_DIALOG DLGINIT
+BEGIN
+    IDC_STATIC_NOTIFY, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x2584, 0x0000, 0x1987, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 45
+    END
+
+    IDD_AUTOPATCHMAN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 246
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 256
+    END
+
+    IDD_DIALOG_DOWNLOAD_AREA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 128
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_DIALOG_WARNING_WHQL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_GAMESETDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 281
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 영어(미국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\AutoPatchMan.rc2"  // Microsoft Visual C++에서 편집되지 않은 리소스
+#include "afxres.rc"         // 표준 구성 요소
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

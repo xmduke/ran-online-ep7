@@ -1,0 +1,51 @@
+name: Build
+
+on:
+ workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    name: release_win32
+    steps:
+      - uses: actions/checkout@v2.4.0
+        with:
+          submodules: recursive
+
+      - name: Setup .NET Core SDK
+        uses: actions/setup-dotnet@v2.1.0
+        with:
+         dotnet-version: 6.0.x
+
+      - name: Add msbuild to PATH
+        uses: microsoft/setup-msbuild@v1.1
+
+      - name: Build 32bit release
+        run: |
+            msbuild /p:Configuration=Release_RZ /p:Platform=win32 .
+
+      - name: Compress release binary
+        run: |
+            7z a -t7z -m0=lzma2 -mx=9 -mmt "game-client-bin.7z" "..\game-client\"
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: game-client
+          path: |
+            game-client-bin.7z
+
+  check_date:
+    runs-on: ubuntu-latest
+    name: Check latest commit
+    needs: build
+    outputs:
+      should_run: ${{ steps.should_run.outputs.should_run }}
+    steps:
+      - uses: actions/checkout@v3
+
+      - id: should_run
+        continue-on-error: true
+        name: Check if latest commit date is within the previous 24 hours
+        if: ${{ github.event_name == 'schedule' }}
+        run: test -z $(git rev-list  --after="24 hours"  ${{ github.sha }}) && echo "::set-output name=should_run::false"

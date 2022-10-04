@@ -1,0 +1,202 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 중립 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 22, 17, 211, 52
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 10, "Arial", 400, 0, 0x0
+BEGIN
+    ICON            IDI_AGENTSERVER,IDC_MYICON,14,9,20,20
+    LTEXT           "AgentServer Version 1.0",IDC_STATIC,49,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) Min Communication",IDC_STATIC,49,20,150,8
+    DEFPUSHBUTTON   "OK",IDOK,96,36,30,11,WS_GROUP
+END
+
+IDD_MAIN_DIALOG DIALOGEX 0, 0, 401, 259
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AgentServer"
+FONT 10, "Arial", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDITCONSOLE,7,7,386,145,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | 
+                    WS_VSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_EDITCONSOLE_INFO,7,154,386,65,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | 
+                    WS_VSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT_EXEC,7,221,344,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Execute",IDC_BTN_EXECUTE,354,220,39,14
+    PUSHBUTTON      "Connect Session",IDC_BTN_CONNECT_SESSION,7,239,80,14
+    PUSHBUTTON      "Start",IDC_BTN_STOP,270,239,39,14
+    PUSHBUTTON      "Pause",IDC_BTN_PAUSE,311,239,39,14
+    PUSHBUTTON      "E&xit",IDC_CLOSE,354,239,39,14
+    PUSHBUTTON      "Connect Field",IDC_BTN_CONNECT_FIELD,93,239,79,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MAIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 393
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 252
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 중립 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_AGENTSERVER         ICON                    "Basic.ico"
+IDI_SMALL               ICON                    "BasicSmall.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_AGENTSERVER MENU 
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "끝내기(&X)",                  IDM_EXIT
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "정보(&A)...",                 IDM_ABOUT
+    END
+END
+
+IDR_POPMENU MENU 
+BEGIN
+    POPUP "POPUP"
+    BEGIN
+        MENUITEM "Open",                        IDC_OPEN
+        MENUITEM "Start",                       IDC_BTN_STOP
+        MENUITEM "Pause",                       IDC_BTN_PAUSE
+        MENUITEM "Exit",                        IDC_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "Connect Session",             IDC_BTN_CONNECT_SESSION
+        MENUITEM "Connect Field",               IDC_BTN_CONNECT_FIELD
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_AGENTSERVER ACCELERATORS 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "AgentServer"
+    IDC_AGENTSERVER         "AGENTSERVER"
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

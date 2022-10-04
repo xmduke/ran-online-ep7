@@ -1,0 +1,203 @@
+//---------------------------------------------------------------------------[GM3]
+[/dsp] 정보 디스플레이 변경 [GM3]
+	[off] console, fps 출력 off
+	[console]  정보 출력 page on/off
+	[fps]  화면갱신율 출력 on/off
+	[gate]  현제 맵에 있는 gate 출력
+	[player] 주변의 플래이어 이름, 'gaea id'를 표시.
+	[allplayer] 현재 맵에 있는 모든 플레이어 이름, 'gaea id'를 표시.
+
+[/weather] 날씨 제어 [GM3]
+	[rain]  비
+	[snow]  눈
+	[spore]  포자
+	[leave]  낙엽
+	[none]  날씨효과 중단
+	[on]  날씨 변화 켬
+	[off]  날씨 변화 끔
+
+[/move2gate] (혹은 [/m2g]) 지정한 gate 로 순간이동.  [GM3]
+	[GATE NUMBER]  멥에 존제하는 gate number로 이동.
+
+[/move2pos] (혹은 /m2p) 지정한 위치로 순간이동.  [GM3]
+	[ mapMid,mapSid, posX,posY ]
+	
+[/move2char_cn] (혹은 /m2c_cn) 지정 케릭터로 순간이동. [GM3]
+	[케릭터 이름]
+
+[/move2char_ci] (혹은 /m2c_ci) 지정 케릭터로 순간이동. [GM3]
+	[char id(number)]
+	
+[/genchar_cn] 지정 케릭터를 GM 옆으로 소환. [GM3]
+	[케릭터 이름]
+
+[/genchar_ci] 지정 케릭터를 GM 옆으로 소환. [GM3]
+	[char id(number)]
+
+[/visible] 캐릭터를 투명하게 만들 수 있다. [GM3]
+	[none]	. 캐릭터를 전혀 출력하지 않음 ( 화면 캡쳐에 유용. )
+	[off]	. 캐릭터를 자신한테만 히미하게 보여줌.
+	[on]	. 정상적으로 캐릭터를 보여줌.
+
+[/where_npc] npc의 위치를 알아본다. (존제하지 않을 때는 반환하지 않음. ) [GM3]
+	[mid,sid]	npc의 아이디를 적어야함.
+	
+[/kickuser] 특정 플래이어를 강재 접속 종료시킴. [GM3]
+	[char id(number)]
+
+[&공지내용]  채팅창에 &를 입력후 내용을 입력하면 해당 서버에 운영자 공지를 게임내에서 보낼 수 있음. [GM3]
+
+[/chatblock_ua] 채팅 금지 명령어. [GM3]
+	[user account]
+	[minute]
+
+[/chatblock_cn] 채팅 금지 명령어. [GM3]
+	[char name]
+	[minute]
+
+[/chatblock_ci] 채팅 금지 명령어. [GM3]
+	[char id(number)]
+	[minute]
+
+[/charinfo_cn] 캐릭터 정보 출력. [GM3]
+	[char name]
+
+[/charinfo_ci] 캐릭터 정보 출력. [GM3]
+	[char id(number)]
+	
+
+//---------------------------------------------------------------------------[GM2]
+
+[/bighead] 큰머리 모드. [GM2]
+	[on]
+	[off]
+
+[/bighand] 큰손 모드. [GM2]
+	[on]
+	[off]
+
+//---------------------------------------------------------------------------[GM1]
+
+[/time] 현제 게임 시간대 변경. [GM1]
+	[0~24] 시간.
+
+[/itemhold] 아이템 발생시 획득 권한 제어 [GM1]
+	[on]  기여한 자에게 제한
+	[off]  획득 권한 제한하지 않음
+
+[/eventexp_begin] 경험치 이벤트 시작. [GM1]
+	[scale] 경험치 배율 조정. (1.5 => 50%증가.)
+
+[/eventexp_end] 경험치 이벤트 종료. [GM1]
+
+[/eventitem_begin] 아이탬 드롭율 이벤트 시작. [GM1]
+	[scale]
+
+[/eventitem_end] 아이탬 드롭율 이벤트 종료. [GM1]
+
+[/eventmoney_begin] 돈 드롭율 이벤트 시작. [GM1]
+	[scale]
+
+[/eventmoney_end] 돈 드롭율 이벤트 종료. [GM1]
+
+[/pk_mode] pk 허용 여부를 결정. [GM1]
+	[on]
+	[off]
+
+[/mob_gen] 몹 소환. [GM1]
+	[mid,sid,posx,posy] mid,sid 몹 아이디, posx,posy 몹 소환 위치.
+
+[/mob_gen_ex] 몹 소환. [GM1]
+	[MobMID,MobSID,MapMID,MapSID,PosX,PosY,Range,Num,bThisChannel] 
+        지정된 맵의 지정된 위치에 Range 반경내 랜덤하게 Num 개수만큼 몹 소환.
+	bThisChannel(0) : 모든 채널에서 몹 소환.
+	bThisChannel(1) : GM이 접속한 채널에서만 몹 소환.
+	
+[/mob_del] 몹 제거. [GM1]
+	[] 가장 최근에 소환된 몹 부터 차례로 제거됨.
+
+[/mob_del_ex] 몹 제거. [GM1]
+	[MobMID,MobSID,MapMID,MapSID,bThisChannel] 
+	/mob_gen_ex 로 소환된 몹이 모두 제거됨.
+        bThisChannel(0) : 모든 채널에서 몹 제거.
+	bThisChannel(1) : GM이 접속한 채널에서만 몹 제거.
+
+[/lev_new] level 소환. level edit에서 편집된 파일을 소환한다. ( 대규모 몹 출현 이벤트용. 단 하나만 소환 가능. ) [GM1]
+	[test.lev]
+
+[/lev_del] 소환된 level 을 삭제한다. [GM1]
+
+[/warning_msg] 경고메시지를 화면에 출력한다. [GM1]
+	[on]
+	[off]
+	
+[/chatlog] 채팅 내용 저장한다.
+	[normal]   일반
+	[private]  귓속말
+	[party]    파티
+	[guild]    길드
+	[toall]    확성기
+	[alliance] 동맹
+	[system]   시스템
+	[all]      모두
+	[on]       저장을 시작함
+	[off]	   저장을 중지
+	
+	
+저장위치 - /내문서/RanOnline/ChatLog/년월일.txt
+저장형태 - [시:분] [채팅타입]	[캐릭터명][채팅말]
+채팅타입 - 일반 없음
+           귓속말 @
+           파티   #
+           클럽   %
+           동맹   !
+           확성기 $
+           시스템 &
+	
+[/msgview] 상대방의 채팅 내용을 본다.	
+	[아이디] 대상의 귓속말, 파티대화, 길드대화 보는 것을 추가 한다.
+	[off]    귓속말, 파티대화, 길드대화보는 것을 중단한다.
+	
+[/limit_event_begin] [시작레벨] [제한레벨] [플레이시간] [부스터 적용시간] [경험치 배율] [아이템 배율] 부스터 이벤트 적용
+	예) 레벨 120에서 150레벨 사이의 유저에게 50분 플레이 후 10 분의 부스터 시간을 주고 경험치를 2배와 아이템 드랍율 3.5배로 주고 싶다면
+		/limit_event_begin 120 150 50 10 2 3.5
+
+[/limit_event_end] 부스터 이벤트 종료
+	
+[/event_ex_begin] [타입] [적용값] 이동속도, 공격속도, 공격력 증가 이벤트 시작
+	[speed]  이동 속도를 증가 시킨다.
+	[aspeed] 공격 속도를 증가 시킨다.
+	[attack] 공격력을 증가 시킨다.
+	
+	[/event_ex_begin] [타입] 이동속도, 공격속도, 공격력 증가 이벤트 종료
+	[speed]  이동 속도 이벤트를 종료 시킨다.
+	[aspeed] 공격 속도 이벤트를 종료 시킨다.
+	[attack] 공격력 이벤트를 종료 시킨다.
+	
+/class_event_begin 클래스별 이벤트를 시작 [EventType] [ClassType] [EventRate] [MinLevel] [MaxLevel]
+		        [EventType] -> exp : EXP 이벤트
+				        item: ITEM 드랍율 이벤트
+				        money: 돈 배율 이벤트
+[ClassType] ->  1,   남격투부
+				2,   남검도부
+				4,   여양궁부
+				8,   여기예부
+				16,  남극강부
+				32,  여극강부
+				64,  여격투부
+				128, 여검도부
+				256, 남양궁부
+				512, 남기예부
+				1023 전체
+
+[EventRate] -> 이벤트에 적용될 배율
+[MinLevel] -> 이벤트가 적용되는 최소 레벨(입력하지 않으면 전체 레벨에 적용됨)
+[MaxLevel] -> 이벤트가 적용되는 최대 레벨(입력하지 않으면 전체 레벨에 적용됨)
+Ex) /class_event_begin exp 4 10 : 남자 극강부에게 경험치 10배의 이벤트를 시작함
+    /class_event_begin item 7 5 1 10 : 1~10 레벨 사이의 여자 검도부에게 아이템 드랍율을 5배 높여줌
+
+/class_event_end 클래스별 이벤트를 종료 [EventType] [ClassType]
+[EventType] -> 위와 동일
+[ClassType] -> 위와 동일(입력하지 않으면 전 클래스에 적용)
+Ex) /class_event_end exp 0 : 남자 격투부의 경험치 이벤트를 종료
+/class_event_end money : 모든 클래스의 돈 배율 이벤트를 종료

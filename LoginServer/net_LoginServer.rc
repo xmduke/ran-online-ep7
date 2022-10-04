@@ -1,0 +1,222 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 중립 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 22, 17, 230, 52
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 10, "Arial", 400, 0, 0x0
+BEGIN
+    ICON            IDI_NET_LOGINSERVER,IDC_MYICON,14,9,20,20
+    LTEXT           "Ran-Online LoginServer Version 1.0",IDC_STATIC,49,10,
+                    119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) Min Communication",IDC_STATIC,49,20,152,8
+    DEFPUSHBUTTON   "OK",IDOK,104,36,30,11,WS_GROUP
+END
+
+IDD_MAIN_DIALOG DIALOGEX 0, 0, 335, 282
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LoginServer"
+FONT 10, "Arial", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDITCONSOLE,7,7,320,148,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | 
+                    WS_VSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_EDITCONSOLE_INFO,7,159,320,48,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | 
+                    WS_VSCROLL | NOT WS_TABSTOP
+    CONTROL         "Check Order",IDC_CHECK_CHECKORDER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,212,55,8
+    COMBOBOX        IDC_COMBO_WEEKDAY,75,210,55,144,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_TIME1,166,210,34,204,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_MINUTE1,200,210,34,234,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "~",IDC_STATIC,246,210,8,8
+    COMBOBOX        IDC_COMBO_TIME2,260,210,34,204,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_MINUTE2,294,210,34,234,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_EXEC,6,227,276,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Execute",IDC_BTN_EXECUTE,289,227,39,14
+    LTEXT           "Game Version",IDC_STATIC,6,249,54,8
+    EDITTEXT        IDC_EDIT_GAMEVERSION,64,246,21,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Launcher Version",IDC_STATIC,92,248,63,8
+    EDITTEXT        IDC_EDIT_PATCHVERSION,160,246,21,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Set Version",IDC_BTN_SETVERSION,187,246,50,14
+    PUSHBUTTON      "Connect Session",IDC_BTN_CONNECT_SESSION,7,263,80,14
+    PUSHBUTTON      "Check",IDC_BTN_CHECK,130,263,51,14
+    PUSHBUTTON      "Start",IDC_BTN_STOP,187,263,45,14
+    PUSHBUTTON      "Pause",IDC_BTN_PAUSE,239,263,39,14
+    PUSHBUTTON      "E&xit",IDC_CLOSE,285,263,45,14
+    CONTROL         "Maintenance",IDC_CHECK_MAINTENANCE,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,272,249,55,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MAIN_DIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 279
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 중립 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_NET_LOGINSERVER     ICON                    "BasicSmall.ico"
+IDI_SMALL               ICON                    "Basic.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_NET_LOGINSERVER MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+END
+
+IDR_POPMENU MENU 
+BEGIN
+    POPUP "PopupMenu"
+    BEGIN
+        MENUITEM "Open",                        IDC_OPEN
+        MENUITEM "Start",                       IDC_BTN_STOP
+        MENUITEM "Pause",                       IDC_BTN_PAUSE
+        MENUITEM "Check",                       IDC_BTN_CHECK
+        MENUITEM "Exit",                        IDC_CLOSE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_NET_LOGINSERVER ACCELERATORS 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "net_LoginServer"
+    IDS_HELLO               "Hello World!"
+    IDC_NET_LOGINSERVER     "NET_LOGINSERVER"
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

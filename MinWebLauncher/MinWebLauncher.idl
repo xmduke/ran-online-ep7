@@ -1,0 +1,56 @@
+// MinWebLauncher.idl : ActiveX 컨트롤 프로젝트의 형식 라이브러리 소스입니다.
+
+// 이 파일은 MIDL 컴파일러 도구에 의해 처리되어
+// MinWebLauncher.ocx의 리소스가 되는
+// 형식 라이브러리(MinWebLauncher.tlb)가 생성됩니다.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(D4EF61A3-18E5-4FB8-AE48-0D47F84F50C3), version(1.7),
+  helpfile("MinWebLauncher.hlp"),
+  helpstring("MinWebLauncher ActiveX 컨트롤 모듈"),
+  control ]
+library MinWebLauncherLib
+{
+	importlib(STDOLE_TLB);
+
+	// CMinWebLauncherCtrl의 기본 디스패치 인터페이스입니다.
+
+	[ uuid(B0242861-6F9F-499F-8A8D-9B53F2A80568),
+	  helpstring("MinWebLauncher Control의 디스패치 인터페이스")]
+	dispinterface _DMinWebLauncher
+	{
+		properties:
+		[id(1), helpstring("속성 DownloadURL")] BSTR DownloadURL;
+		[id(2), helpstring("속성 GameType")] LONG GameType;
+		[id(3), helpstring("속성 UUID")] BSTR UUID;
+methods:
+		[id(4), helpstring("메서드 StartGame")] void StartGame(void);
+		[id(5), helpstring("메서드 GoDownloadPage")] void GoDownloadPage(void);
+		[id(6), helpstring("메서드 CheckRegi")] BOOL CheckRegi(void);
+	};
+
+	// CMinWebLauncherCtrl의 이벤트 디스패치 인터페이스입니다.
+
+	[ uuid(55FE2265-552A-4624-A71A-BDA0B966DA9C),
+	  helpstring("MinWebLauncher Control의 이벤트 인터페이스") ]
+	dispinterface _DMinWebLauncherEvents
+	{
+		properties:
+			// 이벤트 인터페이스에 속성이 없습니다.
+
+		methods:
+	};
+
+	// CMinWebLauncherCtrl의 클래스 정보입니다.
+
+	[ uuid(5FFFA267-0B81-42B4-BE64-77B5C9FE287F),
+	  helpstring("MinWebLauncher Control"), control ]
+	coclass MinWebLauncher
+	{
+		[default] dispinterface _DMinWebLauncher;
+		[default, source] dispinterface _DMinWebLauncherEvents;
+	};
+
+};

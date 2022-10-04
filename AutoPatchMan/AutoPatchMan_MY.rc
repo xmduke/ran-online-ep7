@@ -1,0 +1,605 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 醞董 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\icon1.my.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_GAMESETDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+    END
+
+    IDD_DIALOG_WARNING_WHQL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+    END
+
+    IDD_AUTOPATCHMAN_DIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 255
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 229
+        TOPMARGIN, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GAMESETDLG DIALOGEX 0, 0, 319, 215
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Option"
+FONT 9, "Arial", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Save",IDOK,162,191,78,16
+    PUSHBUTTON      "Cancel",IDCANCEL,264,191,50,16
+    GROUPBOX        "Display",IDC_STATIC,6,6,147,50
+    COMBOBOX        IDC_COMBO_RESOLUTION,12,18,98,87,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Sound",IDC_STATIC,161,7,146,118
+    CONTROL         "",IDC_SLIDER_BGM,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,187,65,98,13
+    LTEXT           "BGM",IDC_STATIC,169,67,13,8
+    CONTROL         "",IDC_SLIDER_SFX,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,187,107,98,13
+    LTEXT           "SFX",IDC_STATIC,169,107,13,8
+    CONTROL         "",IDC_SLIDER_MAP,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,187,87,98,13
+    LTEXT           "MAP",IDC_STATIC,169,87,13,8
+    COMBOBOX        IDC_COMBO_HZ,115,18,31,99,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_3DALGORITHM,169,43,86,75,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Find",IDC_BUTTON_COMPATIBLE,257,43,42,14
+    CONTROL         "",IDC_CHECK_BGM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    289,67,16,8
+    CONTROL         "",IDC_CHECK_MAP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    289,89,16,8
+    CONTROL         "",IDC_CHECK_SFX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    289,109,16,8
+    CONTROL         "Passive Mode",IDC_CHECK_PASSIVE,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,169,144,59,10
+    CONTROL         "Game Cursor",IDC_CHECK_GAMECURSOR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,184,57,10
+    CONTROL         "Field Shadow",IDC_CHECK_SHADOWLAND,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,132,58,10
+    CONTROL         "Realtime Reflection",IDC_CHECK_REALREFLECT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,145,77,10
+    COMBOBOX        IDC_COMBO_SHADOWCHAR,73,94,77,67,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SKINDETAIL,73,111,77,54,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Character Shadow",IDC_STATIC,10,96,60,8
+    LTEXT           "Character Detail",IDC_STATIC,17,112,53,8
+    GROUPBOX        "Graphic",IDC_STATIC,6,66,147,151
+    CONTROL         "Scene Distortion",IDC_CHECK_REFRACT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,158,68,10
+    CONTROL         "Glow Effect",IDC_CHECK_GLOW,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,19,171,53,10
+    COMBOBOX        IDC_COMBO_FOGRANGE,73,77,77,152,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "View",IDC_STATIC,54,79,16,8
+    GROUPBOX        "Download",IDC_STATIC,161,131,146,30
+    CONTROL         "Texture Font",IDC_CHECK_TEXTURE_FONT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,197,80,10
+    CONTROL         "3D Sound",IDC_CHECK_3DSOUND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,169,23,72,10
+    CONTROL         "window mode",IDC_CHECK_WINDOWMODE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,36,132,9
+END
+
+IDD_DIALOG_WARNING_WHQL DIALOGEX 0, 0, 249, 114
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Caution"
+FONT 8, "Arial", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,180,96,50,14
+    ICON            IDR_MAINFRAME,IDC_STATIC,222,6,21,18
+    LTEXT           "Windows Hardware Quality Labs (WHQL) Certified Video Driver is not installed. if Windows Hardware Quality Labs (WHQL) Certified Video Driver is not installed, it's possible to make error while playing game.",
+                    IDC_STATIC,7,7,202,36
+    LTEXT           "Driver Download",IDC_STATIC_NIVIDIA_LINK,120,54,54,8
+    LTEXT           "nVidia  ( Geforce, TNT )",IDC_STATIC,18,54,92,8
+    LTEXT           "Driver Download",IDC_STATIC_ATI_LINK,120,72,54,8
+    LTEXT           "ATI  ( Radeon )",IDC_STATIC,42,72,66,8
+    CONTROL         "Don't caution next time.",IDC_CHECK_NOCHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,96,93,10
+END
+
+IDD_AUTOPATCHMAN_DIALOG DIALOGEX 0, 0, 238, 262
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_BORDER
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "Arial", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Option",IDC_BUTTON_OPTION,150,159,40,16,BS_CENTER | 
+                    BS_VCENTER | BS_FLAT | NOT WS_TABSTOP
+    PUSHBUTTON      "Start",IDC_BUTTON_START,2,159,112,16,BS_CENTER | 
+                    BS_VCENTER | BS_FLAT | NOT WS_TABSTOP
+    PUSHBUTTON      "Exit",IDC_BUTTON_EXIT,194,159,40,16,BS_CENTER | 
+                    BS_VCENTER | BS_FLAT | NOT WS_TABSTOP
+    CONTROL         "",IDC_STATIC_NOTIFY,
+                    "{8856F961-340A-11D0-A96B-00C04FD705A2}",0x0,4,14,230,
+                    141
+    CONTROL         "",IDC_PROGRESS_ALL,"msctls_progress32",0x1,3,247,230,8
+    CONTROL         "",IDC_PROGRESS_CUR,"msctls_progress32",0x1,3,237,230,8
+    LTEXT           "RAN-Online",IDC_STATIC,99,4,39,8
+    LISTBOX         IDC_LIST_LOG,3,195,230,38,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Action",IDC_BUTTON_PATCH,120,156,24,11,NOT WS_VISIBLE
+    CONTROL         "http",IDC_CHECK_USE_HTTP,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,119,169,27,10
+    CONTROL         "When the game is prepared, start",IDC_READYTOSTART,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,181,121,10
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AutoPatchMan Information"
+FONT 9, "Arial", 400, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,18,17
+    LTEXT           "AutoPatchMan Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (c) 2002",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_AUTOPATCHMAN_DIALOG DLGINIT
+BEGIN
+    IDC_STATIC_NOTIFY, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x29a7, 0x0000, 0x1b49, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "AutoPatchMan Info.(&A)..."
+    IDS_WHQL_CVD            "WHQL Certified Video Driver"
+    IDS_WHQL_UCVD           "WHQL Uncertified Video Driver"
+    IDS_MESSAGE_001         "Run on the Web environment."
+    IDS_MESSAGE_002         "Ran-Online file is damaged. Please reinstall Ran-Online."
+    IDS_MESSAGE_003         "Closing. wait a moment."
+    IDS_MESSAGE_004         "Program restart  failed after patch."
+    IDS_MESSAGE_005         "Winsock version is not suitable."
+    IDS_MESSAGE_006         "DirextX version is not suitable."
+    IDS_MESSAGE_007         "Please play after updating DirectX."
+    IDS_MESSAGE_008         "Server is now inspected. Please conect a little bit later."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MESSAGE_009         "Version file reading  failed."
+    IDS_MESSAGE_010         "Error occurs while program patch file loading."
+    IDS_MESSAGE_011         "Error occurs whlile program patch file installing."
+    IDS_MESSAGE_012         "Finished prepare to game play."
+    IDS_MESSAGE_013         "Connecting Server failed. reach the max try connecting."
+    IDS_MESSAGE_014         "Trying to connection......"
+    IDS_MESSAGE_015         "Connecting Server failed. over the max connection time."
+    IDS_MESSAGE_016         "Connecting Server OK, data transmission succeed."
+    IDS_MESSAGE_017         "Try to connection FTP......"
+    IDS_MESSAGE_018         "Connecting FTP Server fails due to over connection time."
+    IDS_MESSAGE_019         "Connect to FTP Server,  data transmission success."
+    IDS_MESSAGE_020         "Creating event fails."
+    IDS_MESSAGE_021         "Selecting event fails."
+    IDS_MESSAGE_022         "Connecting fails."
+    IDS_MESSAGE_023         "Waiting for event fails."
+    IDS_MESSAGE_024         "Contact event was not occured."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MESSAGE_025         "Thread Creating fails."
+    IDS_MESSAGE_026         "Unable to connect to Server."
+    IDS_MESSAGE_027         "Version data transmission failed."
+    IDS_MESSAGE_028         "Forced termination accomplished."
+    IDS_MESSAGE_029         "Can't find file to start launch program."
+    IDS_MESSAGE_030         "Sound card is missing or out of order."
+    IDS_MESSAGE_031         "None"
+    IDS_MESSAGE_032         "Low"
+    IDS_MESSAGE_033         "Middle"
+    IDS_MESSAGE_034         "High"
+    IDS_MESSAGE_035         "Higher"
+    IDS_MESSAGE_036         "Low"
+    IDS_MESSAGE_037         "Middle"
+    IDS_MESSAGE_038         "High"
+    IDS_MESSAGE_039         "Standard"
+    IDS_MESSAGE_040         "Hardware Acceleration HALF"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MESSAGE_041         "Hardware Acceleration FULL"
+    IDS_MESSAGE_042         "Near"
+    IDS_MESSAGE_043         "Far"
+    IDS_MESSAGE_044         "Further"
+    IDS_MESSAGE_045         "Connecting FTP Server fails."
+    IDS_MESSAGE_046         "Size of downloaded file is wrong."
+    IDS_MESSAGE_047         "Patch file is being transmitted......"
+    IDS_MESSAGE_048         "Patching......"
+    IDS_MESSAGE_049         "Patch list file is being transmitted."
+    IDS_MESSAGE_050         "Error occurs while patch list file transmitting."
+    IDS_MESSAGE_051         "Decompressing patch list file."
+    IDS_MESSAGE_052         "Decompressing patch list file fails."
+    IDS_MESSAGE_053         "Loading patch file list."
+    IDS_MESSAGE_054         "Loading patch file list fails."
+    IDS_MESSAGE_055         "Error occurs while patch file transmitting."
+    IDS_MESSAGE_056         "Please check 'passive mode' on 'option' menu, 'download' tap,"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MESSAGE_057         "Comparing patch file list."
+    IDS_MESSAGE_058         "Comparing patch file list fails."
+    IDS_MESSAGE_059         "A part of patch file is damaged."
+    IDS_MESSAGE_060         "Renewing client version."
+    IDS_MESSAGE_061         "Renewing client version fails."
+    IDS_MESSAGE_062         "It accomplished all patch work successfully."
+    IDS_MESSAGE_063         "and try again."
+END
+
+#endif    // 醞董 resources
+/////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////
+// 醞措橫(渠虜) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_GAMESETDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_DIALOG_WARNING_WHQL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_AUTOPATCHMAN_DIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 257
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GAMESETDLG DIALOGEX 0, 0, 319, 225
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Option"
+FONT 9, "MingLiU", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "儲存",IDOK,174,192,78,16
+    PUSHBUTTON      "取?",IDCANCEL,264,191,50,16
+    GROUPBOX        "Display",IDC_STATIC,6,6,156,50
+    COMBOBOX        IDC_COMBO_RESOLUTION,12,18,98,87,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "?樂選項",IDC_STATIC,168,6,146,118
+    CONTROL         "",IDC_SLIDER_BGM,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,194,64,98,13
+    LTEXT           "BGM",IDC_STATIC,176,66,13,8
+    CONTROL         "",IDC_SLIDER_SFX,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,194,106,98,13
+    LTEXT           "SFX",IDC_STATIC,176,106,13,8
+    CONTROL         "",IDC_SLIDER_MAP,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,194,86,98,13
+    LTEXT           "MAP",IDC_STATIC,176,86,13,8
+    COMBOBOX        IDC_COMBO_HZ,115,18,41,99,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_3DALGORITHM,176,42,86,75,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "搜尋?樂",IDC_BUTTON_COMPATIBLE,264,42,42,14
+    CONTROL         "",IDC_CHECK_BGM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    296,66,16,8
+    CONTROL         "",IDC_CHECK_MAP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    296,88,16,8
+    CONTROL         "",IDC_CHECK_SFX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    296,108,16,8
+    CONTROL         "使用鍵盤模式",IDC_CHECK_PASSIVE,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,176,143,64,10
+    CONTROL         "使用滑鼠模式",IDC_CHECK_GAMECURSOR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,184,64,10
+    CONTROL         "使用地形陰影",IDC_CHECK_SHADOWLAND,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,132,64,10
+    CONTROL         "使用反射?果",IDC_CHECK_REALREFLECT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,145,60,10
+    COMBOBOX        IDC_COMBO_SHADOWCHAR,78,95,77,67,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SKINDETAIL,78,112,77,54,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "角色影子",IDC_STATIC,12,95,31,8
+    LTEXT           "角色詳細資?",IDC_STATIC,12,111,43,8
+    GROUPBOX        "顯??果",IDC_STATIC,6,66,156,151
+    CONTROL         "畫?扭曲?果",IDC_CHECK_REFRACT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,19,158,56,10
+    CONTROL         "使用最低?果顯?",IDC_CHECK_GLOW,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,19,171,72,10
+    COMBOBOX        IDC_COMBO_FOGRANGE,78,78,77,152,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "視角",IDC_STATIC,12,78,14,8
+    GROUPBOX        "下載",IDC_STATIC,168,130,146,30
+    CONTROL         "使用TEXTURE_FONT",IDC_CHECK_TEXTURE_FONT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,197,80,10
+    CONTROL         "使用3D??",IDC_CHECK_3DSOUND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,176,22,48,10
+    CONTROL         "視窗模式",IDC_CHECK_WINDOWMODE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,36,48,10
+END
+
+IDD_DIALOG_WARNING_WHQL DIALOGEX 0, 0, 250, 119
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "警告"
+FONT 8, "MingLiU", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "確?",IDOK,180,96,50,14
+    ICON            IDR_MAINFRAME,IDC_STATIC,222,6,20,20
+    LTEXT           "Windows Hardware Quality Labs (WHQL) 沒有安裝最新的驅動?式. WHQL 以目前的驅動?式來進?遊戲?可??發生問題.",
+                    IDC_STATIC,7,7,204,35
+    LTEXT           "下載驅動?式",IDC_STATIC_NIVIDIA_LINK,137,54,45,8
+    LTEXT           "nVidia 系列 ( Geforce, TNT )",IDC_STATIC,18,54,113,8
+    LTEXT           "下載驅動?式",IDC_STATIC_ATI_LINK,137,72,45,8
+    LTEXT           "ATI 系列 ( Radeon )",IDC_STATIC,42,72,77,8
+    CONTROL         "在下次?新執??不提出警告訊?.",IDC_CHECK_NOCHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,96,124,10
+END
+
+IDD_AUTOPATCHMAN_DIALOG DIALOGEX 0, 0, 238, 262
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_BORDER
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "MingLiU", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "選項",IDC_BUTTON_OPTION,150,159,40,16,BS_CENTER | 
+                    BS_VCENTER | BS_FLAT | NOT WS_TABSTOP
+    PUSHBUTTON      "?始遊戲",IDC_BUTTON_START,2,159,112,16,BS_CENTER | 
+                    BS_VCENTER | BS_FLAT | NOT WS_TABSTOP
+    PUSHBUTTON      "結?",IDC_BUTTON_EXIT,194,159,40,16,BS_CENTER | 
+                    BS_VCENTER | BS_FLAT | NOT WS_TABSTOP
+    CONTROL         "",IDC_STATIC_NOTIFY,
+                    "{8856F961-340A-11D0-A96B-00C04FD705A2}",0x0,4,14,230,
+                    141
+    CONTROL         "",IDC_PROGRESS_ALL,"msctls_progress32",0x1,3,249,230,8
+    CONTROL         "",IDC_PROGRESS_CUR,"msctls_progress32",0x1,3,240,230,8
+    LTEXT           "RAN-Online",IDC_STATIC,99,4,39,8
+    LISTBOX         IDC_LIST_LOG,3,197,230,38,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "?始?新",IDC_BUTTON_PATCH,117,156,29,14,NOT WS_VISIBLE
+    CONTROL         "http",IDC_CHECK_USE_HTTP,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,119,170,27,10
+    CONTROL         "準備好遊戲就馬上?始",IDC_READYTOSTART,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,182,115,10
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AutoPatchMan 資?"
+FONT 9, "MingLiU", 400, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,21
+    LTEXT           "AutoPatchMan 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (c) 2002",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "確?",IDOK,178,7,50,16,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_AUTOPATCHMAN_DIALOG DLGINIT
+BEGIN
+    IDC_STATIC_NOTIFY, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x23a8, 0x0000, 0x15e9, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "AutoPatchMan 資?(&A)..."
+    IDS_WHQL_CVD            "WHQL ?證的顯?卡驅動?式"
+    IDS_WHQL_UCVD           "WHQL ??證的顯?卡驅動?式"
+    IDS_MESSAGE_001         "請在web上執?."
+    IDS_MESSAGE_002         "遊戲執?檔已遭損傷.請?新安裝遊戲資?."
+    IDS_MESSAGE_003         "?在結??式. 請稍?."
+    IDS_MESSAGE_004         "在?新後?新執?遊戲?發生錯?."
+    IDS_MESSAGE_005         "電腦目前的版?為舊版?."
+    IDS_MESSAGE_006         "目前安裝的 DirectX的版?為舊版?."
+    IDS_MESSAGE_007         "請安裝最新版?的 DirectX後在?新執?遊戲."
+    IDS_MESSAGE_008         "?服器進?維?中. 請稍後在?新連線."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MESSAGE_009         "讀取遊戲版?失敗."
+    IDS_MESSAGE_010         "在下載patch檔?的??發生錯?."
+    IDS_MESSAGE_011         "在安裝patch檔?的??發生錯?."
+    IDS_MESSAGE_012         "已完成進?遊戲的各種?定."
+    IDS_MESSAGE_013         "?服器的上?人數已滿,連線失敗."
+    IDS_MESSAGE_014         "?在嘗試連接中......"
+    IDS_MESSAGE_015         "由於超過連線?間, 與?服器的連線失敗."
+    IDS_MESSAGE_016         "已成?連線並傳送遊戲資?."
+    IDS_MESSAGE_017         "?在連接FTP......"
+    IDS_MESSAGE_018         "由於超過連線?間, 與FTP的連線失敗."
+    IDS_MESSAGE_019         "已成?的連線至FTP並下載資?."
+    IDS_MESSAGE_020         "生成event失敗."
+    IDS_MESSAGE_021         "選擇event失敗."
+    IDS_MESSAGE_022         "連線失敗."
+    IDS_MESSAGE_023         "等待?服器的訊號失敗"
+    IDS_MESSAGE_024         "接受?服器的訊號失敗"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MESSAGE_025         "生成垃圾失敗."
+    IDS_MESSAGE_026         "無法連線至?服器."
+    IDS_MESSAGE_027         "傳送版?資?發生錯?."
+    IDS_MESSAGE_028         "強制終止遊戲."
+    IDS_MESSAGE_029         "找不到執?Launcher所需的檔?."
+    IDS_MESSAGE_030         "無??卡或??卡無法??啟動."
+    IDS_MESSAGE_031         "無陰影"
+    IDS_MESSAGE_032         "陰影?果低等"
+    IDS_MESSAGE_033         "陰影?果中等"
+    IDS_MESSAGE_034         "陰影?果高等1"
+    IDS_MESSAGE_035         "陰影?果高等2"
+    IDS_MESSAGE_036         "低等"
+    IDS_MESSAGE_037         "中等"
+    IDS_MESSAGE_038         "高等"
+    IDS_MESSAGE_039         "基?"
+    IDS_MESSAGE_040         "硬碟?速 HALF"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MESSAGE_041         "硬碟?速 FULL"
+    IDS_MESSAGE_042         "拉近"
+    IDS_MESSAGE_043         "普通"
+    IDS_MESSAGE_044         "拉遠"
+    IDS_MESSAGE_045         "連接FTP失敗."
+    IDS_MESSAGE_046         "下載檔?的大小不符."
+    IDS_MESSAGE_047         "?在接受patch檔?......"
+    IDS_MESSAGE_048         "?在進?patch......"
+    IDS_MESSAGE_049         "?在傳送list."
+    IDS_MESSAGE_050         "在傳送list的過?中發生錯?."
+    IDS_MESSAGE_051         "?在解?list的壓縮."
+    IDS_MESSAGE_052         "解list的壓縮失敗."
+    IDS_MESSAGE_053         "讀取patch檔?的list."
+    IDS_MESSAGE_054         "讀取list失敗."
+    IDS_MESSAGE_055         "在傳送patch 檔?的過?中發生錯?."
+    IDS_MESSAGE_056         "請檢測在選項中的 '下載中'的 '被動模式'"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MESSAGE_057         "?在比對patch檔?的list."
+    IDS_MESSAGE_058         "比對list失敗."
+    IDS_MESSAGE_059         "patch檔?中發?有部分損壞."
+    IDS_MESSAGE_060         "?新client版?."
+    IDS_MESSAGE_061         "?新client版?失敗."
+    IDS_MESSAGE_062         "已成?完成所有的?新."
+    IDS_MESSAGE_063         "請稍??試."
+END
+
+#endif    // 醞措橫(渠虜) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
